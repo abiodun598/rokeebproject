@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find Laws, Legal Help, and Attom</title>
+        <link rel="icon" href="PROJECT IMAGES/find law.jpg">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+        crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+        crossorigin="anonymous"></script>
+        <style>
+            .for{
+                background-color: rgb(66, 65, 65);
+                color: white;
+                width: 100%;
+                padding-top: 11px;
+                padding-bottom: 11px;
+                padding-right: 60px;
+                font-size: large;
+                text-align: end;
+                font-family: sans-serif;
+            }
+            #nav{
+                width: 100%;
+                height: 70px;
+                margin-top: 0px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 1px solid rgb(180, 180, 180);
+                margin: 0px auto;
+                margin-bottom: 0px;
+            }
+            #navbarSupportedContent{
+                height: 50px;
+                padding-right: 100px;
+            }
+            #navbarSupportedContent>ul{
+                font-weight: bolder;
+                font-size: large;
+                color: rgb(65, 65, 65);
+            }
+            #navbarSupportedContent i{
+                padding: 12px;
+                border: 1px solid rgb(43, 43, 43);
+                color: rgb(65, 65, 65);
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            #Content>li{
+                margin-right: 20px;
+            }
+            #Content>li:hover{
+                border-bottom: 4px solid black;
+            }
+            .ico{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 17%;
+                height: 70%;
+            }
+            #maf{
+                width: 100%;
+            }
+            #rem{
+                background-color: #dfdfdf;
+                width: 220px;
+                height: 35px;
+                font-size: 15px;
+                border-radius: 7px;
+            }
+            #dow:hover{
+                background-color: rgb(97, 97, 97);
+            }
+            .staff{
+                width: 100%;
+                height: 490px;
+                position: absolute;
+                z-index: -3;
+            }
+            .lawyer{
+                margin: 0px auto;
+                width: 87%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .lawyer>h1{
+                font-weight: lighter;
+                font-size: 48px;
+                color: rgb(0, 0, 0);
+                margin-bottom: 280px;
+            }
+            .lawyer>div{
+                width: 87%;
+                padding: 15px;
+                background: rgb(44, 43, 43);
+                border-radius: 10px;
+                padding-top: 20px;
+            }
+            .lawyer h3{
+                text-align: center;
+                color: white;
+                font-size: xx-large;
+            }
+            .lawyer i{
+                color: orangered;
+            }
+            .issue{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 94%;
+                margin: 0px auto;
+            }
+            .issue input{
+                width: 100%;
+                padding: 11px;
+                border-radius: 6px;
+                border: none;
+                outline: none;
+                color: rgb(71, 71, 71);
+            }
+            .issue button{
+                width: 30%;
+                padding: 6px;
+                border-radius: 6px;
+                border: none;
+                outline: none;
+                margin-top: 24px;
+                color: white;
+                font-weight: bolder;
+                font-size: larger;
+                background: orangered;
+                box-shadow: 0px 0px 15px 1px black;
+            }
+            .issue button:hover{
+                background: rgb(179, 48, 0);
+            }
+            .issue label{
+                font-weight: bolder;
+                color: white;
+            }
+            
+            .learn{
+                text-align: center;
+                font-weight: bolder;
+            }
+            .leap{
+                text-align: center;
+            }
+            .hand{
+                width: 87%;
+                padding: 12px;
+                background-color: rgb(184, 184, 184);
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0px auto;
+                padding-left: 35px;
+                border-radius: 15px;
+            }
+            .hand div{
+                margin-left: 30px;
+            }
+            .hand h3{
+                font-weight: bolder;
+            }
+            .hand p{
+                font-size: 23px;
+            }
+            .hand button:hover{
+                color: orangered;
+                box-shadow: 0px 0px 12px 2px black;
+            }
+            .hand button{
+                transition: all 0.3s ease-in-out 0s;
+                font-size: 23px;
+                border: none;
+                outline: none;
+                border-radius: 6px;
+                padding: 13px;
+                width: 160px;
+                background-color: rgb(49, 49, 49);
+                margin-left: 45px;
+                color: white;
+                font-weight: bolder;
+            }
+            .rise{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 93%;
+                margin: 0px auto;
+            }
+            .rise>div{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 31.5%;
+            }
+            .rise p{
+                font-weight: bolder;
+                margin-top: 12px;
+                cursor: pointer;
+                text-align: center;
+            }
+            .rise img{
+                cursor: pointer;
+                width: 90%;
+            }
+            .rise p:hover{
+                text-decoration: underline;
+            }
+            .more{
+                text-align: center;
+                font-weight: bolder;
+                font-size: 30px;
+            }
+            .feedback{
+                display: flex;
+                flex-direction: row;
+                width: 82%;
+                margin: 0px auto;
+            }
+            .feedback li{
+                color: blue;
+                list-style-type: none;
+                line-height: 29px;
+                cursor: pointer;
+            }
+            .feedback li:hover{
+                text-decoration: underline;
+            }
+            .policies{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 500px;
+                margin: 0px auto;
+                margin-left: 150px;
+            }
+            .company{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 500px;
+            }
+            .new{
+                width: 100%;
+                padding-top: 50px;
+                background: rgb(219, 214, 214);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 40px;
+            }
+            .split{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 70%;
+            }
+            .split>div{
+                background-color: white;
+                box-shadow: 0px 0px 15px 1px black;
+                padding-bottom: 50px;
+            }
+            .split li{
+                list-style-type: none;
+                color: rgb(0, 0, 177);
+                font-size: 16px;
+                line-height: 29px;
+                cursor: pointer;
+            }
+            .split li:hover{
+                text-decoration: underline;
+            }
+            .split img{
+                width: 100%;
+                margin-bottom: 14px;
+            }
+            .split span{
+                font-weight: bolder;
+                color: rgb(0, 0, 128);
+                font-size: 18px;
+                cursor: pointer;
+            }
+            .split span:hover{
+                text-decoration: underline;
+            }
+            #top:hover{
+                background: gold;
+                color: rgb(0, 0, 167);
+            }
+            #top{
+                transition: background 0.8s ease-in-out 0s;
+                color: black;
+                text-decoration: none;
+                text-align: center;
+                font-weight: bolder;
+                background-color: rgb(122, 121, 121);
+                width: 100%;
+            }
+            .footer{
+                width: 100%;
+                padding-top: 50px;
+                padding-bottom: 40px;
+                background-color: rgb(73, 72, 72);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .folaw{
+                width: 80%;
+            }
+            .footer1{
+                width: 87%;
+                padding-bottom: 15px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border-bottom: 0.5px solid rgb(180, 180, 180);
+            }
+            .mail{
+                width: 30%;
+            }
+            .mail1{
+                height: 50%;
+                border-bottom: 0.5px solid rgb(180, 180, 180);
+                font-size: 15px;
+                line-height: 30px;
+                color: white;
+            }
+            .mail2{
+                padding-top: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                color: white;
+            }
+            .about{
+                width: 63%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                color: white;
+            }
+            .about li{
+                list-style-type: none;
+                line-height: 37px;
+                font-size: 15px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            .about li:hover{
+                text-decoration: underline;
+            }
+            .about h5{
+                margin-bottom: 5px;
+                cursor: pointer;
+                padding-bottom: 7px;
+                border-bottom: 4px solid orangered;
+            }
+            .about h5:hover{
+                text-decoration: underline;
+            }
+            .about a{
+                font-size: 13px;
+                font-weight: 500;
+                cursor: pointer;
+                color: white;
+            }
+            .about p{
+                font-size: 14px;
+            }
+            .browse{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 300px;
+                padding-bottom: 13px;
+            }
+            .browse img{
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                cursor: pointer;
+            }
+            .footer2{
+                width: 87%;
+                padding-top: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                color: white;
+                font-size: 15px;
+            }
+            .footer2 span{
+                padding-right: 6px;
+                border-right: 1px solid white;
+                line-height: 20px;
+            }
+            
+            .minacc{
+                display: none;
+            }
+            .caveat{
+                color: white;
+                background-color: orangered;
+                padding: 7px;
+                border-radius: 12px;
+                width: 90%;
+                margin: 0px auto;
+            }
+            .caveat h3{
+                text-align: center;
+                font-size: xx-large;
+            }
+            .project{   
+                margin: 0px auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-weight: bolder;
+            }
+            .project h1{
+                color: blue;
+            }
+            .project a{
+                background-color: rgb(9, 255, 0);
+                border: 2px solid purple;
+            }
+            .project a:hover{
+                border: 2px solid red;
+            }
+            .project span{
+                background-color: aqua;
+                border: 2px solid purple;
+            }
+            .project span:hover{
+                border: 2px solid red;
+            }
+            #next{
+                background: aqua
+            }
+            #next:hover{
+                background: white;
+                border: 2px solid red;
+
+            }
+            @media screen and (max-width: 768px){
+                .for{
+                    display: none;
+                }
+                #navbarSupportedContent>ul{
+                    background-color: white;
+                }
+                #navbarSupportedContent i{
+                    background: orangered;
+                }
+                #Content>li{
+                    margin-left: 20px;
+                }
+                .ico{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 90%;
+                    height: 90%;
+                    margin: 0px auto;
+                }
+                #maf{
+                    width: 70%;
+                }
+                .ico i{
+                    font-size: 28px;
+                    border: 4px solid orangered;
+                    border-radius: 10px;
+                    width: 100%;
+                    padding: 5px;
+                }
+                .staff{
+                    width: 100%;
+                    height: 380px;
+                    position: absolute;
+                    z-index: -3;
+                }
+                .lawyer{
+                    margin: 0px auto;
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+                .lawyer>h1{
+                    font-weight: lighter;
+                    font-size: 30px;
+                    color: rgb(0, 0, 0);
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+                .lawyer>div{
+                    width: 87%;
+                    background: rgb(44, 43, 43);
+                    border-radius: 10px;
+                    padding-top: 20px;
+                }
+                .lawyer h3{
+                    text-align: center;
+                    color: white;
+                    font-size: xx-large;
+                }
+                .lawyer i{
+                    color: orangered;
+                }
+                .issue button{
+                    width: 90%;
+                }
+                .issue{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                .lon{
+                    width: 80%;
+                }
+                .leap{
+                    font-size: 14px;
+                }
+                .hand{
+                    width: 87%;
+                    background-color: rgb(184, 184, 184);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 0px auto;
+                    padding-left: 0px;
+                    border-radius: 15px;
+                }
+                .hand h3{
+                    font-weight: bolder;
+                    font-size: 14px;
+                }
+                .hand p{
+                    font-size: 13px;
+                }
+                .hand button:hover{
+                    color: orangered;
+                    box-shadow: 0px 0px 12px 2px black;
+                }
+                .hand button{
+                    transition: all 0.3s ease-in-out 0s;
+                    font-size: 23px;
+                    border: none;
+                    outline: none;
+                    border-radius: 6px;
+                    padding: 13px;
+                    width: 90%;
+                    background-color: rgb(49, 49, 49);
+                    margin-left: 0px;
+                    margin-top: 10px;
+                }
+                
+                .rise{
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 0px;
+                }
+                .rise>div{
+                    width: 95%;
+                }
+                .more{
+                    font-size: 25px;
+                }
+                .feedback{
+                    display: flex;
+                    flex-direction: column;
+                    width: 82%;
+                    margin: 0px auto;
+                }
+                .feedback li{
+                    font-size: 14px;
+                }
+                .policies{
+                    width: 100%;
+                    margin: 0px auto;
+                }
+                .company{
+                    width: 86.5%;
+                }
+                .new{
+                    width: 100%;
+                    padding-top: 35px;
+                    background: rgb(219, 214, 214);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 40px;
+                }
+                .split{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 90%;
+                }
+                .split>div{
+                    background-color: white;
+                    box-shadow: 0px 0px 15px 1px black;
+                    width: fit-content;
+                    height: fit-content;
+                    padding-bottom: 30px;
+                    margin-bottom: 22px;
+                }
+
+                .split li{
+                    list-style-type: none;
+                    color: rgb(0, 0, 177);
+                    font-size: 13px;
+                    line-height: 29px;
+                    cursor: pointer;
+                }
+                .split li:hover{
+                    text-decoration: underline;
+                }
+                .split img{
+                    width: 100%;
+                    margin-bottom: 14px;
+                }
+                .let{
+                    margin-top: 20px !important;
+                }
+                .bim{
+                    margin-bottom: -30px;
+                }
+                .split span{
+                    font-weight: bolder;
+                    color: rgb(0, 0, 128);
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+                .split span:hover{
+                    text-decoration: underline;
+                }
+                #top{
+                    transition: background 0.8s ease-in-out 0s;
+                    color: black;
+                    text-decoration: none;
+                    text-align: center;
+                    font-weight: bolder;
+                    background-color: rgb(122, 121, 121);
+                    width: 100%;
+                }
+                .footer{
+                    width: 100%;
+                    padding-top: 40px;
+                    background-color: rgb(73, 72, 72);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .footer1{
+                    width: 95%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    border-bottom: 0.5px solid rgb(180, 180, 180);
+                }
+                .mail{
+                    width: 75%;
+                    margin: 0px auto;
+                }
+                .mail1{
+                    border-bottom: 0.5px solid rgb(180, 180, 180);
+                    font-size: 15px;
+                    line-height: 30px;
+                    color: white;
+                }
+                .folaw{
+                    width: 80%;
+                }
+                .mail2{
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    color: white;
+                    padding-bottom: 20px;
+                    margin-top: 20px;
+                    border-bottom: 0.5px solid rgb(180, 180, 180);
+                }
+                .minacc{
+                    padding-top: 20px;
+                    display: inline-block;
+                }
+                #accordionFlushExample{
+                    width: 87%;
+                    margin: 0px auto;
+                }
+                #accodiv{
+                    background-color: rgb(73, 72, 72);
+                    border: 1px solid rgb(48, 48, 48);
+                    margin-bottom: 10px;
+                    border-radius: 15px;
+                    color: white;
+                }
+                
+                #accb{
+                    background-color: rgb(73, 72, 72);
+                    border: 1px solid rgb(48, 48, 48);
+                    border-radius: 15px;
+                    border-bottom: 4px solid rgb(214, 157, 0);
+                    color: white;
+                }
+                .about{
+                    display: none;
+                }
+                .minacc li{
+                    list-style-type: number;
+                    line-height: 39px;
+                    font-size: 18px;
+                }
+                .minacc li:hover{
+                    text-decoration: underline;
+                }
+                .minacc h5{
+                    margin-bottom: 0px;
+                    border: none;
+                    font-weight: bolder;
+                }
+                .minacc h5:hover{
+                    text-decoration: none;
+                }
+                .minacc a{
+                    font-size: 17px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    color: white;
+                }
+                .minacc p{
+                    font-size: 16px;
+                }
+                .browse{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+                .browse img{
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 100%;
+                    cursor: pointer;
+                }
+                .footer2{
+                    width: 87%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 15px;
+                }
+                .footer2 p{
+                    text-align: center;
+                }
+                .footer2 img{
+                    width: 100%;
+                    margin: 0px auto;
+                }
+                .footer2 span{
+                    padding-right: 6px;
+                    border-right: 1px solid white;
+                    line-height: 20px;
+                }
+                .caveat{
+                    padding: 3px;
+                    border-radius: 12px;
+                    margin: 0px auto;
+                }
+                .caveat h3{
+                    text-align: center;
+                    font-size: 25px;
+                }
+                .project a{
+                    padding: 2px 5px;
+                    font-size: 13px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h4 class="for">For Legal Professionals</h4>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid"  id="nav">
+                <div class="ico">
+                    <a class="navbar-brand" href="#"><img src="PROJECT IMAGES/dtext.png" id="maf"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                       <i class="fa-solid fa-circle-arrow-down" style="color: #000000;"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="Content">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Find a Lawyer</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Legal Forms & Services
+                            </a>
+                            <ul class="dropdown-menu" id="dow">
+                                <li><a class="dropdown-item" href="#">Estate Planning</a></li>
+                                <li><a class="dropdown-item" href="#">Business Formation</a></li>
+                                <li><a class="dropdown-item" href="#">View all Legal Forms</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Already have an account</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Learn About the Law
+                            </a>
+                            <ul class="dropdown-menu" id="dow">
+                                <li><a class="dropdown-item" href="#">Explore Legal Topics</a></li>
+                                <li><a class="dropdown-item" href="#">Search Law by State</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">View all Legal Forms</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Laws and Court Decisions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"></a>
+                        </li>
+                    </ul>
+                    <i class="fa-solid fa-search"></i>
+                </div>
+            </div>
+        </nav>
+        <img src="PROJECT IMAGES/staff.jpg" class="staff"><br><br>
+        <div class="lawyer">
+            <h1>Get Help With All of Your Legal Needs</h1>
+            <div>
+                <h3><i class="fa-solid fa-search"></i>FindLaw makes it easy to find a lawyer</h3><br>
+                <div class="issue">
+                    <div>
+                        <label for="text"  style="margin-top: 18px;">My legal issue</label><br>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false" 
+                            style="background: orangered; margin-top: 0px; color: white; font-size: 23px; width: 55px;"></button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                            </ul>
+                            <input type="text" class="form-control"
+                            aria-label="Text input with dropdown button">
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <label for="search">I need help near <span style="font-weight: lighter; color: rgb(194, 192, 192);">(city, ZIP code or county)</span> </label><br>
+                        <input type="search" value="Lagos, Lagos" class="lon">
+                    </div>
+                    <button>FIND MY LAWYER >></button>
+                </div>
+            </div>
+        </div><br><br>
+        <h3 class="learn">Learn About the Law</h3>
+        <p class="leap">
+            Are you facing a legal issue, or just looking 
+            for more information about a specific legal topic? 
+            FindLaw's Learn About the Law section is the perfect starting point. <br>
+            Learn About the Law features informational articles about a wide variety of legal topics, 
+            as well as specific information about subjects such as how 
+            to hire an <br>attorney and understanding your state's unique laws.
+        </p><br><br>
+        <div class="hand">
+            <img src="PROJECT IMAGES/diy2.png">
+            <div>
+                <h3>Have you seen our do-it-yourself legal solutions?</h3>
+                <p>You can now DIY your estate planning or business formation</p>
+            </div>
+            <button>Show Me >></button>
+        </div><br><br>
+        <div class="rise">
+            <div>
+                <div>
+                    <img src="PROJECT IMAGES/Annoaid.png">
+                    <p>Accidents and Injuries</p>
+                </div>
+                <div>
+                    <img src="PROJECT IMAGES/Annolw.png">
+                    <p>Criminal Law</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="PROJECT IMAGES/Annodui.png">
+                    <p>DUI Law</p>
+                </div>
+                <div>
+                    <img src="PROJECT IMAGES/Annostate.png">
+                    <p>State Law</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="PROJECT IMAGES/Annoment.png">
+                    <p>Employment Law</p>
+                </div>
+                <div>
+                    <img src="PROJECT IMAGES/Annofamily.png">
+                    <p>Family Law</p>
+                </div>
+            </div>
+        </div><br><br>
+        <h3 class="more">More Legal Topics</h3><br>
+        <div class="feedback">
+            <div class="company">
+                <div>
+                    <li>Bankruptcy</li>
+                    <li>Car Accidents</li>
+                    <li>Civil Rights</li>
+                    <li>Consumer Protection</li>
+                    <li>Divorce</li>
+                </div>
+                
+
+                <div>
+                    <li>Education Law</li>
+                    <li>Elder Law</li>
+                    <li>Estate Planning</li>
+                    <li>Health Care Law</li>
+                    <li>Immigration Law</li>
+                </div>
+            </div>
+
+
+
+            <div class="policies">
+                <div>
+                    <li>Real Estate Law</li>
+                    <li>Small Business Law</li>
+                    <li>Social Security and Retirement</li>
+                    <li>Tax Law</li>
+                    <li>Traffic Laws</li>
+                </div>
+                <div>
+                    <li>Litigation and Appeals</li>
+                    <li>Guide To Hiring a Lawyer</li>
+                    <li>Voting</li>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="new">
+            <h2 style="text-align: center; font-weight: bolder;">What's New at FindLaw</h2><br><br>
+            <div class="split">
+                <div>
+                    <img src="PROJECT IMAGES/lega.png"><br>
+                    <ul>
+                        <h5>TRENDING NOW</h5>
+                        <li style="color: black; font-weight: bolder;" class="bim">Featured Articles</li><br>
+                        <li>List of Criminal Charges</li>
+                        <li>LGBTQ+ Legal Resources</li>
+                        <li>How to Form an LLC by State</li>
+                        <li>When Can You Leave a Child Home Alone?</li>
+                        <li>Conflicts Involving Trees and Neighbors</li>
+                        <span>More Articles >></span>
+    
+                        <li style="color: black; font-weight: bolder; margin-top: 100px;  margin-bottom: -28px;" class="let">Featured Legal Blog Posts</li><br>
+                        <li>Federal Judge Stops Arkansas Social Media <br>
+                            Age Verification Law</li>
+                        <li>Louisiana Ordered to Remove Teens From Angola State <br>
+                            Prison</li>
+                        <li>Could a Pharma Company Be Liable for Stalling <br>
+                            Development of HIV Drugs?</li>
+                        <li>The Robot Did It: Autopilot on Trial</li>
+                        <span>More Articles >></span>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <img src="PROJECT IMAGES/podcasts.jpg"><br>
+                    <ul>
+                        <h5>FINDLAW PODCASTS AND BLOGS</h5>
+                        <li style="color: black; font-weight: bolder;" class="bim">The End of an Era</li><br>
+                        <li>Why Are Lawsuits Over Homeowner's Insurance Claims on <br>
+                            the Rise?</li>
+                        <li>Breaking Down the Supreme Court Student Loan Cases</li>
+                        <li>Junk Fees Are Absolute Garbage</li>
+                        <li>Trains and Toxic Torts</li>
+                        <span>More Podcasts >></span>
+
+                        <li style="color: black; font-weight: bolder; margin-top: 100px; margin-bottom: -28px;" class="let">Latest FindLaw Consumer Blog Posts</li><br>
+                        <li>Faux Paws, Mo' Laws: Texas Tightens Service Animal Fraud <br>
+                            Penalties</li>
+                        <li>Employer Health Insurance Coverage Dropping Weight-Loss <br>
+                            Drugs Like They're Carbs</li>
+                        <li>Spanish Soccer Federation President Kisses a Player. Is It <br>
+                            Sexual Harassment?</li>
+                        <li>Unionized Tech Workers Refuse to Go Back to the Old <br>
+                            Grind[r]</li>
+                        <span>More FindLaw Blogs >></span>
+                    </ul>
+                </div>
+            </div><br><br><br><br><br>
+            <a href="#" id="top">BACK TO TOP <i class="fa-solid fa-circle-arrow-up" style="color: #000000;"></i></a>
+        </div>
+        <div class="footer">
+            <div class="footer1">
+                <div class="mail">
+                    <div class="mail1">
+                        <img src="PROJECT IMAGES/lastlaw.png" class="folaw"><br><br>
+                        <P><strong>Questions?</strong><br>
+                            At FindLaw.com, we pride ourselves on being the <br>
+                            number one source of free legal information and <br>
+                            resources on the web. <a href="#" style="color: white; font-weight: 600;">Contact us.</a>
+                        </P>
+                    </div>
+                    <div class="mail2">
+                        <P style="font-size: 15px;"><strong>Stay up-to-date with how the law affects your <br>
+                            life.</strong> Sign up for our consumer newsletter.
+                        </P>
+                        <form>
+                            <label for="text" style="font-size: 12px; font-weight: bolder;">ENTER YOUR EMAIL ADDRESS</label>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" id="flem" aria-label="Text input with dropdown button">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false" 
+                                style="background: orangered; color: white; font-size: 23px; width: 55px;" onclick="bim()"></button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                </ul>
+                            </div>
+                            <span id="alert"></span>
+                        </form><br>
+                        <div class="browse">
+                            <span style="font-weight: bolder;">FOLLOW US:</span>
+                            <img src="PROJECT IMAGES/facebook.png">
+                            <img src="PROJECT IMAGES/youtube.png">
+                            <img src="PROJECT IMAGES/twitter.png">
+                            <img src="PROJECT IMAGES/find law.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="minacc">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item" id="accodiv">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <h5>ABOUT US >></h5>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <li>Our Team</li>
+                                    <li>Accessibility</li>
+                                    <li>Contact Us</li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" id="accodiv">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    <h5>FIND A LAWYER >></h5>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <li>By Location</li>
+                                    <li>By Legal Issue</li>
+                                    <li>By Lawyer Profiles</li>
+                                    <li>By Name</li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" id="accodiv">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <h5>SELF-HELP RESOURCES</h5>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <li>Legal Forms & Services</li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" id="accodiv">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    <h5>LEGAL RESEARCH</h5>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <li>Learn About the Law</li>
+                                    <li>State Laws</li>
+                                    <li>U.S. Caselaw</li>
+                                    <li>U.S. Codes</li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" id="accodiv">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    <h5>LEGAL NETWORK</h5>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p><a href="#"><strong>FindLaw.com</strong></a> Free, trusted legal <br>
+                                        information for consumers and <br>
+                                        legal 
+                                    </p>
+                                    <p><a href="#"><strong>SuperLawyers.com</strong></a> Directory of <br>
+                                        U.S. attorneys with the exclusive <br>
+                                        Super Lawyers rating 
+                                    </p>
+                                    <p><a href="#"><strong>Abogado.com</strong></a> The #1 Spanish- <br>
+                                        language legal website for <br>
+                                        consumers 
+                                    </p>
+                                    <p><a href="#"><strong>LawInfo.com</strong></a> Nationwide attorney <br>
+                                        directory and legal consumer <br>
+                                        resources 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about">
+                    
+                    <div>
+                        <h5>ABOUT US >></h5>
+                        <li>Our Team</li>
+                        <li>Accessibility</li>
+                        <li>Contact Us</li>
+                        <h5 style="margin-top: 30px;">FIND A LAWYER >></h5>
+                        <li>By Location</li>
+                        <li>By Legal Issue</li>
+                        <li>By Lawyer Profiles</li>
+                        <li>By Name</li>
+                    </div>
+                    <div>
+                        <h5>SELF-HELP RESOURCES</h5>
+                        <li>Legal Forms & Services</li>
+                        <h5 style="margin-top: 30px;">LEGAL RESEARCH</h5>
+                        <li>Learn About the Law</li>
+                        <li>State Laws</li>
+                        <li>U.S. Caselaw</li>
+                        <li>U.S. Codes</li>
+                    </div>
+                    <div>
+                        <h5>LEGAL NETWORK</h5>
+                        <p><a href="#"><strong>FindLaw.com</strong></a> Free, trusted legal <br>
+                            information for consumers and <br>
+                            legal 
+                        </p>
+                        <p><a href="#"><strong>SuperLawyers.com</strong></a> Directory of <br>
+                            U.S. attorneys with the exclusive <br>
+                            Super Lawyers rating 
+                        </p>
+                        <p><a href="#"><strong>Abogado.com</strong></a> The #1 Spanish- <br>
+                            language legal website for <br>
+                            consumers 
+                        </p>
+                        <p><a href="#"><strong>LawInfo.com</strong></a> Nationwide attorney <br>
+                            directory and legal consumer <br>
+                            resources 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer2">
+                <p>
+                    Copyright © 2023, Thomson Reuters. All rights reserved.<br>
+                    <span>Terms >></span>
+                    <span>Privacy >></span>
+                    <span>Disclaimer >></span>
+                    <span>Cookies >></span>
+                    Do Not Sell My Information >>
+                </p>
+                <img src="PROJECT IMAGES/thom.png">
+            </div>
+        </div><br>
+        <div class="caveat">
+            <h3>caveat: this page just a student project, not attempt to clone
+                an <br> existing website
+            </h3>
+        </div><br>
+        <div class="project">
+            <h1>OTHER PROJECTS</h1>
+            <nav aria-label="...">
+                <ul class="pagination" id="proul">
+                    <li class="page-item">
+                        <a class="page-link" id="next" href="canva.html">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="expedia.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="canva.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="findlaw.html">4</a></li>
+                    <li class="page-item"><a class="page-link" href="acefitness.html">5</a></li>
+                    <li class="page-item"><a class="page-link" href="ticketmaster.html">6</a></li>
+                    <li class="page-item"><a class="page-link" href="netflix.html">7</a></li>
+                    <li class="page-item"><a class="page-link" href="mtn.html">8</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="acefitness.html" id="next">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div><br><br><br><br><br>
+
+
+        <script>
+            function bim(){
+                let put= document.getElementById('flem').value;
+                let alrt= document.getElementById('alert');
+                let inv1= /^[a-zA-Z0-9]+@[a-z.]+\.[a-zA-Z]{3}$/;
+                let inv=  /^[a-z0-9]+@[a-z.]+\.[a-zA-Z]{3}$/;
+                if(put.match(inv)){
+                    alrt.innerHTML= ` Loading ...`
+                    alrt.style.color= 'white'
+                }
+                else if(put.match(inv1)){
+                    alrt.innerHTML= 'uppercase is not allowed in E-mail address'
+                    alrt.style.color= 'orange'
+                }
+                else{
+                    alrt.innerHTML= 'enter a valid E-mail address'
+                    alrt.style.color= 'red'
+                }
+            }
+        </script>
+    </body>
+</html>
+

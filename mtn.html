@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="icon" href="PROJECT IMAGES/mtn logo yellow.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+        crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+        crossorigin="anonymous"></script>
+        <style>
+            .Banner{
+                margin-top: 0px;
+                width: 100%;
+            }
+            .containe{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                position: sticky;
+                top: 0px;
+                z-index: 7;
+                background-color: white;
+                align-items: center;
+                width: 100%;
+                box-shadow: 0px 2px 5px rgb(85, 85, 85);
+            }
+            .mid{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                height: 50px;
+                width: 45%;
+            }
+            .mid button{
+                background-color: white;
+                color: black;
+                border: none;
+                font-weight: 500;
+                margin-top: 12%;
+                height: 50px;
+            }
+            .mid button:hover{
+                background-color: white;
+                color: black;
+            }
+            #collapse{
+                position: absolute;
+                transform: translate(-300px,20px);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                z-index: 3;
+            }
+            #collapse p{
+                display: flex;
+                flex-direction: row;
+                color: rgb(63, 63, 63);
+                font-weight: 600;
+            }
+            #collapse i{
+                color: #1b1b1b;
+                margin-right: 5px;
+            }
+            #collapse li{
+                list-style-type: none;
+                color: gray;
+                cursor: pointer;
+            }
+            #collapse li:hover{
+                border-bottom: 2px solid gold;
+            }
+            #collapse div{
+                margin-right: 22px;
+                
+            }
+            .search{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-left: 6%;
+                width: 60%;
+                border-radius: 5px;
+                height: 70%;
+                border: 0.5px solid rgb(131, 131, 131);
+            }
+            .search input{
+                border: none;
+                outline: none;
+                width: 88%;
+                margin-left: 2%;
+                font-size: 13px;
+            }
+            .forico{
+                height: 50px;
+                width: 17%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .forico li{
+                list-style-type: none;
+            }
+            .forico i{
+                font-size: 22px;
+                color: black;
+                cursor: pointer;
+            }
+
+            
+            #carouselExampleInterval{
+                cursor: pointer;
+            }
+            #pre:hover{
+                background-color: gold;
+            }
+            #pre{
+                transition: all 0.3s ease-in-out 0s;
+                border-radius: 100%;
+                width: 50px;
+                height: 50px;
+                margin: 30px;
+                margin-top: 10%;
+                opacity: 0.9;
+                border: 1px solid white;
+            }
+            .idiv{
+                margin: 0px auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 46%;
+            }
+            .idiv i:hover{
+                background-color: gold;
+                padding-top: 17px;
+            }
+            .idiv i{
+                transition: all 0.3s ease-in-out 0s;
+                font-size: 60px;
+                cursor: pointer;
+                padding: 24px;
+                border-radius: 15px;
+                color: black;
+            }
+            .idiv p{
+                font-size: 15px;
+                font-weight: 600;
+                margin-top: 5px;
+                letter-spacing: 2px;
+            }
+            .best{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 75%;
+                margin: 0px auto;
+            }
+            .forh1{
+                font-size: 30px;
+                font-weight: 900;
+                color: black;
+            }
+            .best p:hover{
+                background-color: gold;
+                border: 0.5px solid gold;
+            }
+            .best p{
+                transition: all 0.2s ease-in-out 0s;
+                font-size: 14px;
+                color: black;
+                cursor: pointer;
+                border: 0.5px solid black;
+                border-radius: 20px;
+                padding: 7px 20px;
+            }
+            .many4g{
+                overflow-x: scroll;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0px auto;
+                width: 75%;
+                height: fit-content;
+            }
+            .many4g img:hover{
+                width: 25%;
+                height: 410px;
+
+            }
+            .many4g img{
+                transition: all 0.4s ease-in-out 0s;
+                width: 24%;
+                height: 390px;
+                margin-right: 10px;
+                border-radius: 15px;
+            }
+            #forh12{
+                font-size: 30px;
+                font-weight: 900;
+                color: black;
+                width: fit-content;
+                margin-left: 12.7%;
+
+            }
+            .device{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0% auto;
+                width: 30%;
+                height: fit-content;
+            }
+            .device p{
+                font-size: 13px;
+                color: black;
+                cursor: pointer;
+                border: 0.5px solid black;
+                border-radius: 20px;
+                padding: 7px 16px;
+            }
+            .device p:hover{
+                background-color: gold;
+                border: 0.5px solid gold;
+            }
+            .manywifi{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0px auto;
+                width: 75%;
+                height: fit-content;
+                padding-bottom: 40px;
+                border-bottom: 0.5px solid rgb(155, 155, 155);
+            }
+            .manywifi>div{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                width: 24%;
+                height: 390px;
+                margin-right: 10px;
+                border-radius: 18px;
+                border: 0.5px solid rgb(155, 155, 155);
+                padding: 10px;
+            }
+            .manywifi>div>img{
+                width: 100%;
+                height: 38%;
+                margin-top:10px;
+            }
+            .rate{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 63%;
+                
+            }
+            .manywifi h2{
+                color: rgb(20, 20, 20);
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 28px;
+                margin-bottom:10px;
+                margin-top:10px;
+            }
+            .manywifi p{
+                color: black;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .manywifi span{
+                color: black;
+                font-size: 12px;
+            }
+            .lock{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 0px auto;
+                width: 75%;
+            }
+            .lock div{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                border: 0.5px solid rgb(155, 155, 155);
+                align-items: center;
+                width: 31%;
+                border-radius: 12px;
+            }
+            .lock p{
+                font-size: 12px;
+                color: black;
+                margin-top: 8px;
+            }
+            .lock span{
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: black;
+                font-size: 14px;
+            }
+            .footer{
+                width: 100%;
+                background: black;
+                height: fit-content;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .footer1{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 0px auto;
+                width: 75%;
+                border-bottom: 0.5px solid rgb(155, 155, 155);
+                padding-bottom: 40px;
+            }
+            .footer1 div{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 37%;
+                border-radius: 11px;
+            }
+            .footer1 p{
+                font-size: 12px;
+                color: white;
+                margin-top: 8px;
+            }
+            .footer1 span{
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: white;
+                font-size: 13px;
+            }
+            #accordionFlushExample{
+                display: none;
+            }
+            
+            .feedback{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 75%;
+                padding-top: 50px;
+                padding-bottom: 40px;
+                border-bottom: 0.5px solid rgb(155, 155, 155);
+            }
+            .feedback li{
+                font-size: 12px;
+                line-height: 21px;
+                color: rgba(255, 255, 255, 0.7);
+                cursor: pointer;
+                font-weight: 500;
+            }
+            .feedback li:hover{
+                color:  rgba(255, 255, 255, 0.9);
+            }
+            .feedback p{
+                font-weight: bolder;
+                color: white;
+                font-size: 15px;
+            }
+            .policies{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 40%;
+            }
+            .company{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 44%;
+            }
+            .last{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 40px;
+                padding-bottom: 50px;
+            }
+            .last img{
+                cursor: pointer;
+            }
+            .last p{
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 11px;
+            }
+            .last div{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 170px;
+            }
+            .last i{
+                color: gold;
+                font-size: 22px;
+                cursor: pointer;
+            }
+            .last i:hover{
+                color: rgba(255, 217, 0,0.6);
+            }
+            #alert{
+                width: 100%;
+                padding: 14px;
+                background-color: gold;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0px;
+                position: fixed;
+                bottom: 0px;
+            }
+            #alert p{
+                color: black;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            #alert strong{
+                color: #00415c;
+                font-size: 15px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+            #alert span{
+                transition: all 0.2s ease-in-out 0s;
+                color: black;
+                font-size: 15px;
+                font-weight: 700;
+                cursor: pointer;
+                padding: 5px 14px;
+                border: 0.6px solid black;
+                border-radius: 20px;
+                margin-left: 20px;
+            }
+            #alert span:hover{
+                background-color: black;
+                color: gold;
+            }
+            #alert a{
+                transition: all 0.2s ease-in-out 0s;
+                text-decoration: none;
+                color: black;
+                font-size: 15px;
+                font-weight: 700;
+                cursor: pointer;
+                padding: 5px 14px;
+                border: 0.6px solid black;
+                border-radius: 20px;
+                margin-left: 20px;
+            }
+            #alert a:hover{
+                background-color: black;
+                color: gold;
+            }
+            #alert img{
+                width: 55px;
+                height: 50px;
+                position: absolute;
+                right: 15px;
+            }
+            #need{
+                width: 12%;
+                padding: 2px;
+                padding-left: 8px;
+                background-color: rgb(226, 226, 226);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                border-radius: 28px !important;
+                border: none;
+                border-radius: 0px;
+                box-shadow: 3px 4px 3px rgb(94, 94, 94);
+                position: fixed;
+                bottom: 62px;
+                right: 40px;
+                z-index: 5;
+            }
+            #need strong{
+                color: rgb(0, 0, 104);
+                font-size: 13px;
+            }
+            #need span{
+                color: rgb(0, 0, 212);
+                font-size: 13px;
+                background-color: gold;
+                border-radius: 8px;
+                padding: 5px 25px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+            #need span:hover{
+                background: rgba(255, 217, 0,0.7);
+            }
+            #need button{
+                position: absolute;
+                background-color: rgba(177, 177, 177,0.9);
+                border-radius: 100%;
+                font-size: 13px;
+                font-weight: bolder;
+                padding: 7px;
+                transform: translate(7px,-7px);
+                opacity: 0.9;
+                font-weight: 900;
+            }
+            .caveat{
+                color: white;
+                background-color: gold;
+                padding: 7px;
+                border-radius: 12px;
+                width: 90%;
+                margin: 0px auto;
+            }
+            .caveat h3{
+                text-align: center;
+                font-size: xx-large;
+            }
+            .project{   
+                margin: 0px auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-weight: bolder;
+            }
+            .project h1{
+                color: blue;
+            }
+            .project a{
+                background-color: rgb(9, 255, 0);
+                border: 2px solid purple;
+            }
+            .project a:hover{
+                border: 2px solid red;
+            }
+            .project span{
+                background-color: aqua;
+                border: 2px solid purple;
+            }
+            .project span:hover{
+                border: 2px solid red;
+            }
+            #next{
+                background: aqua
+            }
+            #next:hover{
+                background: white;
+                border: 2px solid red;
+
+            }
+
+
+
+
+            @media screen and (max-width: 768px){
+                .Banner{
+                    height: 30px;
+                }
+                .containe{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    position: sticky;
+                    top: 0px;
+                    z-index: 7;
+                }
+                .containe>img{
+                    display: none;
+                }
+                .mid{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 50px;
+                    width: 100%;
+                }
+                #collapse{
+                    position: absolute;
+                    transform: translate(-150px,20px);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    z-index: 3;
+                }
+                #collapse p{
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+                #collapse i{
+                    color: #1b1b1b;
+                    margin-right: 5px;
+                    font-size: 13px;
+                }
+                #collapse li{
+                    cursor: pointer;
+                    font-size: 13px;
+                }
+                .mid{
+                    justify-content: space-around !important;
+                }
+                .mid>p{
+                    width: 40%;
+                    height: 40px !important;
+                    height: fit-content;
+                    margin-top: 2%;
+                }
+                .mid button{
+                    width: 100%;
+                    
+                    background-color: white;
+                    color: black;
+                    border: none;
+                    font-weight: 500;
+                    margin-top: 0px ;
+                    height: 47px;
+                }
+                #collapse img{
+                    width: 100px;
+                    height: 100px;
+                }
+                .search{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-left: 6%;
+                    width: 45%;
+                    border-radius: 5px;
+                    height: 70%;
+                    border: 0.5px solid rgb(131, 131, 131);
+                }
+                .search input{
+                    border: none;
+                    outline: none;
+                    width: 88%;
+                    margin-left: 2%;
+                    font-size: 13px;
+                }
+                .forico{
+                    height: 34px;
+                    width: 50%;
+                }
+                .forico li{
+                    list-style-type: none;
+                }
+                .forico i{
+                    font-size: 18px;
+                    color: black;
+                    cursor: pointer;
+                }
+
+                
+                #carouselExampleInterval{
+                    cursor: pointer;
+                }
+                #pre:hover{
+                    background-color: gold;
+                }
+                #pre{
+                    transition: all 0.3s ease-in-out 0s;
+                    border-radius: 100%;
+                    width: 30px;
+                    height: 30px;
+                    margin: 10px;
+                    margin-top: 10%;
+                    opacity: 0.9;
+                    border: 2px solid white;
+                }
+                .idiv{
+                    margin: 0px auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 89%;
+                }
+                .idiv i:hover{
+                    background-color: gold;
+                    padding-top: 10px;
+                }
+                .idiv i{
+                    transition: all 0.3s ease-in-out 0s;
+                    font-size: 23px;
+                    cursor: pointer;
+                    padding: 17px;
+                    border-radius: 15px;
+                    color: black;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .idiv p{
+                    font-size: 10px;
+                    font-weight: 600;
+                    margin-top: 5px;
+                    letter-spacing: 2px;
+                }
+                .best{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 75%;
+                    margin: 0px auto;
+                }
+                .forh1{
+                    font-size: 23px;
+                    font-weight: 900;
+                    color: black;
+                }
+                .best p{
+                    transition: all 0.2s ease-in-out 0s;
+                    font-size: 14px;
+                    padding: 3px 10px;
+                }
+                .many4g{
+                    overflow-x: scroll;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0px auto;
+                    width: 75%;
+                    height: fit-content;
+                }
+                .many4g img:hover{
+                    width: 48%;
+                    height: 410px;
+
+                }
+                .many4g img{
+                    transition: all 0.4s ease-in-out 0s;
+                    width: 45%;
+                    height: 390px;
+                    margin-right: 15px;
+                    border-radius: 15px;
+                }
+                #forh12{
+                    font-size: 23px;
+                    font-weight: 900;
+                    color: black;
+                    width: fit-content;
+                    margin-left: 12.7%;
+
+                }
+                .device{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0% auto;
+                    width: 85%;
+                    height: fit-content;
+                }
+                .device p{
+                    font-size: 13px;
+                    color: black;
+                    cursor: pointer;
+                    border: 0.5px solid black;
+                    border-radius: 20px;
+                    padding: 3px 10px;
+                }
+                .device p:hover{
+                    background-color: gold;
+                    border: 0.5px solid gold;
+                }
+                .manywifi{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    overflow-x: scroll;
+                    margin: 0px auto;
+                    width: 95%;
+                    height: fit-content;
+                    padding-bottom: 40px;
+                    border-bottom: 0.5px solid rgb(155, 155, 155);
+                }
+                .manywifi>div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    width: 49%;
+                    height: 95%;
+                    margin-right: 10px;
+                    border-radius: 18px;
+                    border: 0.5px solid rgb(155, 155, 155);
+                    padding: 10px;
+                }
+                .rate{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 96%;
+                    
+                }
+                .manywifi h2{
+                    color: rgb(20, 20, 20);
+                    font-size: 28px;
+                }
+                .lock{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin: 0px auto;
+                    width: 75%;
+                }
+                .lock >div{
+                    width: 100%;
+                    margin-bottom: 16px;
+                }
+                .footer{
+                    width: 100%;
+                    background: black;
+                    height: fit-content;
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .footer1{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin: 0px auto;
+                    width: 85%;
+                }
+                .footer1 div{
+                    width: 100%;
+                    border-radius: 11px;
+                }
+                .footer1 p{
+                    font-size: 12px;
+                    color: white;
+                    font-weight: bold;
+                    margin-top: 8px;
+                }
+                .footer1 span{
+                    margin-bottom: 5px;
+                    font-weight: bolder;
+                    color: white;
+                    font-size: 16px;
+                }
+                
+                .company{
+                    display:none;
+                }
+                .policies{
+                    display:none;
+                }
+                #accordionFlushExample{
+                    display: inline-block;
+                    width: 100%;
+                }
+                #accordionFlushExample h5{
+                    font-size: medium;
+                }
+                #accodiv{
+                    background-color: black;
+                    border: 1px solid rgb(48, 48, 48);
+                    color: white;
+                }
+                #accodiv li{
+                    list-style-type: none;
+                    color: #87a0af;
+                    font-size: 14px;
+                    cursor: pointer;
+                    line-height: 26px;
+                }
+                #accodiv li:hover{
+                    text-decoration: underline;
+                }
+                #accb{
+                    background-color: black;
+                    border-bottom: 1px solid grey;
+                    color: white;
+                }
+                .last{
+                    padding-top: 20px;
+                    padding-bottom: 100px;
+                }
+                
+                .last div{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 170px;
+                }
+                #alert{
+                    padding: 10px;
+                }
+                #alert p{
+                    font-size: 12px;
+                }
+                #alert span{
+                    font-size: 13px;
+                    padding: 3px 10px;
+                }
+                #alert a{
+                    font-size: 13px;
+                    padding: 3px 10px;
+                }
+                #alert img{
+                    display: none;
+                }
+                #need{
+                    display: none;
+                }
+                .caveat{
+                padding: 3px;
+                border-radius: 12px;
+                margin: 0px auto;
+                }
+                .caveat h3{
+                    text-align: center;
+                    font-size: 25px;
+                }
+                .project a{
+                    padding: 2px 5px;
+                    font-size: 13px;
+                }
+            }
+        </style>
+    </head>
+    <body class="body">
+        <img src="PROJECT IMAGES/Top-layer-Banner.gif" class="Banner">
+        <div class="containe">
+            <img src="PROJECT IMAGES/mtn logo black.png">
+            <div class="mid">
+                <p>
+                    <button id="bur" onclick="bur()" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                        All Products <span class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false" 
+                        style="border: none; background: white; color: black; font-size: 20px; width: 15px; height: fit-content; "></span>
+                    </button>
+                </p>
+                <div>
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                        <div class="card card-body" id="collapse">
+                            <div>
+                                <p><i class="fa-solid fa-camera"></i> Devices</p>
+                                <p><i class="fa-solid fa-phone"></i> Data</p>
+                                <p><i class="fa-solid fa-wifi"></i> Business</p>
+                                <p><i class="fa-solid fa-cloud"></i>cloud</p>
+                            </div>
+                            <div>
+                                <p>Broadband Devices</p>
+                                <li>MTN Broadband MiFi</li>
+                                <li>4G Router (Standard)</li>
+                                <li>4G Router (Premium)</li>
+                                <li>MTN 5G Broadband Router</li>
+                            </div>
+                            <div>
+                                <p>EyeSyte</p>
+                                <li>Smart PTZ Camera</li>
+                                <li>Battery Camera</li>
+                                <li>Smart Doorbell</li>
+                                <li>WiFi + GSM Intelligence Security Alarm System</li>
+                                <li>4G Surveillance Camera (3 meters cable)</li>
+                                <li>4G Surveillance Camera (10 meters cable)</li>
+                            </div>
+                            <img src="PROJECT IMAGES/guns.png">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="search by Products, brands & categories">
+                </div>
+            </div>
+            <div class="forico">
+                <i class="fa-solid fa-cart-shopping"></i>     
+                <i class="fa-solid fa-user" style="color: #000000;"></i>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        account
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Log in/Sign up</a></li>
+                    </ul>
+                </li>
+                <i class="fa-regular fa-moon" onclick="moon()" id="moon"></i>
+                <i class="fa-regular fa-sun" style="display: none;" onclick="sun()" id="sun"></i> 
+            </div>
+            
+        </div>
+
+
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2200">
+                    <img src="PROJECT IMAGES/5g1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2200">
+                    <img src="PROJECT IMAGES/5g2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2200">
+                    <img src="PROJECT IMAGES/5g3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2200">
+                    <img src="PROJECT IMAGES/5g4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2200">
+                    <img src="PROJECT IMAGES/5g5.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev" id="pre">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next" id="pre">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div><br><br>
+        <div class="idiv">
+            <i id="cam" class="fa-solid fa-camera"><p>Devices</p></i>
+            <i id="data" class="fa-solid fa-wifi"><p>Data</p></i>
+            <i id="buss" class="fa-solid fa-phone"><p>Business</p></i>
+            <i id="cloud" class="fa-solid fa-cloud"><p>cloud</p></i>
+        </div><br>
+        <div class="best">
+            <h1 class="forh1">Best Sellers</h1>
+            <p>View All</p>
+        </div>
+        <div class="many4g">
+            <img src="PROJECT IMAGES/wifi5.png">
+            <img src="PROJECT IMAGES/wifi6.png">
+            <img src="PROJECT IMAGES/wifi7.png">
+            <img src="PROJECT IMAGES/wifi8.png">
+            <img src="PROJECT IMAGES/wifi 1.png">
+            <img src="PROJECT IMAGES/wifi2.png">
+            <img src="PROJECT IMAGES/wifi3.png">
+            <img src="PROJECT IMAGES/wifi4.png">
+        </div><br>
+        <h1 id="forh12">Featured Products</h1><br>
+        <div class="device">
+            <p>Devices</p>
+            <p>Data</p>
+            <p>Business</p>
+            <p>Cloud</p>
+        </div><br>
+        <div class="manywifi">
+            <div>
+                <img src="PROJECT IMAGES/4g1.png">
+                <h2>4G Router<br>(Premium)</h2>
+                <p>Wireless, broadband internet <br>
+                    solution that offers fast...
+                </p>
+                <div class="rate">
+                    <img src="PROJECT IMAGES/rate.png"><span>(No Reviews)</span>
+                </div><br>
+                <p>Price <br>
+                    <strong>#25,000</strong>
+                </p>
+                
+            </div>
+
+
+            <div>
+                <img src="PROJECT IMAGES/4g2.png">
+                <h2>4G Router<br>(Standard)</h2>
+                <p>Wireless, broadband internet <br>
+                    solution that offers fast...
+                </p>
+                <div class="rate">
+                    <img src="PROJECT IMAGES/rate.png"><span>(No Reviews)</span>
+                </div><br>
+                <p>Price <br>
+                    <strong>#10,000</strong>
+                </p>
+                
+            </div>
+
+            <div>
+                <img src="PROJECT IMAGES/4g3.png">
+                <h2>MTN Broadband<br>MiFi</h2>
+                <p>Wireless, broadband internet <br>
+                    solution that offers fast
+                </p>
+                <div class="rate">
+                    <img src="PROJECT IMAGES/rate.png"><span>(No Reviews)</span>
+                </div><br>
+                <p>Price <br>
+                    <strong>#7,500</strong>
+                </p>
+                
+            </div>
+
+            <div>
+                <img src="PROJECT IMAGES/4g4.png">
+                <h2>5G Broadband<br>Router</h2>
+                <p>This is a high speed broadband <br>
+                     router compatible with 5G, 4G
+                </p>
+                <div class="rate">
+                    <img src="PROJECT IMAGES/rate.png"><span>(No Reviews)</span>
+                </div><br>
+                <p>Price <br>
+                    <strong>#50,000</strong>
+                </p>
+            </div>
+        </div><br><br>
+        
+        <div class="lock">
+            <div>
+                <img src="PROJECT IMAGES/lock1.png">
+                <p>
+                    <span>Secure Online Payments</span><br>
+                    Protect your financial information and shop <br>
+                    with peace of mind
+                </p>
+            </div>
+            <div>
+                <img src="PROJECT IMAGES/lock2.png">
+                <p>
+                    <span>Nationwide Delivery</span><br>
+                    Enjoy prompt deliveries of your favourite <br>
+                     products nationwide
+                </p>
+            </div>
+            <div>
+                <img src="PROJECT IMAGES/lock3.png">
+                <p>
+                    <span>Prompt Deliveries Every time</span><br>
+                    We deliver your packages promptly and <br>
+                     reliably
+                </p>
+            </div>
+        </div><br><br>
+        <div class="footer">
+            <div class="footer1">
+                <div>
+                    <img src="PROJECT IMAGES/24 hrs mtn.png">
+                    <p>
+                        <span>24/7 Support</span><br>
+                        We're always eager to help. Dial <strong>300</strong> on an MTN line or <br>
+                        <strong>08031000300</strong> on any network for all enquiries.
+                    </p>
+                </div>
+                <div>
+                    <img src="PROJECT IMAGES/mtn enve.png">
+                    <p>
+                        <span>Stay in touch with Us!</span><br>
+                        We love to listen. Write to us at <strong>customercareng@mtn.com</strong>.
+                    </p>
+                </div>
+                
+            </div>
+
+
+
+            <div class="feedback">
+                <div class="company">
+                    <div>
+                        <p>Our Company</p>
+                        <li>About MTN
+                        <li>Code of Ethics</li>
+                        <li>Privacy & Data Protection</li>
+                        <li>MoMo</li>
+                        <li>Business</li>
+                    </div>
+                    
+    
+                    <div>
+                        <p>Legal</p>
+                        <li>Privacy Policy & Cookies</li>
+                        <li>Terms & Conditions</li>
+                        <li>Return Policy</li>
+                        <li>Delivery Policy</li>
+                    </div>
+                </div>
+    
+    
+    
+                <div class="policies">
+                    <div>
+                        <p>Explore eShop</p>
+                        <li>Broadband</li>
+                        <li>Data Bundles</li>
+                        <li>Airtime Recharge</li>
+                    </div>
+                    <div>
+                        <p>Help</p>
+                        <li>FAQs</li>
+                        <li>Help center</li>
+                        <li>Service centers</li>
+                        <li>Coverage Map</li>
+                        <li>Delivery Timeline</li>
+                        <li>Broadband Faulty Device <br> Management</li>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item" id="accodiv">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <h5>Our Company</h5>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <li>About MTN</li>
+                                <li>Code of Ethics</li>
+                                <li>Privacy & Data Protection</li>
+                                <li>MoMo</li>
+                                <li>Business</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="accodiv">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <h5>Legal</h5>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <li>Privacy Policy & Cookies</li>
+                                <li>Terms & Conditions</li>
+                                <li>Return Policy</li>
+                                <li>Delivery Policy</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="accodiv">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <h5>Explore eShop</h5>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <li>Broadband</li>
+                                <li>Data Bundles</li>
+                                <li>Airtime Recharge</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="accodiv">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                <h5>Help</h5>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <li>FAQs</li>
+                                <li>Help center</li>
+                                <li>Service centers</li>
+                                <li>Coverage Map</li>
+                                <li>Delivery Timeline</li>
+                                <li>Broadband Faulty Device</li>
+                                <li>Management</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="last">
+                
+                    <img src="PROJECT IMAGES/img logo mtn.png"><br>
+                    <p>©2023 MTN Nigeria Communications PLC. All rights reserved. Privacy Policy & Data Protection</p>
+                <div>
+                    <i class="fa-brands fa-facebook-f"></i> 
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div><br><br>
+
+        <div class="caveat">
+            <h3>caveat: this page just a student project, not attempt to clone
+                an <br> existing website
+            </h3>
+        </div><br>
+        <div class="project">
+            <h1>OTHER PROJECTS</h1>
+            <nav aria-label="...">
+                <ul class="pagination" id="proul">
+                    <li class="page-item">
+                        <a class="page-link" id="next" href="netflix.html">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="expedia.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="canva.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="findlaw.html">4</a></li>
+                    <li class="page-item"><a class="page-link" href="acefitness.html">5</a></li>
+                    <li class="page-item"><a class="page-link" href="ticketmaster.html">6</a></li>
+                    <li class="page-item"><a class="page-link" href="netflix.html">7</a></li>
+                    <li class="page-item"><a class="page-link" href="mtn.html">8</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" id="next">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div><br><br><br><br><br>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert" id="need">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <div>
+                <strong>Hi there!<br>
+                    Need some help 
+                </strong><br>
+                <span>Let's chat now.</span></p>
+            </div>
+        </div>
+
+
+        <div id="alert" class="alert alert-warning alert-dismissible fade show">
+            <p>
+                <strong>Privacy and Cookies notice:</strong> Cookies help us deliver the best experience on our 
+                website. By using our website, you agree to the use of cookies. 
+            </p>
+            <a href="#" data-bs-dismiss="alert" onclick="cancel()">Accept</a>
+            <span data-bs-dismiss="alert" onclick="cancel()">Cancel</span>
+            <img src="PROJECT IMAGES/mtn message.png">
+        </div>
+
+        
+        <script>
+            function bur(){
+                let bur=document.getElementById('bur');
+                bur.style.backgroundColor='white'
+                bur.style.color='black'
+            }
+            
+            function cancel(){
+                let bur=document.getElementById('need');
+                bur.style.display='none'
+            }
+            function moon(){
+                let body=document.querySelector('.body');
+                body.style.backgroundColor='black'
+                document.getElementById('collapse').style.backgroundColor='black'
+                document.getElementById('moon').style.display='none'
+                document.getElementById('sun').style.display='inline-block'
+                document.getElementById('cam').style.color='white'
+                document.getElementById('data').style.color='white'
+                document.getElementById('buss').style.color='white'
+                document.getElementById('cloud').style.color='white'
+                document.querySelectorAll('p')[11].style.color='white'
+                document.querySelectorAll('p')[11].style.border='1px solid white'
+                document.querySelectorAll('p')[12].style.color='white'
+                document.querySelectorAll('p')[12].style.border='1px solid white'
+                document.querySelectorAll('p')[13].style.color='white'
+                document.querySelectorAll('p')[13].style.border='1px solid white'
+                document.querySelectorAll('p')[14].style.color='white'
+                document.querySelectorAll('p')[14].style.border='1px solid white'
+                document.querySelectorAll('p')[15].style.color='white'
+                document.querySelectorAll('p')[15].style.border='1px solid white'
+                document.querySelectorAll('p')[16].style.color='white'
+                document.querySelectorAll('p')[17].style.color='white'
+                document.querySelectorAll('p')[18].style.color='white'
+                document.querySelectorAll('p')[19].style.color='white'
+                document.querySelectorAll('p')[20].style.color='white'
+                document.querySelectorAll('p')[16].style.color='white'
+                document.querySelectorAll('p')[17].style.color='white'
+                document.querySelectorAll('p')[18].style.color='white'
+                document.querySelectorAll('p')[19].style.color='white'
+                document.querySelectorAll('p')[20].style.color='white'
+                document.querySelectorAll('p')[21].style.color='white'
+                document.querySelectorAll('p')[22].style.color='white'
+                document.querySelectorAll('p')[23].style.color='white'
+                document.querySelectorAll('p')[24].style.color='white'
+                document.querySelectorAll('p')[25].style.color='white'
+                document.querySelectorAll('p')[26].style.color='white'
+                document.querySelectorAll('span')[0].style.color='white'
+                document.querySelectorAll('span')[1].style.color='white'
+                document.querySelectorAll('span')[2].style.color='white'
+                document.querySelectorAll('span')[3].style.color='white'
+                document.querySelectorAll('span')[4].style.color='white'
+                document.querySelectorAll('span')[5].style.color='white'
+                document.querySelectorAll('span')[6].style.color='white'
+                document.querySelectorAll('span')[7].style.color='white'
+                document.querySelectorAll('span')[8].style.color='white'
+                document.querySelectorAll('span')[9].style.color='white'
+                document.querySelectorAll('span')[10].style.color='white'
+                document.querySelectorAll('span')[11].style.color='white'
+                document.querySelectorAll('h2')[0].style.color='white'
+                document.querySelectorAll('h2')[1].style.color='white'
+                document.querySelectorAll('h2')[2].style.color='white'
+                document.querySelectorAll('h2')[3].style.color='white'
+                document.querySelectorAll('h1')[0].style.color='white'
+                document.querySelectorAll('h1')[1].style.color='white'
+                document.querySelector('.footer').style.backgroundColor='rgba(43, 43, 43, 0.9)'
+            }
+            function sun(){
+                let body=document.querySelector('.body');
+                body.style.backgroundColor='white'
+                document.getElementById('moon').style.display='inline-block'
+                document.getElementById('sun').style.display='none'
+                document.getElementById('collapse').style.backgroundColor='white'
+                document.getElementById('cam').style.color='black'
+                document.getElementById('data').style.color='black'
+                document.getElementById('buss').style.color='black'
+                document.getElementById('cloud').style.color='black'
+
+
+                document.querySelectorAll('p')[11].style.color='black'
+                document.querySelectorAll('p')[11].style.border='1px solid black'
+                document.querySelectorAll('p')[12].style.color='black'
+                document.querySelectorAll('p')[12].style.border='1px solid black'
+                document.querySelectorAll('p')[13].style.color='black'
+                document.querySelectorAll('p')[13].style.border='1px solid black'
+                document.querySelectorAll('p')[14].style.color='black'
+                document.querySelectorAll('p')[14].style.border='1px solid black'
+                document.querySelectorAll('p')[15].style.color='black'
+                document.querySelectorAll('p')[15].style.border='1px solid black'
+                document.querySelectorAll('p')[16].style.color='black'
+                document.querySelectorAll('p')[17].style.color='black'
+                document.querySelectorAll('p')[18].style.color='black'
+                document.querySelectorAll('p')[19].style.color='black'
+                document.querySelectorAll('p')[20].style.color='black'
+                document.querySelectorAll('p')[21].style.color='black'
+                document.querySelectorAll('p')[22].style.color='black'
+                document.querySelectorAll('p')[23].style.color='black'
+                document.querySelectorAll('p')[24].style.color='black'
+                document.querySelectorAll('p')[25].style.color='black'
+                document.querySelectorAll('p')[26].style.color='black'
+                document.querySelectorAll('span')[0].style.color='black'
+                document.querySelectorAll('span')[1].style.color='black'
+                document.querySelectorAll('span')[2].style.color='black'
+                document.querySelectorAll('span')[3].style.color='black'
+                document.querySelectorAll('span')[4].style.color='black'
+                document.querySelectorAll('span')[5].style.color='black'
+                document.querySelectorAll('span')[6].style.color='black'
+                document.querySelectorAll('span')[7].style.color='black'
+                document.querySelectorAll('span')[8].style.color='black'
+                document.querySelectorAll('span')[9].style.color='black'
+                document.querySelectorAll('span')[10].style.color='black'
+                document.querySelectorAll('span')[11].style.color='black'
+                document.querySelectorAll('h2')[0].style.color='black'
+                document.querySelectorAll('h2')[1].style.color='black'
+                document.querySelectorAll('h2')[2].style.color='black'
+                document.querySelectorAll('h2')[3].style.color='black'
+                document.querySelectorAll('h1')[0].style.color='black'
+                document.querySelectorAll('h1')[1].style.color='black'
+                document.querySelector('.footer').style.backgroundColor='black'
+            }
+        </script>
+    </body>
+</html>

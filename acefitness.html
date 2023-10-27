@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mission | Our Effort</title>
+        <link rel="icon" href="PROJECT IMAGES/dmis.png">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+        crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+        crossorigin="anonymous"></script>
+        <style>
+            #nav{
+                width: 100%;
+                height: 70px;
+                margin-top: 0px;
+                display: flex;
+                flex-direction: row;
+                padding-left: 50px;
+                justify-content: center;
+                align-items: center;
+                margin: 0px auto;
+                margin-bottom: 0px;
+            }
+            #navbarSupportedContent{
+                height: 50px;
+                padding-right: 100px;
+            }
+            #navbarSupportedContent>ul{
+                font-size: 15px;
+                font-weight: 500;
+                margin-left: 40px;
+            }
+            #navbarSupportedContent i{
+                height: 100%;
+                color: rgb(0, 0, 0);
+                border-radius: 5px;
+                font-weight: 800;
+                font-size: larger;
+                cursor: pointer;
+                padding: 16px;
+                height: 60px;
+            }
+            #Content{
+                
+                background-color: white;
+            }
+            #navbarSupportedContent i:hover{
+                border-bottom: 4px solid rgb(255, 0, 98);
+            }
+            #Content>li{
+                margin-right: 20px;
+                color: black !important;
+            }
+            #Content>li:hover{
+                border-bottom: 4px solid rgb(255, 0, 98);
+            }
+            .navp{
+                height: 100%;
+                margin-top: 30px;
+                cursor: pointer;
+            }
+            .navp:hover{
+                border-bottom: 4px solid rgb(255, 0, 98);
+            }
+            #maf{
+                width: 100px;
+                height: 31px;
+            }
+            .onmission{
+                background-image: url(PROJECT\ IMAGES/raj.jpg);
+                width: 100%;
+                height: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .onmission h1{
+                color: white;
+                font-size: 70px;
+            }
+            #alert{
+                width: 280px;
+                height: 97px;
+                border-radius: 13px;
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                z-index: 7;
+                right: 40px;
+                margin-top: 270px;
+            }
+            #alert div{
+                display: flex;
+                flex-direction: row;
+                font-size: 18px;
+                width: 100%;
+                color: rgb(41, 41, 41);
+                transform: translate(15px,-37px);
+            }
+            #alert img{
+                width: 70px;
+                height: 70px;
+                border-radius: 100%;
+                position: relative;
+                right: -70px;
+            }
+            #alert button{
+                position: relative;
+                background-color: rgb(177, 177, 177);
+                border-radius: 100%;
+                font-size: 16px;
+                font-weight: bolder;
+                padding: 14px 7px;
+                transform: translate(-25px,-25px);
+                opacity: 0.9;
+            }
+            #alert button:hover{
+                background-color: white;
+            }
+            .stands{
+                text-align: center;
+                padding: 40px;
+                font-size: 39px;
+                font-weight: 400;
+            }
+            .method{
+                width: 100%;
+                background-color: #4abfad;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .method div{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+            .method h1{
+                font-size: 49px;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            .res{
+                font-size: 58px !important;
+            }
+            .method p{
+                font-size: 20px;
+            }
+            .method button:hover{
+                background: white;
+                color: #02263c;
+            }
+            .method button{
+                transition: all 0.3s ease-in-out 0s;
+                font-size: 19px;
+                font-weight: 500;
+                color: white;
+                border: 1px solid white;
+                outline: none;
+                background-color: #4abfad;
+                padding: 20px 30px;
+                margin-top: 28px;
+            }
+            .but{
+                transition: all 0.3s ease-in-out 0s;
+                background: #02263c !important;
+            }
+            .but:hover{
+                background: white !important;
+                color: #02263c;
+            }
+            .method img{
+                width: 50%;
+                height: 600px;
+            }
+            .prof{
+                background-image: url(PROJECT\ IMAGES/archive.jpg);
+                width: 100%;
+                padding: 90px 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .prof h1{
+                font-size: 56px;
+                font-weight: 400;
+                color: #02263c;
+            }
+            .prof p{
+                font-size: 19px;
+                text-align: center;
+                color: rgb(83, 83, 83);
+                font-weight: 100pc;
+            }
+            .prof button:hover{
+                background: #02263c;
+                color: white;
+            }
+            .prof button{
+                transition: all 0.3s ease-in-out 0s;
+                color: #02263c;
+                font-size: 19px;
+                background-image: url(PROJECT\ IMAGES/archive.jpg);
+                font-weight: 500;
+                border: 1px solid #02263c;
+                outline: none;
+                padding: 13px 23px;
+                margin-top: 28px;
+            }
+            .butt{
+                transition: all 0.3s ease-in-out 0s;
+                background: #e53d46 !important;
+            }
+            .butt:hover{
+                background: white !important;
+                color: #02263c;
+            }
+            .miss{
+                background-image: url(PROJECT\ IMAGES/angled.png);
+                width: 187px;
+                height: 29px;
+                margin: 0px auto;
+                color: white;
+                font-size: 13px;
+                font-family: Roboto,sans-serif;
+                letter-spacing: 1px;
+                text-align: center;
+                padding-top: 5px;
+                position: relative;
+                z-index: 2;
+            }
+            .blog{
+                font-size: 17px;
+                text-align: center;
+                color: rgb(83, 83, 83);
+                font-weight: 100pc;
+                padding: 44px 0px;
+                width: fit-content;
+                margin: 0px auto;
+                border-top: 2px solid #02263c;
+                margin-top: -16px;
+            }
+            .per{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 92%;
+                margin: 0% auto;
+            }
+            .per h3{
+                transition: all 0.3s ease-in-out 0s;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                background-color: white;
+                text-align: center;
+                width: 30%;
+                font-weight: 500;
+                padding-bottom: 50px;
+                height: 400px;
+            }
+            .per h3:hover{
+                color: #d61721;
+            }
+            .per img{
+                width: 100%;
+                height: 200px;
+            }
+            #carouselExample{
+                width: 100%;
+                margin: 0px auto;
+            }
+            #pre:hover{
+                background-color: blue;
+                box-shadow: 0px 0px 15px 3px black;
+            }
+            #pre{
+                transition: all 0.8s ease-in-out 0s;
+                border-radius: 100%;
+                background-color: red;
+                width: 50px;
+                height: 50px;
+                margin-top: 13%;
+                opacity: 0.9;
+                box-shadow: inset 0px 0px 10px 2px white;
+            }
+            #pre2{
+                visibility: hidden;
+            }
+            #pre3{
+                visibility: hidden;
+            }
+            .footer{
+                width: 100%;
+                background-color: #02263c;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-left: 30px;
+                padding-bottom: 15px;
+                
+            }
+            .listed{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                color: white;
+                margin-bottom: 64px;
+            }
+            .listed img{
+                width: 150px;
+                height: 70px;
+            }
+            .listed li{
+                list-style-type: none;
+                color: #87a0af;
+                font-size: 14px;
+                cursor: pointer;
+                line-height: 26px;
+            }
+            .listed li:hover{
+                text-decoration: underline;
+            }
+            .listed p{
+                font-weight: 500;
+            }
+            .listed i{
+                font-size: 24px;
+                cursor: pointer;
+                margin-left: 7px;
+                
+            }
+            .forimg{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 520px;
+                margin: 0px auto;
+                margin-bottom: 70px;
+            }
+            .forimg img{
+                cursor: pointer;
+            }
+            .small{
+                display: none;
+            }
+            #rem{
+                margin-left: -100px;
+                background-color: #dfdfdf;
+                width: 200px;
+                height: 30px;
+                font-size: 13px;
+                border-radius: 7px;
+            }
+            #sppin{
+                width: 20px;
+                height: 20px;
+            }
+            .caveat{
+                color: white;
+                background-color: #d61721;
+                padding: 7px;
+                border-radius: 12px;
+                width: 90%;
+                margin: 0px auto;
+            }
+            .caveat h3{
+                text-align: center;
+                font-size: xx-large;
+            }
+            .project{
+                margin: 0px auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-weight: bolder;
+            }
+            .project h1{
+                color: blue;
+            }
+            .project a{
+                background-color: rgb(9, 255, 0);
+                border: 2px solid purple;
+            }
+            .project a:hover{
+                border: 2px solid red;
+            }
+            .project span{
+                background-color: aqua;
+                border: 2px solid purple;
+            }
+            .project span:hover{
+                border: 2px solid red;
+            }
+            #next{
+                background: aqua;
+                cursor: pointer;
+            }
+            #next:hover{
+                background: white;
+                border: 2px solid red;
+
+            }
+            
+            @media screen and (max-width: 768px){
+                #maf{
+                    margin-right: 150px;
+                }
+                .onmission{
+                    background-image: url(PROJECT\ IMAGES/raj.jpg);
+                    width: 100%;
+                    height: 300px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .onmission h1{
+                    color: white;
+                    font-size: 50px;
+                    text-align: center;
+                }
+                .stands{
+                    text-align: center;
+                    padding: 40px;
+                    font-size: 26px;
+                    font-weight: 600;
+                }
+                .method{
+                    width: 100%;
+                    background-color: #4abfad;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+                .method div{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                }
+                .method h1{
+                    font-size: 28px;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+                .res{
+                    font-size: 37px !important;
+                }
+                .method p{
+                    font-size: 14px;
+                }
+                .method button{
+                    padding: 12px 18px;
+                    margin-top: 28px;
+                }
+                .method img{
+                    height: 300px;
+                    width: 90%;
+                    margin-top: 30px;
+                }
+                .prof{
+                    background-image: url(PROJECT\ IMAGES/archive.jpg);
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .prof h1{
+                    font-size: 46px;
+                    font-weight: 400;
+                    color: #02263c;
+                    text-align: center;
+                }
+                .per{
+                    display: none;
+                }
+                #pre{
+                    display: none;
+                }
+                .footer{
+                    display: none;
+                }
+                .small{
+                    display: block;
+                    width: 100%;
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    background: #02263c;
+
+                }
+                #accordionFlushExample{
+                    width: 100%;
+                    margin-top: 0px;
+                }
+                #accordionFlushExample h5{
+                    font-size: medium;
+                }
+                #accodiv{
+                    background-color: #02263c;
+                    border: 1px solid rgb(48, 48, 48);
+                    color: white;
+                }
+                #accodiv li{
+                    list-style-type: none;
+                    color: #87a0af;
+                    font-size: 14px;
+                    cursor: pointer;
+                    line-height: 26px;
+                }
+                #accodiv li:hover{
+                    text-decoration: underline;
+                }
+                #accb{
+                    background-color: #02263c;
+                    border-bottom: 1px solid grey;
+                    color: white;
+                }
+                .con{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 92%;
+                    margin: 0% auto;
+                    margin-top: 50px;
+                }
+                .con p{
+                    font-size: medium;
+                    font-weight: 500;
+                    color: white;
+                }
+                .con img{
+                    width: 150px;
+                    height: 70px;
+                }
+                .con li{
+                    list-style-type: none;
+                    color: #87a0af;
+                    font-size: 14px;
+                    cursor: pointer;
+                    line-height: 26px;
+                }
+                .con li:hover{
+                    text-decoration: underline;
+                }
+                .con i{
+                    color: white;
+                    font-size: 26px;
+                    cursor: pointer;
+                    margin-left: 7px;
+                }
+                .fomg{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 70%;
+                    margin: 0px auto;
+                    margin-bottom: 20px;
+                }
+                .fomg img{
+                    cursor: pointer;
+                }
+                .fomg2{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 57%;
+                    margin: 0px auto;
+                    margin-bottom: 20px;
+                }
+                .fomg2 img{
+                    cursor: pointer;
+                }
+                .caveat{
+                    padding: 3px;
+                    border-radius: 12px;
+                    margin: 0px auto;
+                }
+                .caveat h3{
+                    text-align: center;
+                    font-size: 25px;
+                }
+                .project a{
+                    padding: 2px 5px;
+                    font-size: 13px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: sticky; top: 0px; width: 100%; z-index: 3;">
+            <div class="container-fluid"  id="nav">
+                <div class="ico">
+                    <a class="navbar-brand" href="#"><img src="PROJECT IMAGES/d ace.png" id="maf"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggler-icon"><i class="fa-solid fa-circle-arrow-down" style="color: #000000;"></i></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="Content">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">CERTIFICATIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">CONTINUING<br>EDUCATION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">RESOURCES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">ABOUT</a>
+                        </li>
+                    </ul>
+                    
+                    <div style="float: right; display: flex; flex-direction: row; font-size: 11px; height: 100%;
+                    justify-content: space-between;  align-items: center; width: 200px; color: black; font-weight: bold;">
+                        <p class="navp" id="invi">YOUR CART (<span style="color: red;">0</span>)</p> 
+                        <p class="navp" id="invi" onclick="serh()">SIGN IN</p> 
+                        <i class="fa-solid fa-search" onclick="ser()"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="onmission">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert">
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                <div>
+                    <p><strong>Have questions?</strong> <br>
+                        Our ACE Experts <br>
+                        are ready to <span style="color: red; text-decoration: underline; cursor: pointer;">chat.</span></p>
+                    <img src="PROJECT IMAGES/man.png">
+                </div>
+            </div>
+            <h1>We're on a <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">mission</span> </h1>
+        </div>
+        <h3 class="stands">
+            ACE stands out from other certifiers because we run <br>
+            programs and initiatives and apply our own efforts <br>
+            to bring to life the mission of getting people moving.
+        </h3>
+
+
+        <div class="method">
+            <div>
+                <h1>The ACE Mover Method</h1>
+                <p>The ACE Mover Method is a philosophy that facilitating healthy lifestyle <br>
+                    behaviors. This philosophy is centered around empowering clients to take a <br>
+                    personalized journey. During their journey the client achieves self-efficacy <br>
+                    because the exercise professional or health coach practices empathy and <br>
+                    trust, communication and collaboration. It represents and underscores <br>
+                    ACE's respected role as a leader in making evidence-based behavior-<br>
+                    change facilitation the center point of programs, interventions, and other <br>
+                    work to get people moving.</p>
+                <button>LEARN MORE ></button>
+            </div>
+            <img src="PROJECT IMAGES/smile.jpg">
+        </div>
+
+
+        <div class="method" style="background: #02263c;">
+            <img src="PROJECT IMAGES/jim.jpg">
+            <div>
+                <h1 class="res">Science & Research</h1>
+                <p>Learn how exercise and behavior change science shapes ACE's certification <br>
+                    programs and continuing education offerings. Discover our contributions to <br>
+                    scientific inquiry in the form of primary research on the effect of behavior- <br>
+                    change coaching on population health status and evaluations of fitness <br>
+                    products and practices and see who's on ACE's expert Scientific Advisory <br>
+                    Panel.
+                    </p>
+                <button class="but">LEARN MORE ></button>
+            </div>
+        </div>
+
+
+        <div class="prof">
+            <h1>Standards & Professionalism</h1>
+            <p>See what ACE is doing to ensure that properly credentialed exercise professionals and health coaches are trusted and inspire confidence. Learn about <br>
+                ACE's advocacy in the places where standards for the profession are set and advanced and see ACE's call to action for consistent professionalism.
+            </p>
+            <button>LEARN MORE ></button>
+        </div>
+
+
+        <div class="method">
+            <div>
+                <h1>Community <br>Engagement</h1>
+                <p>Discover how ACE gets people moving in communities that need it the <br>
+                    most. From scholarships to partnerships, ACE is dedicated to bringing <br>
+                    physical activity opportunities to individuals and communities across the <br>
+                    Country.</p>
+                <button>LEARN MORE ></button>
+            </div>
+            <img src="PROJECT IMAGES/community.jpg">
+        </div>
+
+
+        <div class="prof">
+            <h1>Population Health</h1>
+            <p>Read about ACE's contributions to the national conversation about population-health improvement. Discover how ACE is setting the stage for properly <br>
+                credentialed exercise professionals and health coaches to deliver community-based behavior-change programs-the kind experts agree must become an <br>
+                integral extension of healthcare and a key target for community-health investments.
+            </p>
+            <button>LEARN MORE ></button>
+        </div>
+        <div class="method" style="background: #e53d46;">
+            <img src="PROJECT IMAGES/agri.jpg">
+            <div>
+                <h1 style="font-size: 58px;">Issue Advocacy</h1>
+                <p>ACE works across the country to advance and revise policies that reduce <br>
+                    barriers to being active and that open business doors for exercise <br>
+                    professionals and health coaches. Through education and technical <br>
+                    assistance ACE is dedicated to helping individuals become advocates for <br>
+                    getting people moving.
+                </p>
+                <button class="butt">LEARN MORE ></button>
+            </div>
+        </div>
+        <div style="background: rgb(207, 207, 207); padding-top: 50px; padding-bottom: 50px;">
+            <div class="miss">
+                <p>ACE MISSION BLOG</p>
+            </div>
+            <p class="blog">
+                The ACE Mission Blog tells the story of ACE's community engagement, issue advocacy, and science-<br>
+                and-research work.
+            </p><br><br><br><br>
+
+
+
+
+            <div id="carouselExample" class="carousel slide" style="width: 96%;">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="per">
+                        <h3>
+                            <img src="PROJECT IMAGES/person.png">
+                            <span style="font-size: 16px; font-weight: 500; margin-top: 20px; margin-bottom: 6px; color: black;">
+                                ACE Mission Blog
+                            </span>
+                            Updated Exam Content<br>
+                            Outline for ACE Personal <br>
+                            Trainer certification
+                        </h3>
+                        <h3>
+                            <img src="PROJECT IMAGES/GettyImag.png">
+                            <span style="font-size: 16px; font-weight: 500; margin-top: 20px; margin-bottom: 6px; color: black;">
+                                ACE Mission Blog
+                            </span>
+                            Using Cultural<br>
+                            Competence to Improve <br>
+                            Minority Health
+                        </h3>
+                        <h3>
+                            <img src="PROJECT IMAGES/wafamily.jpg">
+                            <span style="font-size: 16px; font-weight: 500; margin-top: 20px; margin-bottom: 6px; color: black;">
+                                ACE Mission Blog
+                            </span>
+                            2022 ACE Impact<br>
+                        </h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                        <div class="per">
+                            <h3>
+                                <img src="PROJECT IMAGES/podcasts.jpg">
+                                <span style="font-size: 16px; font-weight: 500; margin-top: 20px; margin-bottom: 6px; color: black;">
+                                    ACE Mission Blog
+                                </span>
+                                A Sustainable Approach<br>
+                                to Community Health <br>
+                                trough Exercise
+                            </h3>
+                            <h3>
+                                <img src="PROJECT IMAGES/Change.png">
+                                <span style="font-size: 16px; font-weight: 500; margin-top: 20px; margin-bottom: 6px; color: black;">
+                                    ACE Mission Blog
+                                </span>
+                                The Report Card on<br>
+                                Physical activity for <br>
+                                Children and Youth: Are
+                            </h3>
+                            <h3>
+                                <img src="PROJECT IMAGES/lega.png">
+                                <span style="font-size: 16px; font-weight: 500; margin-top: 20px; margin-bottom: 6px; color: black;">
+                                    ACE Mission Blog
+                                </span>
+                                The High Cost of <br>
+                                Physical Inactivity<br>
+                            </h3>
+                        </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" id="pre">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" id="pre">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="listed">
+                <img src="PROJECT IMAGES/on exerc.png">
+                <div>
+                    <p>CERTIFICATIONS</p>
+                    <li>Why Choose ACE</li>
+                    <li>Personal Trainer</li>
+                    <li>Health Coach</li>
+                    <li>Group Fitness Instructor</li>
+                    <li>Medical Exercise Specialist</li>
+                </div>
+                <div>
+                    <p>PROFESSIONALS</p>
+                    <li>Career Support</li>
+                    <li>Job Board</li>
+                    <li>Continuing Education</li>
+                    <li>Specialist Programs</li>
+                    <li>Certification Renewal</li>
+                </div>
+                <div>
+                    <p>CERTIFICATIONS</p>
+                    <li>ACE Healthy Living Blog</li>
+                    <li>Exercise Library</li>
+                    <li>Tools & Calculators</li>
+                    <li>Find an ACE Pro</li>
+                    <li>Store</li>
+                </div>
+                <div>
+                    <p>ABOUT ACE</p>
+                    <li>Our Team</li>
+                    <li>Our Efforts</li>
+                    <li>Press Room</li>
+                    <li>Careers</li>
+                    <li>2022 Impact Report</li>
+                </div>
+                <div>
+                    <p>LEGAL</p>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>Return Policy</li>
+                    <li>Sitemap</li>
+                    <li>Cookie Preferences</li>
+                </div>
+                <div>
+                    <p>CONTACT US</p>
+                    <li>American Council on Exercise</li>
+                    <li>4933 Paramount Drive</li>
+                    <li>San Diego, California 92123</li>
+                    <li>1 (888) 825-3636</li>
+                    <i class="fa-brands fa-facebook-f"></i> 
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    
+                </div>
+            </div>
+            <div class="forimg">
+                <img src="PROJECT IMAGES/ncca.png">
+                <img src="PROJECT IMAGES/charity5.jpg">
+                <img src="PROJECT IMAGES/Footer-b.png">
+                <img src="PROJECT IMAGES/authorizenet.png">
+                <img src="PROJECT IMAGES/digi.png">
+            </div>
+                
+            <p style="color: #87a0af;">Copyright© The American Council on Exercise. All Rights Reserved.</p>
+        </div>
+        <div class="small">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item" id="accodiv">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <h5>CERTIFICATIONS</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <li>Why Choose ACE</li>
+                            <li>Personal Trainer</li>
+                            <li>Health Coach</li>
+                            <li>Group Fitness Instructor</li>
+                            <li>Medical Exercise Specialist</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" id="accodiv">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h5>PROFESSIONALS</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <li>Career Support</li>
+                            <li>Job Board</li>
+                            <li>Continuing Education</li>
+                            <li>Specialist Programs</li>
+                            <li>Certification Renewal</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" id="accodiv">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <h5>RESOURCES</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <li>ACE Healthy Living Blog</li>
+                            <li>Exercise Library</li>
+                            <li>Tools & Calculators</li>
+                            <li>Find an ACE Pro</li>
+                            <li>Store</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" id="accodiv">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            <h5>ABOUT ACE</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <li>Our Team</li>
+                            <li>Our Efforts</li>
+                            <li>Press Room</li>
+                            <li>Careers</li>
+                            <li>2022 Impact Report</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" id="accodiv">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            <h5>LEGAL</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <li>Terms of Use</li>
+                            <li>Privacy Policy</li>
+                            <li>Return Policy</li>
+                            <li>Sitemap</li>
+                            <li>Cookie Preferences</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="con">
+                <img src="PROJECT IMAGES/on exerc.png">
+                <div>
+                    <p>CONTACT US</p>
+                    <li>American Council on Exercise</li>
+                    <li>4933 Paramount Drive</li>
+                    <li>San Diego, California 92123</li>
+                    <li>1 (888) 825-3636</li>
+                    <i class="fa-brands fa-facebook-f"></i> 
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div><br><br>
+            <div class="fomg">
+                <img src="PROJECT IMAGES/ncca.png">
+                <img src="PROJECT IMAGES/charity5.jpg">
+                <img src="PROJECT IMAGES/authorizenet.png">
+            </div>
+            <div class="fomg2">
+                <img src="PROJECT IMAGES/Footer-b.png">
+                <img src="PROJECT IMAGES/digi.png">
+            </div><br><br>
+            <p style="color: #87a0af; text-align: center;">Copyright© The American Council on Exercise. All Rights Reserved.</p>
+        </div><br><br>
+        <div class="caveat">
+            <h3>caveat: this page just a student project, not attempt to clone
+                an <br> existing website
+            </h3>
+        </div><br>
+        <div class="project">
+            <h1>OTHER PROJECTS</h1>
+            <nav aria-label="...">
+                <ul class="pagination" id="proul">
+                    <li class="page-item">
+                        <a class="page-link" id="next" href="findlaw.html">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="expedia.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="canva.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="findlaw.html">4</a></li>
+                    <li class="page-item"><a class="page-link" href="acefitness.html">5</a></li>
+                    <li class="page-item"><a class="page-link" href="ticketmaster.html">6</a></li>
+                    <li class="page-item"><a class="page-link" href="netflix.html">7</a></li>
+                    <li class="page-item"><a class="page-link" href="mtn.html">8</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="ticketmaster.html" id="next">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div><br><br><br>
+
+
+
+
+
+
+        <script>
+            function ser(){
+                document.getElementById('invi').innerHTML="<input type='search' placeholder='search what you like in exercise' id='rem'>"
+            }
+            function serh(){
+                document.getElementById('invi').innerHTML=`<div class='spinner-border text-danger' role='status' id='sppin'>
+                <span class='visually-hidden'>Loading...</span></div> Logging in`
+            }
+            
+        </script>
+    </body>
+</html>

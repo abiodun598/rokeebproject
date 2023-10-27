@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Canva: Visual Suite for Everyone</title>
+        <link rel="icon" href="PROJECT IMAGES/download c.jfif">
+
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+        crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+        crossorigin="anonymous"></script>
+        <style>
+            #nav{
+                border-bottom: 0.5px solid rgb(180, 180, 180);
+                box-shadow: 0px 1px 4px rgb(180, 180, 180);
+                position: fixed;
+                top: 0px;
+                height: 80px;
+                background-color: white;
+            }
+            #nav h1{
+                font-size: xx-large;
+                color: blue;
+            }
+            #nav li{
+                margin-left: 13px;
+                border-radius: 8px;
+            }
+            #nav li:hover{
+                background-color: rgb(196, 195, 195);
+            }
+            #nav form{
+                width: 50%;
+                align-items: center;
+            }
+            #nav input{
+                height: 70%;
+                border-radius: 0px;
+                border: 1px solid rgb(90, 90, 90);
+                width: 47%;
+            }
+            #nav input:hover{
+                border: 1px solid black;
+            }
+            #nav h6{
+                padding: 9px 13px;
+                margin-left: 6px;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                font-weight: bolder;
+                text-align: center;
+                cursor: pointer;
+            }
+            #b1{
+                background-color: rgb(190, 190, 190); 
+                color: black;
+            }
+            #b1:hover{
+                background-color: rgb(92, 92, 92);
+            }
+            #b2{
+                background-color: rgb(206, 28, 206); 
+                color: white;
+            }
+            #b2:hover{
+                background-color: purple;
+            }
+            .design{
+                text-align: center;
+                font-size: 47px;
+                font-weight: bolder;
+                color: black;
+            }
+            .p1{
+                text-align: center;
+                font-size: 18px;
+                color: rgb(48, 48, 48);
+            }
+            .p2{
+                margin: 0px auto;
+                color: white;
+                background-color: rgb(143, 17, 143);
+                font-weight: bolder;
+                padding: 8px;
+                width: 12%;
+                text-align: center;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+            .p2:hover{
+                background-color: purple;
+            }
+            .theme{
+                width: 90%;
+                height: 230px;
+                margin: 0px auto;
+                overflow-x: scroll;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .theme img{
+                width: 170px;
+                border-radius: 18px;
+                margin-right: 23px;
+            }
+            .fit{
+                color: black;
+                font-size: 43px;
+                text-align: center;
+            }
+            .canva{
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 0px auto;
+            }
+            .canva h2{
+                font-size: 25px;
+            }
+            .exa{
+                width: 32%;
+                border: 0.5px solid rgb(180, 180, 180);
+                border-radius: 15px;
+                padding: 37px 20px;
+            }
+            .exa p{
+                font-size: 14px;
+            }
+            .imgdiv{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin-bottom: 14px;
+                align-items: center;
+            }
+            .imgdiv img{
+                width: 35px;
+                height: 35px;
+                margin-right: 8px;
+            }
+            .first{
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+            .canva button{
+                background-color: rgb(206, 28, 206);
+                width: 100%;
+                padding: 6px;
+                outline: none;
+                border: none;
+                color: white;
+                border-radius: 10px;
+                font-weight: bolder;
+                margin-top: 8%;
+            }
+            .canva button:hover{
+                background-color: purple;
+            }
+            .enjoy{
+                text-align: center;
+                font-size: 15px;
+            }
+            .enjoy a{
+                text-decoration: underline;
+                color: purple;
+            }
+            .fit{
+                color: black;
+                font-size: 43px;
+                text-align: center;
+            }
+            @keyframes bute{                
+                0%{
+                    margin-left: 0%;
+                }
+                50%{
+                margin-left: 80%; 
+                }
+                100%{
+                margin-left: -40%;
+                }
+            }
+            .companies{
+                width: 90%;
+                margin: 0px auto;
+                overflow-x: scroll;
+            }
+            .child{
+                -webkit-animation: bute 17s ease-in-out 0s infinite alternate;
+                -moz-animation: bute 17s ease-in-out 0s infinite alternate;
+                -o-animation: bute 17s ease-in-out 0s infinite alternate;
+                width: 1100px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 0px auto;
+            }
+            .child:hover{
+                animation: none;
+            }
+            .child img{
+                width: 150px;
+                height: 50px;
+            }
+            .boost{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+                margin: 0px auto;
+            }
+            .boost img{
+                width: 50%;
+                height: 420px;
+            }
+            .boost h2{
+                letter-spacing: 1px;
+                font-weight: bolder;
+                color: black;
+                font-size: 34px;
+            }
+            .boost p{
+                font-size: 18px;
+                margin-top: 10%;
+                margin-bottom: 13%;
+            }
+            .boost span{
+                background-color: rgb(224, 222, 222); 
+                color: black;
+                font-weight: bold;
+                border-radius: 6px;
+                padding: 13px;
+                color: rgb(37, 37, 37);
+            }
+            .boost span:hover{
+                background-color: rgb(172, 171, 171);
+            }
+            .boos a{
+                color: rgb(184, 6, 184);
+            }
+            .boos a:hover{
+                color: rgb(155, 2, 155);
+            }
+            .Templates{
+                text-align: center;
+                color: black;
+            }
+            .Customise{
+                text-align: center;
+                color: rgb(66, 66, 66);
+                font-size: 20px;
+            }
+            .general{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 0px auto;
+                width: 90%;
+                height: 500px;
+            }
+            .general div{
+                width: 18.5%;
+                height: 460px;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .general img{
+                border-radius: 18px;
+            }
+            #bu1{
+                background-color: rgb(214, 212, 212); 
+                color: black;
+                padding: 9px 16px;
+                border: none;
+                outline: none;
+                margin-left: 43%;
+                margin-top: 30px;
+                border-radius: 11px;
+                color: black;
+                font-weight: bolder;
+            }
+            #bu1:hover{
+                background-color: rgb(182, 180, 180);
+            }
+            .gene{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 90%;
+                padding: 10px 0px;
+                margin: 0px auto;
+                position: relative;
+                z-index: -4;
+            }
+            .content{
+                background-color: white;
+                width: 68%;
+                height: 340px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .content div{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                width: 70%;
+            }
+            .content i{
+                font-size: 35px;
+                margin-right: 5%;
+            }
+            .animation{
+                width: 30%;
+                height: 340px;
+                background-color: rgb(2, 2, 48);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                position: relative;
+                z-index: -3;
+            }
+            @keyframes whit{                
+                0%{
+                    margin-left: -300px; 
+                }
+                25%{
+                    margin-left: 10px; 
+                }
+                50%{
+                    margin-left: 10px; 
+                }
+                75%{
+                    margin-left: 10px; 
+                }
+                100%{
+                    margin-left: -300px; 
+                }
+            }
+            .white{
+                -webkit-animation: whit 6s ease-in-out 4s infinite alternate;
+                -moz-animation: whit 6s ease-in-out 4s infinite alternate;
+                -o-animation: whit 6s ease-in-out 4s infinite alternate;
+                width: 180px;
+                height: 160px;
+                border-radius: 13px;
+                background-color: aliceblue;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin-left: -300px; 
+                margin-top: 30px;
+            }
+            .white div{
+                border: 3px solid blue;
+                width: 49px;
+                height: 30px;
+                border-radius: 8px;
+            }
+            @keyframes con{                
+                0%{
+                    transform: translate(-2300px,200px); 
+                }
+                25%{
+                    transform: translate(0px,0px);
+                }
+                50%{
+                    border: 3px solid green;
+                    width: 300px;
+                }
+                75%{
+                    transform: translate(15px,-10px); 
+                    width: 300px;
+                }
+                100%{
+                    border: 3px solid red;
+                    width: 340px;
+                }
+            }
+            .concor{
+                -webkit-animation: con 8s ease-in-out 0s infinite alternate;
+                -moz-animation: con 8s ease-in-out 0s infinite alternate;
+                -o-animation: con 8s ease-in-out 0s infinite alternate;
+                margin-top: 60px;
+            }
+            @keyframes circ{                
+                0%{
+                    transform: translate(0px,0px); 
+                }
+                25%{
+                    transform: translate(20px,-180px); 
+                    
+                }
+                50%{
+                    transform: translate(20px,-180px); 
+                    border: 3px solid red;
+                }
+                75%{
+                    transform: translate(80px,-260px);
+                }
+                100%{
+                    transform: translate(-20px,-260px);
+                }
+            }
+            .circle{
+                -webkit-animation: circ 8s ease-in-out 0s infinite alternate;
+                -moz-animation: circ 8s ease-in-out 0s infinite alternate;
+                -o-animation: circ 8s ease-in-out 0s infinite alternate;
+                height: 105px;
+                width: 35px;
+                border-radius: 100%;
+                border: 2px solid gold;
+                background-image: url(PROJECT\ IMAGES/inplane.jfif);
+            }
+            @keyframes sec{                
+                0%{
+                    transform: translate(0px,0px); 
+                }
+                25%{
+                    margin-left: 58%; 
+                    
+                }
+                50%{
+                    margin-left: 58%; 
+                }
+                75%{
+                    margin-left: 58%;
+                    width: 38px;
+                    height: 38px;
+                }
+                100%{
+                    margin-left: 58%;
+                }
+            }
+            .second{
+                -webkit-animation: sec 3s ease-in-out 3s infinite alternate;
+                -moz-animation: sec 3s ease-in-out 3s infinite alternate;
+                -o-animation: sec 3s ease-in-out 3s infinite alternate;
+                width: 35px;
+                height: 105px;
+                border-radius: 100%;
+                border: 2px solid rgb(21, 255, 0);
+                background-image: url(PROJECT\ IMAGES/download\ c.jfif);
+            }
+
+            @keyframes secd{                
+                0%{
+                    padding: 1px; 
+                }
+                50%{
+                    padding: 10px; 
+                }
+                100%{
+                    padding: 0px;
+                }
+            }
+            .secdiv{
+                -webkit-animation: secd 3s ease-in-out 0s infinite alternate;
+                -moz-animation: secd 3s ease-in-out 0s infinite alternate;
+                -o-animation: secd 3s ease-in-out 0s infinite alternate;
+                width: 150px;
+                height: 50px;
+                border-radius: 20px;
+                border: none;
+                background-color: rgb(251, 255, 17);
+                position: absolute;
+                z-index: -1;
+                transform: translate(210px,320px);
+            }
+            .secdiv h4{
+                font-weight: bolder;
+                font-size: large;
+                transform: translate(20px,10px);
+            }
+            .trait{
+                width: 90%;
+                height: 430px;
+                margin: 0px auto;
+                overflow-x: scroll;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .trait div{
+                width: 330px;
+                margin-right: 20px;
+            }
+            .trait img{
+                width: 330px;
+                height: 300px;
+                border-radius: 18px;
+                margin-right: 23px;
+                
+            }
+            .trait span{
+                font-weight: bolder;
+            }
+            .trait p{
+                font-size: 15px;
+            }
+            .Features{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 100%;
+                height: 460px;
+                padding-top: 50px;
+                border-top: 0.5px solid rgb(180, 180, 180);
+            }
+            .Features li{
+                list-style-type: none;
+                line-height: 33px;
+                cursor: pointer;
+            }
+            .Features li:hover{
+                color: purple;
+            }
+
+            .infor{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin: 0px auto;
+                width: 90%;
+                height: 110px;
+                margin-top: -300px;
+                border-top: 0.5px solid rgb(180, 180, 180);
+            }
+            .last{
+                font-family: sans-serif;
+                font-size: 17px;
+                
+            }
+            .last img{
+                width: 23px;
+                height: 23px;
+            }
+            .country{
+                width: 270px;
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                background-color: white;
+                justify-content: space-around;
+                border: 0.5px solid rgb(180, 180, 180);
+                padding-top: 12px;
+                padding-bottom: 6px;
+                cursor: pointer;
+            }
+
+            .p3{
+                width: 200px; 
+                padding-left: 20px;
+                margin: 0px auto;
+                color: white;
+                background-color: rgb(143, 17, 143);
+                font-weight: bolder;
+                padding: 8px;
+                border-radius: 6px;
+                cursor: pointer;
+                text-align: center;
+            }
+            .p3:hover{
+                background-color: purple;
+            }
+            
+            .country select{
+                height: 20px;
+            }
+            .last p{
+                margin-right: 15px;
+                font-weight: lighter;
+                font-size: 15px;
+            }
+            #accordionFlushExample{
+                visibility: hidden;
+            }
+            .foot{
+                color: black;
+                text-decoration: none;
+            }
+            .foot:hover{
+                color: purple
+            }
+            .foot2{
+                color: black;
+                border-left: 1px solid black;
+                padding-left: 8px;
+                text-decoration: none;
+            }
+            .foot2:hover{
+                color: purple;
+            }
+            .lang{
+                margin-left: 15px;
+            }
+            .face{
+                display: flex;
+                width: 130px;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .face img{
+                width: 25px;
+                height: 25px;
+            }
+            .fixed{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin: 0px auto;
+                width: 100%;
+                position: fixed;
+                z-index: 1;
+                bottom: 0px;
+                background-color: white;
+                box-shadow: 0px -1px 4px rgb(180, 180, 180);
+            }
+            .fixbu{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 250px;
+            }
+            .fixbu button{
+                border: none;
+                outline: none;
+                font-weight: bolder;
+            }
+            #nav p{
+                font-size: small;
+                font-weight: bolder;
+            }
+            #sppin{
+                width: 20px;
+                height: 20px;
+            }
+            .caveat{
+                color: white;
+                background-color: purple;
+                padding: 7px;
+                border-radius: 12px;
+                width: 90%;
+                margin: 0px auto;
+            }
+            .caveat h3{
+                text-align: center;
+                font-size: xx-large;
+            }
+            .project{   
+                margin: 0px auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-weight: bolder;
+            }
+            .project h1{
+                color: blue;
+            }
+            .project a{
+                background-color: rgb(9, 255, 0);
+                border: 2px solid purple;
+            }
+            .project a:hover{
+                border: 2px solid red;
+            }
+            .project span{
+                background-color: aqua;
+                border: 2px solid purple;
+            }
+            .project span:hover{
+                border: 2px solid red;
+            }
+            #next{
+                background: aqua
+            }
+            #next:hover{
+                background: white;
+                border: 2px solid red;
+
+            }
+            @media screen and (max-width: 768px){
+                body{
+                    overflow-x: hidden;
+                }
+                .p2{
+                    width: 350px;
+                    text-align: center;
+                }
+                .theme{
+                    width: 95%;
+                }
+                .canva{
+                    width: 90%;
+                    height: 950px;
+                    margin: 0px auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .companies{
+                    width: 95%;
+                }
+                .child{
+                    animation: bute 14s ease-in-out 0s infinite alternate;
+                    width: 95%;
+                }
+                .child img{
+                    width: 70px;
+                    height: 30px;
+                }
+                .boost{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    border-radius: 25px;
+                    width: 95%;
+                    border: 0.5px solid rgb(180, 180, 180);
+                    height: 710px;
+                    margin: 0px auto;
+                }
+                .boost img{
+                    width: 450px;
+                    height: 320px;
+                    width: 95%;
+                }
+                .boost h2{
+                    font-size: 28px;
+                }
+                .boost p{
+                    font-size: 14px;
+                }
+                .boos{
+                    margin-top: 20px;
+                }
+                
+                .general{
+                    width: 95%;
+                    overflow-x: scroll;
+                }
+                .gene{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 95%;
+                    height: 760px;
+                    margin: 0px auto;
+                    position: relative;
+                    z-index: -4;
+                    padding-bottom: 20px;
+                    border-radius: 23px;
+                    border: 0.5px solid rgb(180, 180, 180);
+                }
+                .content{
+                    background-color: white;
+                    margin-top: 20px;
+                    width: 90%;
+                    height: 340px;
+                }
+                .content p{
+                    font-size: 14px;
+                }
+                #bu1{
+                    width: 350px;
+                    margin-left: 17%;
+                }
+                .trait{
+                    width: 95%;
+                }
+                .Features{
+                    visibility: hidden;
+                }
+                #accordionFlushExample{
+                    visibility: visible;
+                    margin-top: -500px;
+                    border-top: 0.5px solid rgb(180, 180, 180);
+                }
+                #accordionFlushExample li{
+                    cursor: pointer;
+                }
+                #accordionFlushExample li:hover{
+                    color: purple;
+                    text-decoration: underline;
+                }
+                .p3{
+                    width: 350px;
+                }
+                .infor{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin: 0px auto;
+                    width: 95%;
+                    height: 250px;
+                    border-top: 0.5px solid rgb(180, 180, 180);
+                }
+                .fixbu{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 250px;
+                }
+                .fixbu button{
+                    border: none;
+                    outline: none;
+                    font-weight: bolder;
+                    font-size: 12px;
+                    padding: 9px;
+                }
+                .fixed p{
+                    font-size: 13px;
+                }
+                .caveat{
+                    padding: 3px;
+                    border-radius: 12px;
+                    margin: 0px auto;
+                }
+                .caveat h3{
+                    text-align: center;
+                    font-size: 25px;
+                }
+                .project a{
+                    padding: 2px 5px;
+                    font-size: 13px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid" id="nav">
+                <h1 class="navbar-brand" data-bs-toggle="canva.html">Can<span style="color: purple;">va</span></h1>
+                <button class="navbar-toggler" type="button" style="border: 3px solid blue; padding: 0px;" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" style="background: white;" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#"role="button" data-bs-toggle="dropdown">
+                                Design spotlight
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Education
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Price and pricing
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Business
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Learn
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" id="form">
+                        <input class="form-control me-2" type="search" placeholder="Try logo, poster, anything" aria-label="Search">
+                        <h6 onclick="theser()" id="b1">
+                            Log in
+                        </h6>
+                        <p id="mid"></p>
+                        <h6 onclick="thesign()" id="b2">
+                            Sign up
+                        </h6>
+                    </form>
+                </div>
+            </div>
+        </nav><br><br><br><br><br>
+
+      <h1 class="design">What will you Design today?</h1>
+      <p class="p1">Canva makes it easy to create and share professional designs.</p>
+      <p class="p2">Sign up for free</p><br>
+      <div class="theme">
+            <img src="PROJECT IMAGES/yamha.jpg">
+            <img src="PROJECT IMAGES/download c.jfif">
+            <img src="PROJECT IMAGES/reds.jpg">
+            <img src="PROJECT IMAGES/purpost.jfif">
+            <img src="PROJECT IMAGES/tel.jpeg">
+            <img src="PROJECT IMAGES/FB_IMG_5.jpg">
+            <img src="PROJECT IMAGES/facebook.png">
+            <img src="PROJECT IMAGES/download list.jfif">
+            <img src="PROJECT IMAGES/purpost.jfif">
+            <img src="PROJECT IMAGES/blresum.jfif">
+            <img src="PROJECT IMAGES/pinklog.jfif">
+            <img src="PROJECT IMAGES/bldoc.jfif">
+            <img src="PROJECT IMAGES/palm t.jfif">
+        </div><br><br>
+        <h2 class="fit">A perfect fit for everyone</h2><br>
+        <div class="canva">
+            <div class="exa">
+                <h2 class=" first">Canva Free</h2>
+                <p>For anyone wanting to design anything, on your own <br>
+                    or with others.</p>
+                <button style="margin-top: 67px;">Get Canva Free</button>
+            </div>
+            <div class="exa">
+                <div class="imgdiv div1">
+                    <img src="PROJECT IMAGES/crown image.png">
+                    <h2>Canva Pro</h2>
+                </div>
+                <p>For individuals, solopreneurs and freelance <br>
+                    designers who want unlimited access to premium <br>
+                    content, to create professional designs with ease <br>
+                    and scale their productivity. <strong> one person only.</strong></p>
+                <button>Get Canva Free</button>
+            </div>
+            <div class="exa">
+                <div class="imgdiv">
+                    <img src="PROJECT IMAGES/crown image.png">
+                    <h2>Canva for Teams</h2>
+                </div>
+                <p>All the great features of Canva Pro, plus we think <br>
+                    you'll love these features designed to allow teams of <br>
+                    all sizes to collaborate with ease.<br>
+                    Plan for 2+ people.</p>
+                <button>Get Canva Free</button>
+            </div>
+        </div><br><br>
+        <p class="enjoy"><a href="#">Educational organisations</a> and <a href="#">nonprofits</a> can enjoy premium Canva features for free</p>
+        <br><br><br>
+        <h2 class="fit">Trusted by well known companies</h2><br><br>
+
+        <div class="companies">
+            <div  class="child">
+                <img src="PROJECT IMAGES/reddit.png">
+                <img src="PROJECT IMAGES/danon.png">
+                <img src="PROJECT IMAGES/hubspot.png">
+                <img src="PROJECT IMAGES/sony.jfif">
+                <img src="PROJECT IMAGES/sales.png">
+                <img src="PROJECT IMAGES/sky.png">
+            </div>
+        </div><br><br><br><br><br><br>
+        <div class="boost">
+            <div class="boos">
+                <h2>Boost your creativity with AI</h2>
+                <p>
+                    Do more with Canva's AI-powered tools. Erase or replace objects <br>
+                    from your photos with <a href="#">Magic Edit</a>, or generate a new image with <br>
+                    <a href="#">Text to Image</a>. Kickstart your creative process with our AI-powered <br>
+                    writing assistant, <a href="#">Magic Write</a>, or let <a href="#">Magic Design</a> generate a <br>
+                    custom design for you.
+                </p>
+                <span>create with AI</span>
+            </div>
+            <img src="PROJECT IMAGES/mobile3.jpg">
+        </div><br><br><br><br>
+        <div class="boost">
+            <img src="PROJECT IMAGES/roman.jpg" style="border-radius: 20px;">
+            <div class="boos">
+                <h2>Design with others</h2>
+                <p>
+                    Invite friends and family to design with you, or set your whole <br>
+                    team up to work together. Our collaboration features let you <br>
+                    comment and work in real-time on <a href="#">Presentations</a>, <a href="#">Whiteboards</a>, <br>
+                    <a href="#">Docs</a>, <a href="#">Videos</a>, or that birthday party planning.
+                </p>
+                <span>create with AI</span>
+            </div>
+        </div><br><br><br><br><br>
+        <h1 class="Templates">Templates for absolutely anything</h1>
+        <p class="Customise">Customise an office template, or design something more personal, like an invitation.</p><br><br>
+
+
+        <div class="general">
+            <div class="d1">
+                <img src="PROJECT IMAGES/mobile3.jpg" style="height: 130px;">   
+                <img src="PROJECT IMAGES/spider.jpg" style="height: 315px;">
+            </div>
+            <div class="d2">
+                <img src="PROJECT IMAGES/FB_IMG_1.jpg" style="height: 260px;">
+                <img src="PROJECT IMAGES/sony.jfif" style="height: 180px;">        
+            </div>
+            <div class="d3">
+                <img src="PROJECT IMAGES/jet.jpg" style="height: 148px;"> 
+                <img src="PROJECT IMAGES/download c.jfif" style="height: 148px;"> 
+                <img src="PROJECT IMAGES/pl1.jpg" style="height: 148px;"> 
+            </div>
+            <div class="d4">
+                <img src="PROJECT IMAGES/FB_IMG_14.jpg" style="height: 260px;">
+                <img src="PROJECT IMAGES/sales.png" style="height: 180px;">       
+            </div>
+            <div class="d5">
+                <img src="PROJECT IMAGES/purpost.jfif" style="height: 130px;">   
+                <img src="PROJECT IMAGES/iron.jpg" style="height: 315px;">
+            </div>
+        </div>
+        <button id="bu1">Browse all templates</button>
+        <br><br><br><br>
+        <h1 class="Templates">Create your best work, together</h1>
+        <p class="Customise">Try Canva for Teams, the all-in-one solution for teams of all sizes to create <br>
+            and collaborate together.</p><br><br>
+        <div class="gene">
+            <div class="content">
+                <div>
+                    <i class="fa-regular fa-folder-closed" style="color: #000000;"></i>
+                    <p>
+                        <strong>Team folders</strong> help you stay organised, store brand <br>
+                        assets, and manage content
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-duotone fa-mobile-screen-button" style="--fa-primary-opacity: 0.4; --fa-secondary-opacity: 1;"></i>
+                    <p>
+                        <strong>Plan, create, schedule, and publish </strong>your social<br>
+                        media posts directly from Canva
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user" style="color: #000000;"></i>
+                    <p>
+                        <strong>Real-time collaboration</strong> across countries, <br>
+                        companies, and departments
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-comment-dots" style="color: #000000;"></i>
+                    <p>
+                        <strong>Built-in comments</strong> to communicate, keep content <br>
+                        moving, and resolve suggestions in real-time
+                    </p>
+                </div>
+            </div>
+            <div class="animation">
+                <div class="white">
+                    <div style="background: brown;"></div> <div style="background: yellow;"></div> <div style="background: black;"></div>
+                </div>
+                <div class="concor">
+                    <h1 style="color: white; font-weight: bolder; font-size: xx-large;">CONCORDIA</h1>
+                    <p style="color: rgb(64, 191, 250); font-size: x-large; width: 220px;
+                    font-weight: bolder; border: 2px solid gold;">
+                        Go anywhere
+                    </p>
+                </div><br><br><br>
+                <div class="circle"></div>
+                <div class="second"></div>
+                <div class="secdiv"><h4>LOOKS GREAT</h4></div>
+            </div>
+        </div><br><br><br>
+        <p class="p3">Try Canva for Teams</p><br><br>
+
+        <h1 class="Templates">We're full of surprises</h1>
+        <p class="Customise">Here are some of our best traits you might not know about</p><br><br>
+        <div class="trait">
+            <div>
+                <img src="PROJECT IMAGES/ic ipad.jfif">
+                <p><span>We've got a desktop app</span><br>
+                    Design and collaborate from the comfort of your <br>
+                    desktop - no browser, no tabs, no distractions. <br>
+                    Download the app for free!
+                </p>
+            </div>
+            <div>
+                <img src="PROJECT IMAGES/agri.jpg">
+                <p><span>Businesses love us</span><br>
+                    See how teams of all sizes are using Canva to <br>
+                    manage their workflows and create together. 
+                </p>
+            </div>
+            <div>
+                <img src="PROJECT IMAGES/roman.jpg">
+                <p><span>We make presenting easy</span><br>
+                    Take the stress out of preparing and presenting <br>
+                    with our go-to decks.
+                </p>
+            </div>
+            <div>
+                <img src="PROJECT IMAGES/image1.jfif">
+                <p><span>We have a video editor</span><br>
+                    Create and edit professional videos with easy <br>
+                    animations, audio and more.
+                </p>
+            </div>
+            <div>
+                <img src="PROJECT IMAGES/image2.jfif">
+                <p><span>We're free for classrooms</span><br>
+                    Use Canva for in-person, remote or hybrid <br>
+                    learning and teaching. Educators and students <br>
+                    get their own free version of Canva.
+                </p>
+            </div>
+            <div>
+                <img src="PROJECT IMAGES/image5.jfif">
+                <p><span>We're free for non profits</span><br>
+                    Non profits get their own free version of Canva, <br>
+                    to keep doing great work in the world.
+                </p>
+            </div>
+            <div>
+                <img src="PROJECT IMAGES/image3.jfif">
+                <p><span>We're diverse</span><br>
+                    Learn how we're supporting and amplifying <br>
+                    diverse creators and unique cultures in every <br>
+                    corner of the globe.
+                </p>
+            </div>
+            
+        </div><br><br><br>
+
+
+
+        <div class="Features">
+            <div>
+                <h3>Features</h3>
+                <li>Curved text generator</li>
+                <li>Photo effects</li>
+                <li>Image enhancer</li>
+                <li>Add frames to photos</li>
+                <li>Add text to photos</li>
+                <li>Online video recorder</li>
+                <li>Video trimmer</li>
+                <li>Convert videos to MP4</li>
+                <li>See more features</li>
+            </div>
+
+            <div>
+                <h3>Explore</h3>
+                <li>Design ideas</li>
+                <li>Font pairing</li>
+                <li>Custom prints</li>
+                <li>Colour palette generator</li>
+                <li>Colours</li>
+                <li>Apps</li>
+                <li>Colour wheel</li>
+                <li>Template directory</li>
+                <li>Blog</li>
+            </div>
+            
+            <div>
+                <h3>Community</h3>
+                <li>Online communities</li>
+                <li>Creators</li>
+                <li>Canva Represents Fund</li>
+                <li>Developers</li>
+                <li>Partnerships</li>
+                <li>Affiliates programme</li>
+            </div>
+            
+            <div>
+                <h3>Download</h3>
+                <li>iOS</li>
+                <li>Android</li>
+                <li>Windows</li>
+                <li>Mac</li>
+            </div>
+
+            <div>
+                <h3>Company</h3>
+                <li>About</li>
+                <li>Newsroom</li>
+                <li>Careers</li>
+                <li>Sustainability</li>
+                <li>Trust Centre</li>
+                <li>Contact Sales</li>
+                <li>Video trimmer</li>
+                <li>Security</li>
+                <li>Terms and Privacy</li>
+            </div>
+
+        </div>
+
+
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" style="font-weight: bolder;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Features
+                    </button>
+                </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Curved text generator</li>
+                            <li>Photo effects</li>
+                            <li>Image enhancer</li>
+                            <li>Add frames to photos</li>
+                            <li>Add text to photos</li>
+                            <li>Online video recorder</li>
+                            <li>Video trimmer</li>
+                            <li>Convert videos to MP4</li>
+                            <li>See more features</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" style="font-weight: bolder;" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Explore
+                    </button>
+                </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Design ideas</li>
+                            <li>Font pairing</li>
+                            <li>Custom prints</li>
+                            <li>Colour palette generator</li>
+                            <li>Colours</li>
+                            <li>Apps</li>
+                            <li>Colour wheel</li>
+                            <li>Template directory</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" style="font-weight: bolder;" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Community
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Online communities</li>
+                            <li>Creators</li>
+                            <li>Canva Represents Fund</li>
+                            <li>Developers</li>
+                            <li>Partnerships</li>
+                            <li>Affiliates programme</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" style="font-weight: bolder;" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Download
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul style="margin-left: -30px;">
+                            <li>iOS</li>
+                            <li>Android</li>
+                            <li>Windows</li>
+                            <li>Mac</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" style="font-weight: bolder;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Company
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>About</li>
+                            <li>Newsroom</li>
+                            <li>Careers</li>
+                            <li>Sustainability</li>
+                            <li>Trust Centre</li>
+                            <li>Contact Sales</li>
+                            <li>Video trimmer</li>
+                            <li>Security</li>
+                            <li>Terms and Privacy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="infor">
+            <div class="last">
+                <div class="country">
+                    <img src="PROJECT IMAGES/d earth.jpg">
+                    <p class="lang">English (United KIngdom)</p>
+                    <select>
+                            
+                    </select>
+                </div>
+            </div>
+
+            
+            <div>
+                <span>© 2023 All Rights Reserved, Canva®</span>
+                <p style="text-align: center;"><a href="#" class="foot">Privacy policy</a>
+                    <a href="#" class="foot2">Terms</a>
+                </p>
+            </div>
+
+
+            <div class="face">
+                <img src="PROJECT IMAGES/facebook.png">
+                <img src="PROJECT IMAGES/youtube.png">
+                <img src="PROJECT IMAGES/twitter.png">
+            </div>
+        </div><br><br>
+        <div  class="fixed">
+            <p>
+               <strong>Make yourself at home!</strong> Log in to keep your work safely stored to your <br>
+               account.
+            </p>
+            <div class="fixbu">
+                <button class="btn" type="submit" id="b1">
+                    Play with Canva
+                </button>
+                <button class="btn" type="submit" id="b2">
+                    Log in
+                </button>
+            </div>
+        </div>
+        <div class="caveat">
+            <h3>caveat: this page just a student project, not attempt to clone
+                an <br> existing website
+            </h3>
+        </div><br>
+        <div class="project">
+            <h1>OTHER PROJECTS</h1>
+            <nav aria-label="...">
+                <ul class="pagination" id="proul">
+                    <li class="page-item">
+                        <a class="page-link" id="next" href="expedia.html">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="expedia.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="canva.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="findlaw.html">4</a></li>
+                    <li class="page-item"><a class="page-link" href="acefitness.html">5</a></li>
+                    <li class="page-item"><a class="page-link" href="ticketmaster.html">6</a></li>
+                    <li class="page-item"><a class="page-link" href="netflix.html">7</a></li>
+                    <li class="page-item"><a class="page-link" href="mtn.html">8</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="findlaw.html" id="next">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div><br><br><br><br><br>
+
+
+            <script>
+                function theser(){
+                    document.getElementById('mid').innerHTML=`<div class='spinner-border text-success' role='status' id='sppin'>
+                    <span class='visually-hidden'>Loading...</span></div> Logging in...`
+                }
+                function thesign(){
+                    document.getElementById('mid').innerHTML=`<div class='spinner-border text-warning' role='status' id='sppin'>
+                    <span class='visually-hidden'>Loading...</span></div> pls wait...`
+                }
+                
+
+            </script>
+    </body>
+</html>

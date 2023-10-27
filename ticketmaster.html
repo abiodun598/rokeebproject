@@ -1,0 +1,2013 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ticketmaster: Buy Verified Ticket</title>
+        <link rel="icon" href="PROJECT IMAGES/ticket.png">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+        crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+        crossorigin="anonymous"></script>
+
+        <style>
+            .ontop{
+                width: 100%;
+                background-image: url(PROJECT\ IMAGES/bacblack.jpg);
+                padding-bottom: 35px;
+            }
+            .mak{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 95%;
+                margin: 0px auto;
+            }
+            .mak1{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 400px;
+            }
+            .mak1 img{
+                width: 150px;
+                height: 30px;
+                cursor: pointer;
+            }
+            .mak1 li{
+                font-weight: bold;
+                color: white;
+                font-size: 16px;
+                list-style-type: none;
+            }
+            .mak2{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: fit-content;
+            }
+            .mak2 li{
+                font-weight: bold;
+                color: white;
+                font-size: 16px;
+                list-style-type: none;
+                margin-right: 17px;
+            }
+            .mak2 img{
+                cursor: pointer;
+            }
+            .ontop h2{
+                color: white;
+                font-size: 37px;
+                font-weight: bolder;
+                text-align: center;
+                margin-bottom: 0px;
+                margin-top: 27px;
+            }
+            .ontop p{
+                color: white;
+                font-size: 22px;
+                margin-top: 0px;
+                margin-bottom: 30px;
+                text-align: center;
+                font-weight: 600;
+            }
+            .conwhi{
+                width: 79%;
+                height: 54px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0px auto;
+                background: white;
+            }
+            
+           .tform{
+                width: 79%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0px auto;
+            }
+            #fozip{
+                margin-right: 40%;
+            }
+            .forzip{
+                display: flex;
+                flex-direction: row;
+                width: 44%;
+                height: 100%;
+            }
+            #zip{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                border-top: 0.8px solid rgb(56, 56, 56);
+                border-right: 0.5px solid rgb(105, 105, 105);
+                border-left: 0.9x solid rgb(56, 56, 56);
+                border-bottom: 0.7px solid rgb(56, 56, 56);
+                height: 100%;
+                width: 50%;
+                cursor: pointer;
+            }
+            #zip i{
+                margin-top: 0px;
+                margin-right: 0%;
+                font-size: 23px;
+                cursor: pointer;
+            }
+            #zip input{
+                width: 78%;
+                height: 35px;
+                margin-right: 0px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+            .conwhi select{
+                width: 50%;
+                height: 100%;
+                font-size: large;
+                border: none;
+                outline: none;
+            }
+            #from{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                border: 0.5px solid rgb(105, 105, 105);
+                height: 100%;
+                width: 56%;
+                cursor: pointer;
+            }
+            #from i{
+                margin-top: 0px;
+                margin-right: 0%;
+                font-size: 23px;
+                cursor: pointer;
+            }
+            #from input{
+                width: 80%;
+                height: 35px;
+                margin-right: 0px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+            #from p{
+                background-color: rgb(0, 77, 221);
+                font-size: large;
+                padding: 8px;
+                border-radius: 3px;
+                margin-top: 5%;
+            }
+            #from p:hover{
+                background-color: rgb(0, 46, 131);
+            }
+            #carouselExampleSlidesOnly{
+                width: 62%;
+                height: 110px;
+                margin: 0px auto;
+            }
+            #carouselExampleSlidesonly{
+                display: none;
+            }
+            #cha{
+                width: 62%;
+                height: 103px;
+            }
+            .plen{
+                width: 90%;
+                height: 600px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 0px auto;
+
+            }
+            .broad{
+                width: 66%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+            }
+            .tour{
+                width: 100%;
+                height: 20%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                background: rgb(209, 209, 209);
+            }
+            .tour p{
+                font-size: 17px;
+            }
+            .tour span{
+                font-size: 26px;
+                font-weight: 500;
+            }
+            .tour button{
+                font-size: large;
+                font-weight: 600;
+                border: none;
+                color: white;
+                outline: none;
+                border-radius: 3px;
+                padding: 8px;
+                background-color: rgb(0, 77, 221);
+            }
+            .tour button:hover{
+                background-color: rgb(0, 46, 131);
+            }
+            .sec{
+                width: 32%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            .sectop{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            .sectop div{
+                width: 100%;
+                height: 135px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .ann{
+                width: 180px;
+                height: 100%;
+                border-radius: 15px;
+            }
+            .sec p{
+                font-size: 14.3px;
+            }
+            .sec span{
+                font-size: 16px;
+                font-weight: 600;
+                color: #3270ec;
+            }
+            .landiv{
+                width: 100%;
+                height: 250px;
+            }
+            .lan{
+                width: 100%;
+                height: 100%;
+            }
+            .sel h3{
+                margin-left: 63px;
+                font-size: 25px;
+            }
+            .concert{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+                height: 30px;
+                margin: 0px auto;
+            }
+            .concert p{
+                font-size: x-large;
+                font-weight: 700;
+                
+            }
+            .concert span{
+                color: blue;
+                cursor: pointer;
+                font-size: large;
+                font-weight: 500;
+            }
+            .concert span:hover{
+                color: rgb(0, 0, 107);
+            }
+            .sport{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+                height: 200px;
+                margin: 0px auto;
+            }
+            .sport div{
+                width: 23%;
+                height: 100%;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-end;
+                padding-left: 10px;
+                cursor: pointer;
+                box-shadow: 0px 0px 8px 2px black;
+            }
+            .sport p{
+                color: white;
+                font-size: larger;
+                font-weight: 700;
+                border-radius: 5px;
+                padding: 7px;
+                background: rgba(0, 0, 0, 0.5);
+            }
+            .pink{
+                width: 90%;
+                height: 420px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 0px auto;
+            }
+            .sort{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 200px;
+                margin: 0px auto;
+            }
+            .sort div{
+                width: 23%;
+                height: 100%;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-end;
+                padding-left: 10px;
+                cursor: pointer;
+                box-shadow: 0px 0px 8px 2px black;
+            }
+            .sort p{
+                color: white;
+                font-size: larger;
+                font-weight: 700;
+                border-radius: 5px;
+                padding: 7px;
+                background: rgba(0, 0, 0, 0.5);
+            }
+            .sort span{
+                font-weight: 200;
+            }
+
+            .carsort{
+                display: none;
+            }
+            .ice{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+                margin: 0px auto;
+            }
+            .ice img{
+                width: 28%;
+                height: 350px;
+            }
+            .ice>div{
+                width: 69%;
+                height: 420px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .dis{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 200px;
+                margin: 0px auto;
+            }
+            .dis div{
+                width: 32%;
+                height: 100%;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-end;
+                padding-left: 10px;
+                cursor: pointer;
+                box-shadow: 0px 0px 8px 2px black;
+            }
+            .dis p{
+                color: white;
+                font-size: 15px;
+                font-weight: 700;
+                border-radius: 5px;
+                padding: 7px;
+                background: rgba(0, 0, 0, 0.5);
+            }
+            .dis span{
+                font-weight: 200;
+            }
+            .discover{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+                margin: 0px auto;
+            }
+            .discover img{
+                width: 100%;
+                height: 100px;
+                margin-bottom: 10px;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+            .discover p{
+                font-size: 14px;
+            }
+            .discover span{
+                color: #0b49c5;
+                cursor: pointer;
+                font-weight: 700;
+            }
+            .rise{
+                display: none;
+            }
+            .links{
+                width: 100%;
+                padding: 60px;
+                background-color: #272d31;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            
+            .feedback{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 0px auto;
+                width: 75%;
+                padding-bottom: 60px;
+            }
+            .feedback li{
+                list-style-type: none;
+                font-size: 15px;
+                line-height: 36px;
+                color: white;
+                cursor: pointer;
+                font-weight: 500;
+            }
+            .feedback li:hover{
+                color: #0e58cf;
+            }
+            .feedback p{
+                font-weight: bolder;
+                color: white;
+                font-size: 17px;
+            }
+            .feedback span{
+                font-weight: bolder;
+                color: white;
+                font-size: 17px;
+            }
+            .policies{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 43%;
+            }
+            .company{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 43%;
+            }
+            .united{
+                width: 75%;
+                height: 180px;
+                margin: 0px auto;
+                border-top: 1px solid rgb(180, 180, 180);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .united div{
+                display: flex;
+                flex-direction: row;
+                
+            }
+            .img1{
+                width: 150px;
+                height: 30px;
+            }
+            .united p{
+                font-size: 13px;
+                color: white;
+                margin-left: 19px;
+                margin-top: 5px;
+            }
+            .united span{
+                color: blue;
+                padding: 3px;
+                cursor: pointer;
+            }
+            .united span:hover{
+                color: white;
+                background-color: green;
+            }
+            .li1{
+                font-size: 14px;
+                color: white;
+                margin-left: 25px;
+                list-style-type: none;
+                margin-top: 5px;
+                font-weight: 500;
+            }
+            .li2{
+                font-size: 14px;
+                color: white;
+                margin-left: 10px;
+                list-style-type: none;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            .li2:hover{
+                color: blue;
+            }
+            .img2{
+                width: 30px;
+                cursor: pointer;
+            }
+            .united i{
+                color: white;
+                font-size: 20px;
+                margin-left: 20px;
+                cursor: pointer;
+            }
+            #alert{
+                position: fixed;
+                right: 20px;
+                bottom: 25px;
+                width: 35%;
+                padding: 15px;
+                padding: 16px;
+                display: flex;
+                flex-direction: row;
+                border-radius: 4px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 0px 2px 0px;
+                background-image: linear-gradient(104deg, rgb(0, 45, 161) 5%, rgb(2, 108, 223));
+            }
+            #alert button{
+                transition: all 0.3s ease-in-out 0s;
+                font-size: 18px;
+                font-weight: bolder;
+            }
+            #alert button:hover{
+                background-color: white;
+            }
+            #alert>div{
+                width: 98%;
+            }
+            #alert span{
+                line-height: normal;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: rgba(255, 255, 255, 0.7);
+            }
+            .sign{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+            .sign p{
+                font-size: 14px;
+                font-weight: 400;
+                color: white;
+                margin-top: 10px;
+                line-height: normal;
+            }
+            .sign button:hover{
+                background-color: #c4cfff !important;
+            }
+            .sign button{
+                transition: all 0.3s ease-in-out 0s;
+                font-family: inherit;
+                font-weight: 600;
+                font-size: 8px;
+                width: 110px;
+                height: 40px;
+                text-align: center;
+                border-radius: 2px;
+                cursor: pointer;
+                color: rgb(2, 108, 223);
+                background-color: rgb(255, 255, 255);
+                border: none;
+                outline: none;
+            }
+            .caveat{
+                color: white;
+                background-color: #1438d8;
+                padding: 7px;
+                border-radius: 12px;
+                width: 90%;
+                margin: 0px auto;
+            }
+            .caveat h3{
+                text-align: center;
+                font-size: xx-large;
+            }
+            .project{
+                margin: 0px auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-weight: bolder;
+            }
+            .project h1{
+                color: blue;
+            }
+            .project a{
+                background-color: rgb(9, 255, 0);
+                border: 2px solid purple;
+            }
+            .project a:hover{
+                border: 2px solid red;
+            }
+            .project span{
+                background-color: aqua;
+                border: 2px solid purple;
+            }
+            .project span:hover{
+                border: 2px solid red;
+            }
+            #next{
+                background: aqua;
+                cursor: pointer;
+            }
+            #next:hover{
+                background: white;
+                border: 2px solid red;
+
+            }
+
+
+
+
+
+
+            @media screen and (max-width: 768px){
+                .ontop{
+                    width: 100%;
+                }
+                .ontop h2{
+                    font-size: 29px;
+                    margin-top: 22px;
+                }
+                .ontop p{
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+                .mak{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 95%;
+                    margin: 0px auto;
+                    
+                }
+                .mak img{
+                    width: 30%;
+                }
+                .mak1{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                }
+                .conwhi{
+                    width: 79%;
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0px auto;
+                    background: rgba(0, 0, 255, 0.0);
+                }
+            #fozip{
+                margin-right: 30%;
+            }
+                .forzip{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 90%;
+                    background-color: white;
+                    height: 30%;
+                    border: 0.5px solid rgb(105, 105, 105);
+                }
+                #zip{
+                    height: 50%;
+                    width: 100%;
+                }
+                .conwhi select{
+                    width: 100%;
+                    height: 30px;
+                    border: 0.5px solid rgb(105, 105, 105);
+                }
+                #from{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    border: 0.5px solid rgb(105, 105, 105);
+                    height: 40px;
+                    background-color: white;
+                    width: 90%;
+                    cursor: pointer;
+                }
+                #from i{
+                    margin-top: 0px;
+                    margin-right: 0%;
+                    font-size: 23px;
+                    cursor: pointer;
+                }
+                #from input{
+                    width: 80%;
+                    height: 35px;
+                    margin-right: 0px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+                #from p{
+                    background-color: rgb(0, 77, 221);
+                    font-size: large;
+                    padding: 3px;
+                    border-radius: 3px;
+                    margin-top: 5%;
+                }
+                #from p:hover{
+                    background-color: rgb(0, 46, 131);
+                }
+                #carouselExampleSlidesonly{
+                    display: inline-block;
+                    width: 100%;
+                }
+                #carouselExampleSlidesOnly{
+                    display: none;
+                }
+                #cha{
+                    width: 62%;
+                    height: 103px;
+                }
+                .plen{
+                    width: 90%;
+                    height: 900px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin: 0px auto;
+
+                }
+                .broad{
+                    width: 100%;
+                    height: 55%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin: 0px auto;
+
+                }
+                .tour{
+                    width: 100%;
+                    height: 22%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: rgb(209, 209, 209);
+                }
+                .tour p{
+                    font-size: 12px;
+                }
+                .tour span{
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+                .tour button{
+                    font-size: smaller;
+                    padding: 0px;
+                }
+                .sec{
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                }
+                .sectop{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 20px;
+                }
+                .sectop div{
+                    width: 50%;
+                    height: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                .ann{
+                    width: 80%;
+                    height: 100px;
+                    border-radius: 9px;
+                }
+                .landiv{
+                    margin: 0px auto;
+                    width: 90%;
+                }
+                .lan{
+                    width: 100%;
+                    height: 250px;
+                }
+                .sel h3{
+                    margin-left: 43px;
+                    font-size: 25px;
+                }
+                .sport{
+                    display: none;
+                }
+                .pink{
+                    display: none;
+                }
+                .concert{
+                    margin-top: 30px;
+                    margin-bottom: 0px !important;
+                }
+                .carsort{
+                    display: inline-block;
+                    width: 90%;
+                    margin: 0px auto;
+                    margin-left: 5%;
+                }
+                .tem{
+                    width: 100%;
+                    height: 200px;
+                    margin: 0px auto;
+                    box-shadow: 0px 0px 8px 2px black;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                    background-color: #0b49c5;
+
+                }
+                .carsort p{
+                    color: white;
+                    font-size: 15px;
+                    font-weight: 700;
+                    border-radius: 5px;
+                    padding: 7px;
+                    background: rgba(0, 0, 0, 0.5);
+                }
+                .ice{
+                    display: none;
+                }
+                .discover{
+                    display: none;
+                }
+
+                .rise{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 90%;
+                    margin: 0px auto;
+                }
+                .rise>div{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin: 0px auto;
+                }
+                .rise>div>div{
+                    margin: 10px;
+                }
+                .rise p{
+                    font-size: 14px;
+                }
+                .rise img{
+                    width: 100%;
+                    height: 150px;
+                }
+                .rise span{
+                    color: #0b49c5;
+                    cursor: pointer;
+                    font-weight: 700;
+                }
+
+
+
+
+
+                .links{
+                    width: 100%;
+                    height: fit-content;
+                    padding: 30px;
+                    background-color: #272d31;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                
+                .feedback{
+                    display: none;
+                }
+                .united{
+                    width: 100%;
+                    height: 150px;
+                    margin: 0px auto;
+                    border-top: none;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .united div{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 90%;
+                }
+                .united>div>div{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .img1{
+                    width: 150px;
+                    height: 30px;
+                    margin-bottom: 5px;
+                }
+                .united p{
+                    font-size: 12px;
+                    color: white;
+                    margin-left: 0px;
+                    margin-top: 8px;
+                }
+                .li1{
+                    font-size: 12px;
+                    color: white;
+                    margin-left: 15px;
+                    margin-top: 5px;
+                    font-weight: 500;
+                }
+                .li2{
+                    font-size: 15px;
+                    color: white;
+                    margin-left: 0px;
+                }
+                .united i{
+                    font-size: 28px;
+                    margin-left: 0px;
+                }
+                #alert{
+                    position: fixed;
+                    right: 10px;
+                    bottom: 160px;
+                    width: 70%;
+                    padding: 8px;
+                    display: flex;
+                    flex-direction: row;
+                    border-radius: 4px;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 0px 2px 0px;
+                    background-image: linear-gradient(104deg, rgb(0, 45, 161) 5%, rgb(2, 108, 223));
+                }
+                #alert button{
+                    transition: all 0.3s ease-in-out 0s;
+                    font-size: 16px;
+                    font-weight: bolder;
+                }
+                #alert button:hover{
+                    background-color: white;
+                }
+                #alert>div{
+                    width: 98%;
+                }
+                #alert span{
+                    line-height: normal;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: rgba(255, 255, 255, 0.7);
+                }
+                .sign{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                }
+                .sign p{
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: white;
+                    margin-top: 10px;
+                    line-height: normal;
+                }
+                .sign button:hover{
+                    background-color: #c4cfff !important;
+                }
+                .sign button{
+                    transition: all 0.3s ease-in-out 0s;
+                    font-family: inherit;
+                    font-weight: 500;
+                    font-size: 6px;
+                    width: 90px;
+                    height: 35px;
+                    text-align: center;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    color: rgb(2, 108, 223);
+                    background-color: rgb(255, 255, 255);
+                    border: none;
+                    outline: none;
+                }
+                .caveat{
+                    padding: 3px;
+                    border-radius: 12px;
+                    margin: 0px auto;
+                }
+                .caveat h3{
+                    text-align: center;
+                    font-size: 25px;
+                }
+                .project a{
+                    padding: 2px 5px;
+                    font-size: 13px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ontop">
+            <div class="mak">
+                <div class="mak1">
+                    <img src="PROJECT IMAGES/mas.png">
+                    <li>Content</li>
+                    <li>Sport</li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" id="dow">
+                            <li><a class="dropdown-item" href="#">Art & Theater</a></li>
+                            <li><a class="dropdown-item" href="#">Family</a></li>
+                            <li><a class="dropdown-item" href="#">Deals</a></li>
+                            <li><a class="dropdown-item" href="#">Entertainment Guides</a></li>
+                        </ul>
+                    </li>
+                </div><br>
+                <div class="mak2">
+                    <li>Sign in</li>
+                    <li>Sell</li>
+                    <li>Gift card</li>
+                    <li>Help</li>
+                    <li><img src="PROJECT IMAGES/pay.png"></li>
+                </div>
+            </div>
+            <h2>Let's Make Live Happen</h2>
+            <p>Shop millions of live events and discover can't-miss concerts, games, theater and more.</p>
+            
+            <div class="tform">
+                <span id="fozip">dfghjk</span>
+                <span id="forart">fghjkl;</span>
+            </div>
+            <div class="conwhi">
+                <div class="forzip">
+                    <div id="zip">
+                        <input type="search" placeholder="City or Zip Code" id="digit">
+                        <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                    </div>
+                    <select>
+                        <option>All Dates</option>
+                        <option>This Weekend</option>
+                        <option>Date Range</option>
+                    </select>
+                </div>
+                <div id="from">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="search" placeholder="Search for artist, venue and events" id="man">
+                    <p onclick="play()">Search</p>
+                </div>
+            </div>
+        </div><br>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="PROJECT IMAGES/fl1.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="PROJECT IMAGES/fl2.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="PROJECT IMAGES/fl3.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="PROJECT IMAGES/fl4.png" class="d-block w-100">
+              </div>
+              
+            </div>
+        </div>
+        <div id="carouselExampleSlidesonly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="PROJECT IMAGES/tl1.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="PROJECT IMAGES/tl2.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="PROJECT IMAGES/tl3.png" class="d-block w-100">
+              </div>
+              
+            </div>
+        </div>
+        <br><br>
+        <div class="plen">
+            <div class="broad">
+                <img src="PROJECT IMAGES/broad.png">
+                <div class="tour">
+                    <p>
+                        <span>On Broadway & On Tour</span> <br>
+                        Don’t miss your chance to experience the hottest shows on Broadway and on tour!
+                    </p>
+                    <button>Find Tickets</button>
+                </div>
+            </div>
+            <div class="sec">
+                <div class="sectop">
+                    <div>
+                        <img src="PROJECT IMAGES/bro.jpg" class="ann">
+                        <p><span>Travis Scott</span><br>
+                        Get tickets to see him when he stops in your city.</p>
+                    </div><br>
+                    <div>
+                        <img src="PROJECT IMAGES/Annoaid.png" class="ann">
+                        <p><span>Doja Cat</span><br>
+                        Get your tickets now for The Scarlet Tour! </p>   
+                    </div>
+                </div>
+                <div class="landiv">
+                    <img src="PROJECT IMAGES/mobile3.jpg" class="lan">
+                </div>
+            </div><br>
+            
+            
+        </div><br><br><br>
+
+
+        <div class="sel">
+            <h3>Browse by Category</h3><br>
+            <div class="sport">
+                <div style="background-image: url(PROJECT\ IMAGES/community.jpg); background-size: contain;"><p>Concerts</p></div>
+                <div style="background-image: url(PROJECT\ IMAGES/jim.jpg); background-size: contain;"><p>Sports</p></div>
+                <div style="background-image: url(PROJECT\ IMAGES/Change.png); background-size: contain;"><p>Art & Theater</p></div>
+                <div style="background-image: url(PROJECT\ IMAGES/inplane.jfif);"><p>Family</p></div>
+
+            </div>
+            <div class="carsort">
+
+            
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/community.jpg); background-size: contain;" class="tem"><p>Concerts</p></div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/jim.jpg); background-size: contain;" class="tem"><p>Sports</p></div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/Change.png); background-size: contain;" class="tem"><p>Art & Theater</p></div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/inplane.jfif);" class="tem"><p>Family</p></div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <br><br><br>
+            <h3>Top Selling</h3><br>
+            <div class="concert">
+                <p>Concerts</p>
+                <span>See All Concerts</span>
+            </div><br>
+            <div class="pink">
+                <div class="sort">
+                    <div style="background-image: url(PROJECT\ IMAGES/person.png); background-size: contain;">
+                        <p>P!NK <br>
+                            <span>43 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/podcasts.jpg); background-size: contain;">
+                        <p>Eagle <br>
+                            <span>16 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/image3.jfif); background-size: contain;">
+                        <p>Shania Twain <br>
+                            <span>46 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/Annostate.png); background-size: contain;">
+                        <p>Foo Fighters <br>
+                            <span>43 Events</span> 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sort">
+                    <div style="background-image: url(PROJECT\ IMAGES/lega.png); background-size: contain;">
+                        <p>Z100's Jingle Ball<br>
+                            <span>43 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/GettyImag.png); background-size: contain;">
+                        <p>Cody Johnson<br>
+                            <span>43 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/agri.jpg); background-size: contain;">
+                        <p>Kiss 108's Jingle Ball <br>
+                            <span>1 Events</span> 
+                        </p>
+                    </div>
+                    <div style="box-shadow: none;"></div>
+                </div>
+            </div>
+            
+            
+            <div class="carsort">
+
+            
+                <div id="carouselExamples" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/person.png); background-size: contain;" class="tem">
+                                <p>P!NK <br>
+                                    <span>43 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/podcasts.jpg); background-size: contain;" class="tem">
+                                <p>Eagle <br>
+                                    <span>16 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/image3.jfif); background-size: contain;" class="tem">
+                                <p>Shania Twain <br>
+                                    <span>46 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/Annostate.png); background-size: contain;" class="tem">
+                                <p>Foo Fighters <br>
+                                    <span>43 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/lega.png); background-size: contain;" class="tem">
+                                <p>Z100's Jingle Ball<br>
+                                    <span>43 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/GettyImag.png); background-size: contain;" class="tem">
+                                <p>Cody Johnson<br>
+                                    <span>43 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/agri.jpg); background-size: contain;" class="tem">
+                                <p>Kiss 108's Jingle Ball <br>
+                                    <span>1 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExamples" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExamples" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div><br><br>
+            <div class="concert">
+                <p>Sports</p>
+                <span>See All Sports</span>
+            </div><br>
+            <div class="pink">
+                <div class="sort">
+                    <div style="background-image: url(PROJECT\ IMAGES/eagl.png); background-size: contain;">
+                        <p>Atlanta Hawks<br>
+                            <span>87 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/wolf.png); background-size: contain;">
+                        <p>Memphis Grizzlies<br>
+                            <span>85 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/basketball.png); background-size: contain;">
+                        <p>Miami Heat <br>
+                            <span>88 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/butter.png); background-size: contain;">
+                        <p>Charlotte Hornets<br>
+                            <span>85 Events</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="sort">
+                    <div style="background-image: url(PROJECT\ IMAGES/packers.png); background-size: contain;">
+                        <p>Indiana Pacers<br>
+                            <span>85 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/yan.jpg); background-size: contain;">
+                        <p>San Antonio Spurs<br>
+                            <span>87 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/star.png); background-size: contain;">
+                        <p>Dallas Cowboys <br>
+                            <span>15 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/bull.png); background-size: contain;">
+                        <p>Houston Texans <br>
+                            <span>14 Events</span> 
+                        </p>
+                    </div>
+                </div>
+            </div><br>
+
+
+
+
+
+            <div class="carsort">
+
+            
+                <div id="carouselExample1" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/eagl.png); background-size: contain;" class="tem">
+                                <p>Atlanta Hawks<br>
+                                    <span>87 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/wolf.png); background-size: contain;" class="tem">
+                                <p>Memphis Grizzlies<br>
+                                    <span>85 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/butter.png); background-size: contain;" class="tem">
+                                <p>Charlotte Hornets<br>
+                                    <span>85 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/basketball.png); background-size: contain;" class="tem">
+                                <p>Miami Heat <br>
+                                    <span>88 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/packers.png); background-size: contain;" class="tem">
+                                <p>Indiana Pacers<br>
+                                    <span>85 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/yan.jpg); background-size: contain;" class="tem">
+                                <p>San Antonio Spurs<br>
+                                    <span>87 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/star.png); background-size: contain;" class="tem">
+                                <p>Dallas Cowboys <br>
+                                    <span>15 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/bull.png); background-size: contain;" class="tem">
+                                <p>Houston Texans <br>
+                                    <span>14 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="concert">
+                <p>Art & Theater</p>
+                <span>See All Art & Theater</span>
+            </div><br>
+            <div class="pink">
+                <div class="sort">
+                    <div style="background-image: url(PROJECT\ IMAGES/canoe.jfif); background-size: contain;">
+                        <p>Dave Chappelle<br>
+                            <span>21 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/ic\ ipad.jfif); background-size: contain;">
+                        <p>Jerry Seinfeld And Jim Gaffigan<br>
+                            <span>6 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/image5.jfif); background-size: contain;">
+                        <p>Gabriel Iglesias <br>
+                            <span>28 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/pl1.jpg); background-size: contain;">
+                        <p>Matt Rife <br>
+                            <span>263 Events</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="sort">
+                    <div style="background-image: url(PROJECT\ IMAGES/pinklog.jfif); background-size: contain;">
+                        <p>Adam Sandler<br>
+                            <span>43 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/reds.jpg); background-size: contain;">
+                        <p>Nate Bargatze<br>
+                            <span>49 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/staff.jpg); background-size: contain;">
+                        <p>Jo Koy <br>
+                            <span>28 Events</span> 
+                        </p>
+                    </div>
+                    <div style="background-image: url(PROJECT\ IMAGES/roman.jpg); background-size: contain;">
+                        <p>Bill Burr <br>
+                            <span>12 Events</span> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carsort">
+
+            
+                <div id="carouselExample2" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/canoe.jfif); background-size: contain;" class="tem">
+                                <p>Dave Chappelle<br>
+                                    <span>21 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/ic\ ipad.jfif); background-size: contain;" class="tem">
+                                <p>Jerry Seinfeld And Jim Gaffigan<br>
+                                    <span>6 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/image5.jfif); background-size: contain;" class="tem">
+                                <p>Gabriel Iglesias <br>
+                                    <span>28 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/pl1.jpg); background-size: contain;" class="tem">
+                                <p>Matt Rife <br>
+                                    <span>263 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/pinklog.jfif); background-size: contain;" class="tem">
+                                <p>Adam Sandler<br>
+                                    <span>43 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/staff.jpg); background-size: contain;" class="tem">
+                                <p>Jo Koy <br>
+                                    <span>28 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/reds.jpg); background-size: contain;" class="tem">
+                                <p>Nate Bargatze<br>
+                                    <span>49 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/roman.jpg); background-size: contain;" class="tem">
+                                <p>Bill Burr <br>
+                                    <span>12 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+
+            
+            <br><br>
+
+            <div class="concert">
+                <p>Family</p>
+                <span>See All Family</span>
+            </div><br>
+
+
+            <div class="ice">
+                <div>
+                    <div class="dis">
+                        <div style="background-image: url(PROJECT\ IMAGES/bacblack.jpg); background-size: contain;">
+                            <p>Disney on ice present into the<br>
+                                Magic<br>
+                                <span>118 Events</span> 
+                            </p>
+                        </div>
+                        <div style="background-image: url(PROJECT\ IMAGES/bro.jpg); background-size: contain;">
+                            <p>Disney on ice present to Find Your<br>
+                                Hero<br>
+                                <span>136 Events</span> 
+                            </p>
+                        </div>
+                        <div style="background-image: url(PROJECT\ IMAGES/charity5.jpg); background-size: contain;">
+                            <p>San Antonio Show and<br>
+                                Rodeo <br>
+                                <span>37 Events</span> 
+                            </p>
+                        </div>
+                    </div>
+                    <div  class="dis">
+                        <div style="background-image: url(PROJECT\ IMAGES/broad.png); background-size: contain;">
+                            <p>Disney on ice present Frozen & <br>
+                                Encanto<br>
+                                <span>124 Events</span> 
+                            </p>
+                        </div>
+                        <div style="background-image: url(PROJECT\ IMAGES/bldoc.jfif); background-size: contain;">
+                            <p>Ringing Bros. and Barnum & <br>
+                                Bailey present The Greatest <br>
+                                Show On Earth<br>
+                                <span>85 Events</span> 
+                            </p>
+                        </div>
+                        <div style="background-image: url(PROJECT\ IMAGES/FB_IMG_5.jpg); background-size: contain;">
+                            <p>Disney on ice present Magic in <br>
+                                the Stars <br>
+                                <span>169 Events</span> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <img src="PROJECT IMAGES/guns.png">
+            </div>
+
+            <div class="carsort">
+
+            
+                <div id="carouselExample3" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/bacblack.jpg); background-size: contain;" class="tem">
+                                <p>Disney on ice present into the<br>
+                                    Magic<br>
+                                    <span>118 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/bro.jpg); background-size: contain;" class="tem">
+                                <p>Disney on ice present to Find Your<br>
+                                    Hero<br>
+                                    <span>136 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/FB_IMG_5.jpg); background-size: contain;" class="tem">
+                                <p>San Antonio Show and<br>
+                                    Rodeo <br>
+                                    <span>37 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/charity5.jpg); background-size: contain;" class="tem">
+                                <p>Disney on ice present Frozen & <br>
+                                    Encanto<br>
+                                    <span>124 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/broad.png); background-size: contain;" class="tem">
+                                <p>Ringing Bros. and Barnum & <br>
+                                    Bailey present The Greatest <br>
+                                    Show On Earth<br>
+                                    <span>85 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <div style="background-image: url(PROJECT\ IMAGES/bldoc.jfif); background-size: contain;" class="tem">
+                                <p>Disney on ice present Magic in <br>
+                                    the Stars <br>
+                                    <span>169 Events</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" class="tem">
+                            <img src="PROJECT IMAGES/guns.png" class="tem">
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <br><br>
+            
+            <div class="concert">
+                <p>Discover More Events</p>
+                <span>Things to Do</span>
+            </div><br>
+            <div class="discover">
+                <div>
+                    <img src="PROJECT IMAGES/nfl.jpg">
+                    <p>
+                        <span>NFL</span><br>
+                        Explore NFL ticket options <br>
+                         from the Official Ticket <br>
+                          Exchange of the NFL.
+                    </p>
+                </div>
+                <div>
+                    <img src="PROJECT IMAGES/nba.jpg">
+                    <p>
+                        <span>NBA</span><br>
+                        Find great tickets for your <br>
+                         favorite NBA teams for <br>
+                          must-see games.
+                    </p>
+                </div>
+                <div>
+                    <img src="PROJECT IMAGES/nhl.jpg">
+                    <p>
+                        <span>NHL</span><br>
+                        Get verified tickets to <br>
+                         watch your favorite NHL <br>
+                          team take the ice.
+                    </p>
+                </div>
+                <div>
+                    <img src="PROJECT IMAGES/mls.jpg">
+                    <p>
+                        <span>MLS</span><br>
+                        Get Major League Soccer <br>
+                         tickets for your favorite <br>
+                          team.
+                    </p>
+                </div>
+                <div>
+                    <img src="PROJECT IMAGES/mlb.jpg">
+                    <p>
+                        <span>MLB</span><br>
+                        Get Major League Baseball <br>
+                         tickets for your favorite <br>
+                          team.
+                    </p>
+                </div>
+                <div>
+                    <img src="PROJECT IMAGES/broad.png">
+                    <p>
+                        <span>On Broadway & On Tour</span><br>
+                        Musicals and plays <br>
+                         happening on Broadway <br>
+                          and on the road.
+                    </p>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="rise">
+            <div>
+                <div>
+                    <img src="PROJECT IMAGES/nhl.jpg">
+                    <p>
+                        <span>NHL</span><br>
+                        Get verified tickets to <br>
+                         watch your favorite NHL <br>
+                          team take the ice.
+                    </p>
+                </div>
+                <div>
+                    <img src="PROJECT IMAGES/mls.jpg">
+                    <p>
+                        <span>MLS</span><br>
+                        Get Major League Soccer <br>
+                         tickets for your favorite <br>
+                          team.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="PROJECT IMAGES/nfl.jpg">
+                    <p>
+                        <span>NFL</span><br>
+                        Explore NFL ticket options <br>
+                         from the Official Ticket <br>
+                          Exchange of the NFL.
+                    </p>
+                </div>
+                <div>
+                    <img src="PROJECT IMAGES/nba.jpg">
+                    <p>
+                        <span>NBA</span><br>
+                        Find great tickets for your <br>
+                         favorite NBA teams for <br>
+                          must-see games.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="PROJECT IMAGES/mlb.jpg">
+                    <p>
+                        <span>MLB</span><br>
+                        Get Major League Baseball <br>
+                         tickets for your favorite <br>
+                          team.
+                    </p>
+                </div>
+                <div>
+                    <img src="PROJECT IMAGES/broad.png">
+                    <p>
+                        <span>On Broadway & On Tour</span><br>
+                        Musicals and plays <br>
+                         happening on Broadway <br>
+                          and on the road.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <br><br>
+
+        <div class="links" style="height: fit-content;">
+            <div class="feedback">
+                <div class="company">
+                    <div>
+                        <p>Helpful Links</p>
+                        <li>Help/FAQ</li>
+                        <li>Sell</li>
+                        <li>My Account</li>
+                        <li>Contact Us</li>
+                        <li>Gift Cards</li>
+                        <li>Refunds and Exchanges</li>
+                        <li>Do Not Sell or Share My Personal <br>
+                        Information</li>
+                    </div>
+                    
+
+                    <div>
+                        <p>Our Network</p>
+                        <li>Live Nation</li>
+                        <li>House of Blues</li>
+                        <li>Front Gate Tickets</li>
+                        <li>TicketWeb</li>
+                        <li>universe</li>
+                        <li>NFL</li>
+                        <li>NBA</li>
+                        <li>NHL</li>
+                    </div>
+                </div>
+
+
+
+                <div class="policies">
+                    <div>
+                        <p>About Us</p>
+                        <li>Who We Are</li>
+                        <li>Ticketmaster Blog</li>
+                        <li>Ticketing Truths</li>
+                        <li>Privacy Policy</li>
+                        <li>Ad Choices</li>
+                        <li>Careers</li>
+                        <li>Ticket Your Event</li>
+                        <li>Innovation</li>
+                    </div>
+                    <div>
+                        <p>Friends & Partners</p>
+                        <li>PayPal</li>
+                        <li>Allianz</li>
+                        <li>AWS</li>
+                        <br><br>
+                        <span>Get Our App   <img src="PROJECT IMAGES/playstore.png" style="cursor: pointer;"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="united">
+                <div>
+                    <div>
+                        <img src="PROJECT IMAGES/mas.png" class="img1">
+                        <p>By continuing past this page, you agree to our
+                            Terms of Use. <span>Manage my cookies and ad choices</span> 
+                        </p>
+                    </div>
+                    
+                    <li class="li1">© Ticketmaster 2023</li>
+                </div><br>
+                <div>
+                    <img src="PROJECT IMAGES/usa.png" class="img2">
+                    <li class="li2">United States</li>
+                    <i class="fa-brands fa-facebook-f"></i> 
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <div>
+                <span>SIGN IN. GO LIVE</span> 
+                <div class="sign">
+                    <p>
+                        Discover recommended events, and breeze <br>
+                        through checkout.
+                    </p>
+                    <button>
+                        Sign in
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="caveat">
+            <h3>caveat: this page just a student project, not attempt to clone
+                an <br> existing website
+            </h3>
+        </div><br>
+        <div class="project">
+            <h1>OTHER PROJECTS</h1>
+            <nav aria-label="...">
+                <ul class="pagination" id="proul">
+                    <li class="page-item">
+                        <a class="page-link" id="next" href="acefitness.html">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="expedia.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="canva.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="findlaw.html">4</a></li>
+                    <li class="page-item"><a class="page-link" href="acefitness.html">5</a></li>
+                    <li class="page-item"><a class="page-link" href="ticketmaster.html">6</a></li>
+                    <li class="page-item"><a class="page-link" href="netflix.html">7</a></li>
+                    <li class="page-item"><a class="page-link" href="mtn.html">8</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="netflix.html" id="next">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <script>
+            function play(){
+                let art= document.getElementById('man').value;
+                let span2= document.getElementById('forart');
+                let zip= document.getElementById('digit').value;
+                let span1= document.getElementById('fozip');
+                if(!zip|| isNaN(zip)|| zip.length!=5){
+                    span1.innerHTML='your zipcode must be 5 digit'
+                    span1.style.color= 'red'
+                }
+                else if(zip.length=5){
+                    span1.innerHTML='valid'
+                    span1.style.color= 'white'
+                }
+                if(!art){
+                    span2.innerHTML='search a artist'
+                    span2.style.color= 'red'
+                }
+                else{
+                    span2.innerHTML='searching...'
+                    span2.style.color= 'white'
+                }
+            }
+        </script>
+    </body>
+</html>

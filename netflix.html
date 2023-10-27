@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Netflix Nigeria - Watch TV Show</title>
+        <link rel="icon" href="PROJECT IMAGES/netflix logo.png">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+        crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+        crossorigin="anonymous"></script>
+    </head>
+    <style>
+        .forimg{
+            background-image: url(PROJECT\ IMAGES/netflix.jpg);
+            width: 100%;
+            height: 700px;
+            background: rgb(0 0 0 / 40%);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .forbac{
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            border-bottom: 12px solid rgb(44, 44, 44);
+        }
+        .forbac h1{
+            color: white;
+            font-size: 45px;
+            font-weight: 900;
+            text-align: center;
+        }
+        .forbac h6{
+            font-size: 20px;
+            font-weight: 900;
+            width: 51%;
+        }
+        .forbac p{
+            color: white;
+            font-size: 25px;
+            font-weight: 400;
+            text-align: center;
+        }
+        .logotext{
+            width: 76%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logotext img{
+            width: 15%;
+            height: 70%;
+        }
+        .logotext span{
+            background: rgb(229,9,20);
+            color: white;
+            font-weight: 600;
+            width: 76px;
+            border-radius: 4px;
+            height: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .logotext span:hover{
+            background: rgb(170, 8, 16);
+        }
+        .formail{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 400px;
+            width: 52%;
+            height: 55px;
+        }
+        .formail input{
+            width: 64%;
+            height: 100%;
+            border: 0.5px solid rgb(180, 180, 180);
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-weight: 600;
+        }
+        .formail button{
+            width: 35%;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            color: white;
+            background: rgb(229,9,20);
+            font-weight: 700;
+            font-size: 25px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+        }
+        .formail button:hover{
+            background: rgb(170, 8, 16);
+        }
+        h6{
+            padding-top: 8px;
+        }
+        .enjoy{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            width: 100%;
+            height: 520px;
+            border-bottom: 12px solid rgb(44, 44, 44);
+        }
+
+        .enjoy h1{
+            color: white;
+            font-size: 47px;
+            font-weight: 900;
+        }
+        .enjoy p{
+            color: white;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        .tv{
+            position: absolute;
+            width: 450px;
+            height: 350px;
+            z-index: 2;
+        }
+        .gif{
+            transform: translate(30px,-10px);
+        }
+        .download{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: black;
+            width: 100%;
+            height: 520px;
+            border-bottom: 12px solid rgb(44, 44, 44);
+        }
+        .download h1{
+            color: white;
+            font-size: 47px;
+            font-weight: 900;
+        }
+        .download p{
+            color: white;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        .download>div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 94%;
+            margin: 0px auto;
+            height: 100%;
+        }
+        .download>div>div{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .strange{
+            background-color: black;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 20%;
+            height: 15%;
+            position: absolute;
+            z-index: 2;
+            border: 2px solid rgba(128,128,128,0.7);
+            border-radius: 12px;
+            transform: translate(124px,140px);
+        }
+        .strange p{
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .strange span{
+            color: #0071eb;
+            font-weight: 400;
+        }
+        .strange img{
+            height: 100%;
+            width: 24%;
+        }
+        
+        .phone{
+            width: 90%;
+            height: 85%;
+        }
+        .Watch{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: black;
+            width: 100%;
+            height: 380px;
+            border-bottom: 12px solid rgb(44, 44, 44);
+        }
+        .Watch h1{
+            color: white;
+            font-size: 47px;
+            font-weight: 900;
+        }
+        .Watch p{
+            color: white;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        .kids{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            width: 100%;
+            height: 520px;
+            border-bottom: 12px solid rgb(44, 44, 44);
+        }
+        .kids img{
+            width: 50%;
+            height: 100%;
+        }
+        .kids h1{
+            color: white;
+            font-size: 47px;
+            font-weight: 900;
+        }
+        .kids p{
+            color: white;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        .question{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+            width: 100%;
+            height: fit-content;
+            padding-top: 60px;
+            padding: 30px;
+            border-bottom: 12px solid rgb(44, 44, 44);
+        }
+        .question h1{
+            color: white;
+            font-size: 47px;
+            font-weight: 900;
+        }
+        .question p{
+            color: white;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        #accordionFlushExample{
+            visibility: visible;
+            width: 75%;
+            margin-top: 10px;
+        }
+        #accodiv{
+            text-align: left;
+            background-color: rgb(45, 45, 45);
+            border: 1px solid rgb(48, 48, 48);
+            margin-bottom: 10px;
+            color: white;
+            font-size: 20px;
+        }
+        #accb{
+            background-color: rgb(45, 45, 45);
+            border: 1px solid rgb(48, 48, 48);
+            color: white;
+        }
+        .about{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+            width: 100%;
+            height: 450px;
+            padding-top: 60px;
+            border-bottom: 12px solid rgb(44, 44, 44);
+        }
+        .about p{
+            color: rgba(255,255,255,0.7);
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .feedback{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0px auto;
+            width: 75%;
+            padding-bottom: 60px;
+        }
+        .feedback li{
+            list-style-type: none;
+            font-size: 13px;
+            line-height: 32px;
+            color: rgba(255,255,255,0.7);
+            cursor: pointer;
+            font-weight: 400;
+            text-decoration: underline;
+        }
+        .feedback li:hover{
+            color: #0e58cf;
+        }
+        .feedback select{
+            padding: 3px;
+            color: white;
+            background-color: rgb(39, 39, 39);
+            border-radius: 4px;
+        }
+        .feedback span{
+            font-weight: bolder;
+            color: white;
+            font-size: 17px;
+        }
+        .policies{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 43%;
+        }
+        .company{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 43%;
+        }
+        .forlast{
+            background-color: black;
+            width: 100%;
+            height: fit-content;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            border-bottom: 12px solid rgb(44, 44, 44);
+        }
+        .caveat{
+            color: white;
+            background-color: rgb(229,9,20);
+            padding: 7px;
+            border-radius: 12px;
+            width: 90%;
+            margin: 0px auto;
+        }
+        .caveat h3{
+            text-align: center;
+            font-size: xx-large;
+        }
+        .project{   
+            margin: 0px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+        }
+        .project h1{
+            color: blue;
+        }
+        .project a{
+            background-color: rgb(9, 255, 0);
+            border: 2px solid purple;
+        }
+        .project a:hover{
+            border: 2px solid red;
+        }
+        .project span{
+            background-color: aqua;
+            border: 2px solid purple;
+        }
+        .project span:hover{
+            border: 2px solid red;
+        }
+        #next{
+            background: aqua
+        }
+        #next:hover{
+            background: white;
+            border: 2px solid red;
+
+        }
+        #sppin{
+            width: 20px;
+            height: 20px;
+        }
+        @media screen and (max-width: 768px){
+            .forimg{
+                width: 100%;
+                height: 1000px;
+                background: rgb(0 0 0 / 40%);
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+            }
+            .forbac{
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 30px;
+                border-bottom: 12px solid rgb(44, 44, 44);
+            }
+            .forbac h6{
+                font-size: 20px;
+                font-weight: 900;
+                width: 70%;
+            }
+            .formail{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 80%;
+                height: 160px;
+            }
+            .formail input{
+                width: 100%;
+                height: 50%;
+            }
+            .formail button{
+                width: 70%;
+                height: 50%;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .formail button:hover{
+                background: rgb(170, 8, 16);
+            }
+            .br{
+                display: none;
+            }
+            .enjoy{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+                width: 100%;
+                height: 720px;
+                border-bottom: 12px solid rgb(44, 44, 44);
+            }
+            .enjoy>div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .enjoy h1{
+                text-align: center;
+            }
+            .enjoy p{
+                text-align: center;
+            }
+            .tv{
+                position: absolute;
+                width: 90%;
+                height: 350px;
+                z-index: 2;
+            }
+            .gif{
+                transform: translate(-2px,-7px);
+                width: 89%;
+            }
+            .download{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: black;
+                width: 100%;
+                height: 570px;
+                border-bottom: 12px solid rgb(44, 44, 44);
+            }
+            .download h1{
+                color: white;
+                font-size: 40px;
+                font-weight: 900;
+            }
+            .download p{
+                color: white;
+                font-size: 20px;
+                font-weight: 400;
+            }
+            .download>div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 94%;
+                margin: 0px auto;
+                height: 100%;
+            }
+            .download>div>div{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .strange{
+                width: 45%;
+                height: 11%;
+                transform: translate(0px,80px);
+            }
+            .strange p{
+                font-weight: 500;
+                font-size: 12px;
+            }
+            .phone{
+                width: 90%;
+                height: 85%;
+            }
+            .Watch{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .Watch h1{
+                color: white;
+                font-size: 42px;
+                font-weight: 900;
+            }
+            .Watch p{
+                color: white;
+                font-size: 22px;
+                font-weight: 400;
+            }
+            .kids{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                background-color: black;
+                width: 100%;
+                height: 600px;
+                border-bottom: 12px solid rgb(44, 44, 44);
+                padding: 10px;
+            }
+            .kids img{
+                width: 80%;
+                height: 50%;
+            }
+            .kids h1{
+                font-size: 40px;
+            }
+            .kids p{
+                font-size: 18px
+            }
+            .question{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: black;
+                width: 100%;
+                height: fit-content;
+                padding-top: 60px;
+                padding-bottom: 30px;
+                border-bottom: 12px solid rgb(44, 44, 44);
+            }
+            .question h1{
+                color: white;
+                font-size: 40px;
+                font-weight: 900;
+            }
+            .question p{
+                color: white;
+                font-size: 20px;
+                font-weight: 400;
+            }
+            #accordionFlushExample{
+                visibility: visible;
+                width: 85%;
+                margin-top: 10px;
+            }
+            #accodiv{
+                text-align: left;
+                background-color: rgb(45, 45, 45);
+                border: 1px solid rgb(48, 48, 48);
+                margin-bottom: 10px;
+                color: white;
+                font-size: 20px;
+            }
+            #accb{
+                background-color: rgb(45, 45, 45);
+                border: 1px solid rgb(48, 48, 48);
+                color: white;
+            }
+            .about{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                background-color: black;
+                width: 100%;
+                height: fit-content;
+                padding-top: 60px;
+                border-bottom: 12px solid rgb(44, 44, 44);
+            }
+            .about p{
+                color: rgba(255,255,255,0.7);
+                font-size: 18px;
+                font-weight: 500;
+            }
+            .feedback{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0px auto;
+                width: 75%;
+                padding-bottom: 60px;
+            }
+            .feedback li{
+                list-style-type: none;
+                font-size: 13px;
+                line-height: 32px;
+                color: rgba(255,255,255,0.7);
+                cursor: pointer;
+                font-weight: 400;
+                text-decoration: underline;
+            }
+            .feedback li:hover{
+                color: #0e58cf;
+            }
+            .feedback select{
+                padding: 3px;
+                color: white;
+                background-color: rgb(39, 39, 39);
+                border-radius: 4px;
+            }
+            .feedback span{
+                font-weight: bolder;
+                color: white;
+                font-size: 17px;
+            }
+            .policies{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .company{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .caveat{
+                padding: 3px;
+                border-radius: 12px;
+                margin: 0px auto;
+            }
+            .caveat h3{
+                text-align: center;
+                font-size: 25px;
+            }
+            .project a{
+                padding: 2px 5px;
+                font-size: 13px;
+            }
+        }
+    </style>
+    <body>
+        <img src="PROJECT IMAGES/netflix.jpg" class="forimg">
+        <div class="forbac">
+            <div class="logotext">
+                <img src="PROJECT IMAGES/netflix text.png">
+                <span>Sign in</span>
+            </div><br class="br"><br class="br"><br class="br"><br class="br"><br class="br"><br class="br"><br>
+            <h1>Unlimited movies, TV shows, and more</h1><br>
+            <p>
+                Watch anywhere. Cancel anytime. <br>
+                Ready to watch? Enter your email to create or restart your membership.
+            </p>
+        <br>
+            <div class="formail">
+                <input type="text" list="datalistOptions" id="put" placeholder="Email address">
+                <datalist id="datalistOptions">
+                    <option value="...@gmail.com">
+                    <option value="+234...">
+                </datalist>
+                <button onclick="bim()" type="submit" >Get Started ></button>
+            </div>
+            <h6 id="alert"></h6>
+        </div>
+        <div class="enjoy">
+            <div>
+                <h1>Enjoy on your TV</h1>
+                <p>Watch on Smart TVs, Playstation, Xbox, <br>
+                    Chromecast, Apple TV, Blu-ray players, <br>
+                    and more.
+                </p>
+            </div>
+            <div>
+                <img src="PROJECT IMAGES/tv.png" class="tv">
+                <img src="PROJECT IMAGES/netflix gif.gif" class="gif">
+            </div>
+        </div>
+        <div class="download">
+            <div>
+                <div>
+                    <img src="PROJECT IMAGES/phone.jpg" class="phone">
+                    <div class="strange">
+                        <img src="PROJECT IMAGES/stranger.png">
+                        <p>Stranger Things <br>
+                            <span>Downloading...</span></p>
+                        <img src="PROJECT IMAGES/download-icon.gif">
+                    </div>
+                </div>
+                <div>
+                    <h1>Download your shows <br> to watch offline</h1>
+                    <p>
+                        Save your favorites easily and always have <br> something to watch.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="Watch">
+            <div class="container">
+                <h1>Watch <br>
+                        everywhere
+                    </h1>
+                <p> Stream unlimited movies and TV <br> shows on your phone, tablet, laptop, <br> and TV.</p>
+            </div>
+        </div>
+        <div class="kids">
+            <img src="PROJECT IMAGES/kids.png">
+            <div>
+                <h1>Create profiles for kids</h1>
+                <p>Send kids on adventures with their favorite characters <br>
+                    in a space made just for them—free with your, <br>
+                    membership
+                </p>
+            </div>
+        </div>
+        <div class="question">
+            <h1>Frequently Asked Questions</h1>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item" id="accodiv">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <h5>What is Netflix?</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, <br>
+                            documentaries, and more on thousands of internet-connected devices. <br><br>
+                            You can watch as much as you want, whenever you want without a single commercial – all for one low <br> 
+                            monthly price. There's always something new to discover and new TV shows and movies are added <br>
+                            every week!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" id="accodiv">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h5>How much does Netflix cost?</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed <br>
+                            monthly fee. Plans range from ₦1,200 to ₦4,400 a month. No extra costs, no contracts.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" id="accodiv">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <h5>Where can I watch?</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com <br>
+                            from your personal computer or on any internet-connected device that offers the Netflix app, including <br>
+                            smart TVs, smartphones, tablets, streaming media players and game consoles. <br><br>
+
+                            You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads <br>
+                             to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" id="accodiv">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            <h5>How do I cancel?</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account <br>
+                            online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" id="accodiv">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            <h5>What can I watch on Netflix?</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix <br>
+                            originals, and more. Watch as much as you want, anytime you want.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" id="accodiv">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" id="accb" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            <h5>Is Netflix good for kids?</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            The Netflix Kids experience is included in your membership to give parents control while kids enjoy <br>
+                            family-friendly TV shows and movies in their own space. <br><br>
+
+                            Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of <br>
+                            content kids can watch and block specific titles you don’t want kids to see.
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="formail">
+                <input type="text" list="datalistOptions" id="put2" placeholder="Email address">
+                <datalist id="datalistOptions">
+                    <option value="...@gmail.com">
+                    <option value="+234...">
+                </datalist>
+                <button onclick="bim2()" type="submit" >Get Started ></button>
+            </div>
+            <h6 id="alert2"></h6>
+            
+        </div>
+        <div class="about">
+            <p>Questions? Contact us.</p>
+            <div class="feedback">
+                <div class="company">
+                    <div>
+                        <li>FAQ</li>
+                        <li>Investor Relations</li>
+                        <li>Privacy</li>
+                        <li>Speed Test</li>
+                        <li><select>
+                                <option>ENGLISH</option>
+                            </select>
+                        </li>
+                        <li>Netflix Nigeria</li>
+                    </div>
+                    
+
+                    <div>
+                        <li>Help Center</li>
+                        <li>Jobs</li>
+                        <li>Cookie Preferences</li>
+                        <li>Legal Notices</li>
+                    </div>
+                </div>
+
+
+
+                <div class="policies">
+                    <div>
+                        <li>Account</li>
+                        <li>Ways to Watch</li>
+                        <li>Corporate Information</li>
+                        <li>Only on Netflix</li>
+                    </div>
+                    <div>
+                        <li>Media Center</li>
+                        <li>Terms of Use</li>
+                        <li>Contact Us</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="forlast">
+            <div class="caveat">
+                <h3>caveat: this page just a student project, not attempt to clone
+                    an <br> existing website
+                </h3>
+            </div><br>
+            <div class="project">
+                <h1>OTHER PROJECTS</h1>
+                <nav aria-label="...">
+                    <ul class="pagination" id="proul">
+                        <li class="page-item">
+                            <a class="page-link" id="next" href="ticketmaster.html">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="expedia.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="canva.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="findlaw.html">4</a></li>
+                    <li class="page-item"><a class="page-link" href="ticketmaster.html">6</a></li>
+                    <li class="page-item"><a class="page-link" href="netflix.html">7</a></li>
+                    <li class="page-item"><a class="page-link" href="mtn.html">8</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="mtn.html" id="next">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+
+
+
+
+        <script>
+            function bim(){
+                let put= document.getElementById('put').value;
+                let alrt= document.getElementById('alert');
+                let inv1= /^[a-zA-Z0-9]+@[a-z.]+\.[a-zA-Z]{3}$/;
+                let inv=  /^[a-z0-9]+@[a-z.]+\.[a-zA-Z]{3}$/;
+                if(put.match(inv)){
+                    alrt.innerHTML= `<div class='spinner-border text-info' role='status' id='sppin'>
+                <span class='visually-hidden'>Loading...</span></div> Loading your mail for Netflix`
+                    alrt.style.color= 'green'
+                }
+                else if(put.match(inv1)){
+                    alrt.innerHTML= 'uppercase is not allowed in E-mail address'
+                    alrt.style.color= 'red'
+                }
+                else{
+                    alrt.innerHTML= 'enter a valid E-mail address'
+                    alrt.style.color= 'red'
+                }
+            }
+
+            function bim2(){
+                let pt2= document.getElementById('put2').value;
+                let alrt2= document.getElementById('alert2');
+                let inv12= /^[a-zA-Z0-9]+@[a-z.]+\.[a-zA-Z]{3}$/;
+                let inv2=  /^[a-z0-9]+@[a-z.]+\.[a-zA-Z]{3}$/;
+                // k.match('rok')
+                if(pt2.match(inv2)){
+                    alrt2.innerHTML= `<div class='spinner-border text-light' role='status' id='sppin'>
+                <span class='visually-hidden'>Loading...</span></div> Loading your mail to create Netflix`
+                    alrt2.style.color= 'green'
+                }
+                else if(pt2.match(inv12)){
+                    alrt2.innerHTML= 'uppercase is not allowed in E-mail address'
+                    alrt2.style.color= 'red'
+                }
+                else{
+                    alrt2.innerHTML= 'enter a valid E-mail address'
+                    alrt2.style.color= 'red'
+                }
+            }
+        </script>
+    </body>
+</html>

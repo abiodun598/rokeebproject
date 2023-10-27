@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup to Canva</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+        crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+        crossorigin="anonymous"></script>
+
+        <link rel="icon" href="PROJECT IMAGES/download c.jfif">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+        <style>
+            
+            
+            body{
+                background-image: url(PROJECT\ IMAGES/reds.jpg);
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: repeat;
+                background-position-y: center;
+                overflow-x: hidden;
+            }
+            .caveat{
+                color: white;
+                background-color: blue;
+                padding: 7px;
+                border-radius: 12px;
+                width: 90%;
+                margin: 0px auto;
+            }
+            .caveat h3{
+                text-align: center;
+                font-size: xx-large;
+            }
+            .head{
+                color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin-left: 40px;
+                font-family: sans-serif;
+                width: fit-content;
+                height: 265px;
+                width: 1800px;
+            }
+            .head h2{
+                font-size: 30px;
+            }
+            .log{
+                background-color: white;
+                height: 550px;
+                width: 300px;
+                border: none;
+                border-radius: 10px;
+                margin: 0px auto;
+                padding: 10px 28px;
+                font-family: sans-serif;
+                padding-top: 40px;
+            }
+            .pp{
+                color: rgb(104, 104, 104);
+                font-size: 11px;
+                line-height: 20px;
+            }
+            .log h1{
+                color: rgb(29, 29, 29);
+                font-size: 27px;
+                font-weight: bolder;
+            }
+            .log img{
+                width: 17px;
+                height: 17px;
+            }
+            .logp{
+                font-size: 15px;
+                font-weight: bolder;
+                color: rgb(19, 19, 19);
+            }
+            .logd{
+                background-color: rgb(238, 238, 238);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-bottom: 15px;
+                padding-top: 6px;
+                height: 25px;
+                height: 32px;
+                cursor: pointer;
+            }
+            .logd:hover{
+                background-color: rgb(201, 201, 201);
+            }
+            .agree{
+                color: rgb(104, 104, 104);
+                font-size: 12px;
+                line-height: 20px;
+            }
+            .logs{
+                font-size: 15px;
+                font-weight: 600;
+                color: rgb(73, 73, 73);
+            }
+            .last{
+                font-family: sans-serif;
+                color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: right;
+                font-size: 13px;
+                font-weight: 600;
+                
+            }
+            .last img{
+                width: 18px;
+                height: 18px;
+            }
+            .country{
+                width: 260px;
+                height: 40px;
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(59, 59, 59);
+                border-radius: 10px;
+                justify-content: space-around;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                margin-bottom: 30px;
+                cursor: pointer;
+            }
+            .country:hover{
+                background-color: rgb(53, 53, 53);
+            }
+            .last p{
+                margin-right: 15px;
+                font-weight: lighter;
+                font-size: 15px;
+            }
+            .foot{
+                color: white;
+                text-decoration: none;
+            }
+            .foot:hover{
+                color: rgb(248, 164, 192);
+            }
+            .foot2{
+                color: white;
+                border-left: 4px solid white;
+                padding-left: 8px;
+                text-decoration: none;
+            }
+            .foot2:hover{
+                color: rgb(248, 164, 192);
+            }
+            .lang{
+                margin-left: 15px;
+            }
+            i{
+                visibility: hidden;
+            }
+            #myTab button{
+                background-color: none;
+                color: red;
+                font-weight: bolder;
+            }
+            #myTab button:hover{
+                background-color: rgb(92, 92, 92);
+            }
+            #home-tab-pane{
+                background-color: aliceblue;
+                display: flex;
+                flex-direction: row;
+                color: black;
+                transform: translate(-620px,50px);
+            }
+            #home-tab-pane div{
+                margin-left: 20px;
+            }
+            #home-tab-pane li{
+                list-style-type: none;
+                font-size: 13px;
+                cursor: pointer;
+            }
+            #home-tab-pane li:hover{
+                background-color: rgb(141, 139, 139);
+            }
+            #home-tab-pane h3{
+                font-size: 13px;
+                font-weight: bolder;
+            }
+            .vis{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .vis img{
+                width: 35px;
+                height: 35px;
+                margin-top: 10px;
+            }
+            #profile-tab-pane{
+                background-color: aliceblue;
+                display: flex;
+                flex-direction: row;
+                color: black;
+                transform: translate(-650px,-146px);
+            }
+            #profile-tab-pane div{
+                margin-left: 20px;
+            }
+            #profile-tab-pane li{
+                list-style-type: none;
+                font-size: 13px;
+                cursor: pointer;
+            }
+            #profile-tab-pane li:hover{
+                background-color: rgb(194, 193, 193);
+            }
+            #profile-tab-pane h3{
+                font-size: 13px;
+                font-weight: bolder;
+            }
+
+
+            .visual{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-left: 0px;
+            }
+            .visual img{
+                width: 35px;
+                height: 35px;
+                margin-top: 10px;
+            }
+            
+            #contact-tab-pane{
+                background-color: aliceblue;
+                display: flex;
+                flex-direction: row;
+                color: black;
+                height: 226px;
+                transform: translate(-650px,-370px);
+            }
+            #contact-tab-pane div{
+                margin-left: 20px;
+            }
+            #contact-tab-pane p{
+                list-style-type: none;
+                font-size: 13px;
+                cursor: pointer;
+            }
+            #contact-tab-pane p:hover{
+                background-color: rgb(150, 150, 150);
+            }
+            #contact-tab-pane h3{
+                font-size: 13px;
+                font-weight: bolder;
+            }
+            .plan{
+                width: 110px;
+                height: 110px;
+                margin-left: 40px;
+                margin-top: 15px;
+            }
+
+            #pricing-tab-pane{
+                background-color: aliceblue;
+                display: flex;
+                flex-direction: row;
+                color: black;
+                padding-top: 7px;
+                transform: translate(-620px,-585px);
+            }
+            #pricing-tab-pane div{
+                margin-left: 20px;
+            }
+            #pricing-tab-pane li{
+                list-style-type: none;
+                font-size: 13px;
+                cursor: pointer;
+            }
+            #pricig-tab-pane li:hover{
+                background-color: rgb(141, 139, 139);
+            }
+            #pricing-tab-pane h3{
+                font-size: 13px;
+                font-weight: bolder;
+            }
+            #pricing-tab-pane img{
+                width: 73px;
+                height: 80px;
+            }
+            .project{
+                margin: 0px auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-weight: bolder;
+            }
+            .project h1{
+                color: blue;
+            }
+            .project a{
+                background-color: rgb(9, 255, 0);
+                border: 2px solid purple;
+            }
+            .project a:hover{
+                border: 2px solid red;
+            }
+            .project span{
+                background-color: aqua;
+                border: 2px solid purple;
+            }
+            .project span:hover{
+                border: 2px solid red;
+            }
+            #next{
+                background: aqua;
+                cursor: pointer;
+            }
+            #next:hover{
+                background: white;
+                border: 2px solid red;
+
+            }
+            @media screen and (max-width: 768px){
+                body{
+                    background-image: url(PROJECT\ IMAGES/items.png);
+                    background-attachment: relative;
+                    background-size: contain;
+                    background-repeat: repeat;
+                    background-position: center;
+                    overflow-x: hidden;
+                }
+                .head{
+                    margin: 0px auto;
+                    width: 470px;
+                    margin-bottom: -30px;
+                }
+                i{
+                    visibility: visible;
+                    padding: 10px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    font-size: 25px;
+                    margin-left: 90px;
+                }
+                i:hover{
+                    background-color: gray;
+                    
+                }
+                .caveat{
+                    color: rgb(255, 230, 0);
+                    background-color: green;
+                    padding: 3px;
+                    border-radius: 12px;
+                    margin: 0px auto;
+                }
+                .caveat h3{
+                    text-align: center;
+                    font-size: 25px;
+                }
+                body{
+                    background-image: url(PROJECT\ IMAGES/reds.jpg);
+                    background-attachment: fixed;
+                    background-size: cover;
+                    background-repeat: repeat;
+                    background-position-y: center;
+                    overflow-x: hidden;
+                }
+                #home-tab-pane{
+                    background-color: aliceblue;
+                    display: flex;
+                    flex-direction: column;
+                    color: black;
+                    width: 150px;
+                    transform: translate(10px,0px);
+                }
+                .log{
+                    margin-left: 10px;
+                }
+                #profile-tab-pane{
+                    background-color: aliceblue;
+                    display: flex;
+                    flex-direction: column;
+                    color: black;
+                    width: 170px;
+                    transform: translate(5px,-736px);
+                }
+                #contact-tab-pane{
+                    background-color: aliceblue;
+                    display: flex;
+                    flex-direction: column;
+                    color: black;
+                    transform: translate(5px,-1604px);
+                    height: 1000px;
+                    width: 170px;
+                }
+                .plan{
+                    width: 70px;
+                    height: 70px;
+                    margin-left: 0px;
+                    margin-top: 15px;
+                }
+                #pricing-tab-pane{
+                    background-color: aliceblue;
+                    display: flex;
+                    flex-direction: column;
+                    color: black;
+                    transform: translate(5px,-2600px);
+                    width: 150px;
+                }
+                .project a{
+                    padding: 2px 5px;
+                    font-size: 13px;
+                }
+            }
+        </style>
+    </head>
+    <body><br><br>
+        <div class="caveat">
+            <h3>caveat: this page just a student project, not attempt to clone
+                an <br> existing website
+            </h3>
+        </div><br><br>
+        <div class="head">
+            <h2>Canva</h2>
+            <ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-left: 20px;">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Design spotlight</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Business</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Education</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pricing-tab" data-bs-toggle="tab" data-bs-target="#pricing-tab-pane" type="button" role="tab" aria-controls="pricing-tab-pane" aria-selected="false">Price and pricing</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Learn</button>
+                </li>
+            </ul>
+
+
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                    <div>
+                        <h3>Visual documents</h3>
+                        <ul>
+                            <li>Visual suit</li>
+                            <li>Docs</li>
+                            <li>Presentationst</li>
+                            <li>Whiteboards</li>
+                            <li>PDF editor</li>
+                            <li>Graph and charts</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Photos and videos</h3>
+                        <ul>
+                            <li>Video editor</li>
+                            <li>Youtube video editor</li>
+                            <li>Photo editor</li>
+                            <li>Photo collages</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Print</h3>
+                        <ul>
+                            <li>Business card</li>
+                            <li>Cards</li>
+                            <li>Invitations</li>
+                            <li>Mugs</li>
+                            <li>T-shirts</li>
+                            <li>hoodies</li>
+                            <li>Calenders</li>
+                            <li>labels</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <img src="PROJECT IMAGES/saud.jpg">
+                        <h3>Browse Canva templates</h3>
+                        <p style="font-size: small;">Choose from thousand of free,<br>
+                        ready-to-use templates</p>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    
+                    <div>
+                        <h3>Canva for business</h3>
+                        <ul>
+                            <li>Content creation</li>
+                            <li>visual communication</li>
+                            <li>Brand management</li>
+                            <li>Team collaboration</li>
+                            <li>Plan and schedule content</li>
+                            <li>Asset management</li>
+                            <li>Brainstorms and workshops</li>
+                            <li>Branded team template</li>
+                            <li>Productivity and workflows</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Solutions</h3>
+                        <ul>
+                            <li>Marketing</li>
+                            <li>Creatives</li>
+                            <li>Agencies</li>
+                            <li>Sales</li>
+                            <li>Communication</li>
+                            <li>Media and publishing</li>
+                            <li>Startups</li>
+                            <li>Real estate</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Resources</h3>
+                        <ul>
+                            <li>Business resources</li>
+                            <li>Case atudies</li>
+                            <li>Feathures</li>
+                            <li>Integration and apps</li>
+                            <li>Contact sales</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="vis">
+                            <img src="PROJECT IMAGES/d earth.jpg" >
+                            <p style="font-size: small;"><strong>Visual suite</strong></br>
+                                Reimagine the way you work
+                            </p>
+                        </div>
+                        <div class="vis">
+                            <img src="PROJECT IMAGES/palm t.jfif">
+                            <p style="font-size: small;"><strong>Canva for teams</strong></br>
+                                For teams of all size wanting to<br>
+                                create together
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <div class="lans" style="display: flex; flex-direction: column; justify-content: flex-start;">
+                        <div class="visual">
+                            <img src="PROJECT IMAGES/smile.jpg">
+                            <p style="font-size: small;"><strong>Teachers and schools</strong></br>
+                                Create and collaborate visually in<br>
+                                the classroom
+                            </p>
+                        </div>
+                        <div class="visual">
+                            <img src="PROJECT IMAGES/image3.jfif">
+                            <p style="font-size: small;"><strong>Students</strong></br>
+                                Design and documents to boost<br>
+                                your learning
+                            </p>
+                        </div>
+                        <div class="visual">
+                            <img src="PROJECT IMAGES/desert.jpg">
+                            <p style="font-size: small;"><strong>Teachers and schools</strong></br>
+                                Create and collaborate visually in<br>
+                                the classroom
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div style="display: flex; flex-direction: column; justify-content: flex-start;">
+                        <div class="visual">
+                            <img src="PROJECT IMAGES/qrscan.png">
+                            <p style="font-size: small;"><strong>Teachers and schools</strong></br>
+                                Create and collaborate visually in<br>
+                                the classroom
+                            </p>
+                        </div>
+                        <div class="visual">
+                            <img src="PROJECT IMAGES/FB_IMG_10.jpg">
+                            <p style="font-size: small;"><strong>Students</strong></br>
+                                Design and documents to boost<br>
+                                your learning
+                            </p>
+                        </div>
+                        <div class="visual">
+                            <img src="PROJECT IMAGES/reds.jpg">
+                            <p style="font-size: small;"><strong>Teachers and schools</strong></br>
+                                Create and collaborate visually in<br>
+                                the classroom
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+
+                    <div>
+                        <div style="display: flex; flex-direction: column; justify-content: flex-start;">
+                            <img src="PROJECT IMAGES/pl1.jpg" class="plan">
+                            <p style="font-size: small;"><strong>Become an education creator</strong><br><br>
+                                Create and publish your own<br>
+                                resources on canva and earn by<br>
+                                sharing
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tab-pane fade" id="pricing-tab-pane" role="tabpanel" aria-labelledby="pricing-tab" tabindex="0">
+                    <div>
+                        <h3>Free</h3>
+                        <ul>
+                            <li>Design suit</li>
+                            <li>Docs</li>
+                            <li>free forever</li>
+                            <li>For individual</li>
+                            <li>PDF editor</li>
+                            <li>Graph and charts</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Pro</h3>
+                        <ul>
+                            <li>premium content</li>
+                            <li>Access video editor</li>
+                            <li>Photo editor</li>
+                            <li>Photo collages</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Teams</h3>
+                        <ul>
+                            <li>Design tool</li>
+                            <li>Work place</li>
+                            <li>Invitations</li>
+                            <li>Brand tools</li>
+                            <li>T-shirts</li>
+                            <li>hoodies</li>
+                            <li>Calenders</li>
+                            <li>labels</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <img src="PROJECT IMAGES/FB_IMG_5.jpg">
+                        <h3>Browse Its' templates</h3>
+                        <p style="font-size: small;">Choose from thousand of free,<br>
+                        ready-to-use templates</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div><br><br>
+        <p style="margin-bottom: 0px;">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                Click on this for more information
+            </button>
+        </p>
+        <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <div class="card card-body" style="width: 300px; background-color: aqua; font-weight: bolder;">
+                    GO DOWN FOR OTHER PROJECTS
+                </div>
+            </div>
+        </div>
+        
+        <div class="log">
+            <h1>Digital Inspiration<br> invited you to join<br>
+                Canva!
+            </h1>
+            <p class="pp">
+                Create an account, it's free. Canva is loved<br>
+                by beginners and experts, teams and <br>individuals.
+            </p>
+            <div class="logd">
+                <img src="PROJECT IMAGES/google.png" style="margin-left: -10px;">
+                <p class="logp">Continue with Google</p>
+            </div>
+            <div class="logd">
+                <img src="PROJECT IMAGES/facebook.png">
+                <p class="logp">Continue with Facebook</p>
+            </div>
+            <div class="logd">
+                <img src="PROJECT IMAGES/enve.jpg" style="margin-left: -10px;">
+                <p class="logp">Continue with email</p>
+            </div>
+            <div class="logd">
+                <p class="logp">Continue another way</p>
+            </div>
+            <p class="agree">By continuing, you agree to Canva's <a href="#">Terms of Use.</a> <br>
+                Read our <a href="#">Privacy Policy.</a>
+            </p>
+            <div class="logd" style="margin-top: 43px;">
+                <img src="PROJECT IMAGES/download list.jfif">
+                <p class="logs">Sign up with your work email</p>
+            </div>
+        </div><br><br><br><br><br><br>
+        <div class="last">
+            <p><a href="#" class="foot">Privacy policy</a></p>
+            <p><a href="#" class="foot2">Terms</a></p>
+            <div class="country">
+                <img src="PROJECT IMAGES/d earth.jpg">
+                <p class="lang">English (United KIngdom)</p>
+                <select>
+                        
+                </select>
+            </div>
+        </div>
+
+        <div class="project">
+            <h1>OTHER PROJECTS</h1>
+            <nav aria-label="...">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" id="next">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="expedia.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="canva.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="findlaw.html">4</a></li>
+                    <li class="page-item"><a class="page-link" href="acefitness.html">5</a></li>
+                    <li class="page-item"><a class="page-link" href="ticketmaster.html">6</a></li>
+                    <li class="page-item"><a class="page-link" href="netflix.html">7</a></li>
+                    <li class="page-item"><a class="page-link" href="mtn.html">8</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="expedia.html" id="next">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div><br><br>
+    </body>
+</html>

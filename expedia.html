@@ -1,0 +1,3224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Expedia Travel: Vacation Homes....</title>
+        <link rel="icon" href="PROJECT IMAGES/expedia.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+        crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+        crossorigin="anonymous"></script>
+        <style>
+            .top{
+                font-family: sans-serif;
+                color: rgb(1, 1, 97);
+                width: 100%;
+                margin-top: 0%;
+                border: none;
+                border-bottom: 0.5 solid rgb(180, 180, 180);
+                box-shadow: 0px 1px 4px rgb(180, 180, 180);
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0px auto;
+            }
+            .top img{
+                width: 25px;
+                height: 25px;
+                margin-top: 33px;
+                border-radius: 100%;
+            }
+            .top div{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-left: 30px;
+            }
+            .top h2{
+                font-size: 30px;
+                cursor: pointer;
+                margin-top: 30px;
+            }
+            .top p{
+                margin-top: 30px;
+                font-weight: bold;
+                color: rgb(1, 1, 97);
+                cursor: pointer;
+            }
+            .top p:hover{
+                color: blue;
+            }
+           
+            .d1{
+                margin-left: 9%;
+            }
+            #more{
+                margin-left: 7%;
+            }
+            .d3{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin-right: 0%;
+                width: 58%;
+                padding-left: 0px;
+            }
+            .d3a{
+                width: 20%;
+                height: 35px;
+                margin-top: 2%;
+                justify-content: space-around !important;
+                border: 2px solid rgb(148, 148, 148);
+                border-radius: 17px;
+            }
+            .d3a:hover{
+                background: rgb(138, 138, 138);
+            }
+            .d3b{
+                justify-content: space-between !important;
+            }
+            .d3c{
+                width: 70%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between !important;
+            }
+            i{
+                font-size: x-large;
+                margin-top: 7%;
+                margin-right: 10%;
+                cursor: pointer;
+            }
+            i:hover{
+                color: blue;
+            }
+
+            #myTab{
+                margin: 0px auto;
+                width: 82%;
+                padding-left: 300px;
+                border:  0.5px solid rgb(180, 180, 180);
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+            }
+            #myTab li{
+                border: none;
+                color: black;
+                font-weight: bolder;
+            }
+            #myTab li:hover{
+                border-bottom: 1.3px solid black;
+            }
+            #myTabContent{
+                margin: 0px auto;
+                width: 82%;
+                height: fit-content;
+            }
+            #Stays-tab-pane{
+                margin: 0px auto;
+                border: 0.5px solid rgb(180, 180, 180);
+                width: 100%;
+                height: 180px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                padding-top: 25px;
+                padding-left: 30px;
+            }
+            #detail2{
+                justify-content: space-around;
+
+            }
+            #detail2>div{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                border: 0.5px solid rgb(0, 0, 0);
+                height: 50px;
+                width: 300px;
+                border-radius: 14px;
+                cursor: pointer;
+            }
+            #detail2 i{
+                margin-top: 0px;
+                margin-right: 0%;
+                cursor: pointer;
+            }
+            #detail2 input{
+                width: 270px;
+                height: 35px;
+                margin-right: 0px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+            
+            #detail2 button{
+                border-radius: 30px;
+                background-color: #0e58cf;
+                color: white;
+                font-family: sans-serif;
+                font-weight: bolder;
+                font-size: 20px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+            #detail2 button:hover{
+                background-color: #00378f;
+            }
+            .detail3{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin-top: 30px;
+            }
+            .detail3>div{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin-right: 30px;
+            }
+            input[type="checkbox"]{
+                width: 18px;
+                height: 18px;
+                margin-top: 5px;
+                margin-right: 10px;
+                cursor: pointer;
+
+            }
+            input[type="checkbox"]:hover{
+                outline: 0.7px solid blue;
+            }
+
+            #Flight-tab-pane{
+                margin: 0px auto;
+                border: 0.5px solid rgb(180, 180, 180);
+                width: 100%;
+                height: 180px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                padding-top: 25px;
+                padding-left: 30px;
+            }
+            #myoneContent{
+                margin: 0px;
+                width: 82%;
+                height: fit-content;
+            }
+            #Round-tab-pane{
+                margin: 0px;
+                width: 82%;
+                height: fit-content;
+                display: flex;
+                flex-direction: row;
+                padding-top: 20px;
+            }
+            #from{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                border: 0.5px solid rgb(0, 0, 0);
+                height: 50px;
+                width: 230px;
+                border-radius: 14px;
+                cursor: pointer;
+            }
+            #from i{
+                margin-top: 0px;
+                margin-right: 0%;
+                cursor: pointer;
+            }
+            #from input{
+                width: 150px;
+                height: 35px;
+                margin-right: 0px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+            #Round-tab-pane button{
+                border-radius: 30px;
+                background-color: #0e58cf;
+                color: white;
+                font-family: sans-serif;
+                font-weight: bolder;
+                font-size: 20px;
+                border: none;
+                width: 90px;
+                height: 50px;
+                outline: none;
+                cursor: pointer;
+                margin-left: 7px;
+            }
+            #Round-tab-pane button:hover{
+                background-color: #00378f;
+            }
+            #myoneTab button{
+                font-weight: bolder;
+            }
+            #myoneTab button:hover{
+                border-bottom: 2px solid black;
+            }
+            #myoneTab{
+                color: #0e58cf;
+            }
+            #Multi-tab-pane{
+                margin: 0px;
+                width: 82%;
+                height: fit-content;
+                display: flex;
+                flex-direction: row;
+                padding-top: 20px;
+                margin-top: -120px;
+            }
+            #One-tab-pane{
+                margin: 0px;
+                width: 82%;
+                height: fit-content;
+                display: flex;
+                flex-direction: row;
+                padding-top: 20px;
+                margin-top: -30px;
+            }
+            #One-tab-pane button{
+                border-radius: 30px;
+                background-color: #0e58cf;
+                color: white;
+                font-family: sans-serif;
+                font-weight: bolder;
+                font-size: 20px;
+                border: none;
+                width: 90px;
+                height: 50px;
+                outline: none;
+                cursor: pointer;
+                margin-left: 7px;
+            }
+            #One-tab-pane button:hover{
+                background-color: #00378f;
+            }
+            #Multi-tab-pane button{
+                border-radius: 30px;
+                background-color: #0e58cf;
+                color: white;
+                font-family: sans-serif;
+                font-weight: bolder;
+                font-size: 20px;
+                border: none;
+                width: 90px;
+                height: 50px;
+                outline: none;
+                cursor: pointer;
+                margin-left: 7px;
+            }
+            #Multi-tab-pane button:hover{
+                background-color: #00378f;
+            }
+            #economy{
+                border: 2px solid black;
+                border-radius: 20px;
+                background-color: #88acf5;
+                font-weight: bolder;
+            }
+            #economy:hover{
+                background-color: #374766;
+            }
+            .pick{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                height: 50px;
+                width: 1050px;
+                border: none;
+                border-radius: 14px;
+                cursor: pointer;
+                margin: 0px auto;
+            }
+            .pick>div{
+                height: 50px;
+                width: 515px;
+                border: 0.5px solid rgb(0, 0, 0);
+                border-radius: 14px;
+                padding-left: 15px;
+                padding-top: 6px;
+            }
+            .pick i{
+                margin-top: 0px;
+                margin-right: 0%;
+                cursor: pointer;
+            }
+            .pick input{
+                width: 350px;
+                height: 35px;
+                margin: 0px auto;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                margin-left: 7px;
+            }
+            #Cars-tab-pane{
+                margin: 0px auto;
+                width: 82%;
+                height: 310px;
+                padding-top: 30px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                border: 0.5px solid rgb(180, 180, 180);
+            }
+            .date{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                height: 50px;
+                width: 1050px;
+                border-radius: 14px;
+                cursor: pointer;
+                margin: 0px auto;
+            }
+            .date>div{
+                height: 50px;
+                width: 340px;
+                border: 0.5px solid rgb(0, 0, 0);
+                border-radius: 14px;
+                padding-left: 15px;
+                padding-top: 6px;
+                margin-top: 30px;
+            }
+            .date i{
+                margin-top: 0px;
+                margin-right: 0%;
+                cursor: pointer;
+            }
+            .date input{
+                width: 250px;
+                height: 35px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+            #ten{
+                color: black;
+                padding: 0px;
+                
+            }
+            #tenb{
+                border-radius: 14px;
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                padding-top: 3px;
+                align-items: flex-start;
+                padding-left: 8px;
+                background-color: white;
+            }
+            #tenb span{
+                margin-bottom: 0px;
+                font-size: 12px;
+                color: black;
+            }
+            #tenb p{
+                margin-top: 0px;
+                font-size: 14px;
+                font-weight: bolder;
+                color: black;
+            }
+            .aarp{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 250px;
+                font-size: 14px;
+                margin-left: 30px;
+
+            }
+            .aarp p{
+                border-radius: 20px;
+                padding: 7px 11px;
+                border: 1px solid black;
+                cursor: pointer;
+            }
+            .aarp p:hover{
+                background-color: #99b9ec;
+            }
+            .bcode{
+                border-radius: 30px;
+                background-color: #0e58cf;
+                color: white;
+                font-family: sans-serif;
+                font-weight: bolder;
+                font-size: 20px;
+                border: none;
+                width: 90px;
+                height: 50px;
+                outline: none;
+                cursor: pointer;
+                margin-left: 30px;
+            }
+            .bcode{
+                background-color: #00378f;
+            }
+            #packages-tab-pane{
+                margin: 0px auto;
+                width: 82%;
+                height: 180px;
+                padding-top: 30px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                border: 0.5px solid rgb(180, 180, 180);
+                position: relative;
+                margin-top: -310px;
+            }
+            .added{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 380px;
+                font-size: 14px;
+                margin-left: 30px;
+            }
+            .added p{
+                border-radius: 20px;
+                padding: 4px;
+                border: 2px solid rgb(20, 20, 20);
+                cursor: pointer;
+                width: 100px;
+                background-color: #3270ec;
+            }
+            .added p:hover{
+                background-color: #99b9ec;
+            }
+            #pulti{
+                margin: 0px;
+                width: 82%;
+                height: fit-content;
+                display: flex;
+                flex-direction: row;
+                padding-top: 20px;
+                margin-left: 30px;
+            }
+            #pulti button{
+                border-radius: 30px;
+                background-color: #0e58cf;
+                color: white;
+                font-family: sans-serif;
+                font-weight: bolder;
+                font-size: 20px;
+                border: none;
+                width: 90px;
+                height: 50px;
+                outline: none;
+                cursor: pointer;
+                margin-left: 7px;
+            }
+            #pulti button:hover{
+                background-color: #00378f;
+            }
+            #Things-tab-pane{
+                margin: 0px auto;
+                width: 82%;
+                height: 110px;
+                padding-top: 10px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                border: 0.5px solid rgb(180, 180, 180);
+                position: relative;
+                margin-top: -180px;
+            }
+            #tulti{
+                margin: 0px;
+                width: 1050px;
+                height: fit-content;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-top: 20px;
+                margin-left: 30px;
+            }
+            #tulti button{
+                border-radius: 30px;
+                background-color: #0e58cf;
+                color: white;
+                font-family: sans-serif;
+                font-weight: bolder;
+                font-size: 20px;
+                border: none;
+                width: 110px;
+                height: 50px;
+                outline: none;
+                cursor: pointer;
+                margin-left: 7px;
+            }
+            #tulti button:hover{
+                background-color: #00378f;
+            }
+            #rom{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                border: 0.5px solid rgb(0, 0, 0);
+                height: 50px;
+                width: 450px;
+                border-radius: 14px;
+                cursor: pointer;
+                margin-left: 7px;
+                padding-left: 10px;
+            }
+            #rom i{
+                margin-top: 0px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            #rom input{
+                width: 380px;
+                height: 35px;
+                margin-right: 0px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+            #Cruises-tab-pane{
+                margin: 0px auto;
+                width: 82%;
+                height: 110px;
+                padding-top: 10px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                border: 0.5px solid rgb(180, 180, 180);
+                position: relative;
+                margin-top: -110px;
+                margin-bottom: 200px;
+            }
+            .key{
+                width: 82%;
+                height: 90px;
+                background-color: rgb(0, 0, 39);
+                border-radius: 15px;
+                margin: 0% auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                font-family: sans-serif;
+                color: white;
+                font-weight: bold;
+                font-size: smaller;
+                letter-spacing: 0.6px;
+            }
+            .key img{
+                width: 43px;
+                height: 43px;
+                margin-left: 40px;
+                border-radius: 100%;
+            }
+            .key1{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 600px;
+            }
+            .key1 p{
+                margin-top: 10px;
+            }
+            .key2{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 300px;
+            }
+            .learn{
+                padding: 10px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            .learn:hover{
+                border-radius: 17px;
+                background-color: rgb(99, 109, 163);
+            }
+            .key button{
+                margin-right: -30px;
+                margin-top: 5px;
+                width: 29%;
+                height: 50px;
+                border-radius: 25px;
+                background-color: #0e58cf;
+                color: white;
+                font-family: sans-serif;
+                font-weight: bolder;
+                font-size: 15px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+            .key button:hover{
+                background-color: #00378f;
+            }
+            .saving{
+                width: 82%;
+                height: 550px;
+                background-image: url(PROJECT\ IMAGES/smile.jpg);
+                background-attachment: relative;
+                background-size: contain;
+                background-position: center;
+                border-radius: 15px;
+                margin: 0% auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-family: sans-serif;
+                color: white;
+                font-weight: bold;
+                letter-spacing: 0.6px;
+                padding-left: 50px;
+            }
+            .saving p{
+                margin-top: -8px;
+                font-size: 17px;
+            }
+            .saving h1{
+                font-size: 40px;
+            }
+            .saving button{
+                padding: 10px 15px;
+                width: 20%;
+                height: 65px;
+                border-radius: 32px;
+                background-color: #0e58cf;
+                color: white;
+                font-family: sans-serif;
+                font-weight: bolder;
+                font-size: 15px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+            .saving button:hover{
+                background-color: #00378f;
+            }
+            .deals{
+                width: 82%;
+                height: 130px;
+                margin: 0% auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                font-family: sans-serif;
+                color: rgb(0, 0, 39);
+                letter-spacing: 0.6px;
+            }
+            .deals p{
+                margin-top: -8px;
+            }
+            .items{
+                width: 82%;
+                height: 660px;
+                margin: 0% auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                font-family: sans-serif;
+                letter-spacing: 0.6px;
+                border: none;
+                overflow-x: hidden;
+                overflow-x: scroll;
+                display: flex;
+                flex-direction: row;
+                padding: 0px;
+            }
+            .items1{
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+            .items1 img{
+                width: 265px;
+                height: 265px;
+                border-radius: 15px;
+            }
+            .p1{
+                font-size: small;
+                margin-bottom: 0px;
+            }
+            .p2{
+                font-size: 18px;
+                margin-bottom: 0px;
+                margin-top: 7px;
+            }
+            .items1 h5{
+                font-size: 16px;
+                margin-top: 4px;
+                margin-bottom: 0px;
+            }
+            .p3{
+                font-size: 11px;
+                margin-top: 4px;
+                margin-bottom: 0px;
+                line-height: 17px;
+                letter-spacing: 0.5px;
+            }
+            .p4{
+                font-size: 20px;
+                margin-top: 8px;
+                margin-bottom: 0px;
+            }
+            .items1 div{
+                width: 227px;
+                height: 30px;
+                padding: 5px;
+                background-color: gold;
+                border: none;
+                outline: none;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin-top: 8px;
+            }
+            #tag{
+                margin-top: -7px;
+            }
+            .p5{
+                transform: translate(-50px,0px);
+                font-size: 12px;
+            }
+            .p6{
+                font-size: 15px;
+                cursor: pointer;
+                border-radius: 17px;
+                padding: 10px;
+                width: 200px;
+                margin-top: 15px;
+            }
+            .p6:hover{
+                border: 1px solid #00378f;
+            }
+            .p7{
+                font-family: sans-serif;
+                font-size: medium;
+                cursor: pointer;
+                border-radius: 5px;
+                width: fit-content;
+                font-weight: bold;
+                font-size: small;
+                padding: 7px;
+                color: white;
+                background-color: rgb(8, 68, 8);
+            }
+            .bluebo{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                height: fit-content;
+                width: 82%;
+                margin: 0px auto;
+                font-family: sans-serif;
+                font-size: 12px;
+            }
+            .bluebo img{
+                width: 350px;
+                height: 250px;
+                border-radius: 25px;
+            }
+            .bluebo span{
+                font-weight: bolder;
+                font-size: 15px;
+            }
+            .blane{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                height: fit-content;
+                width: 82%;
+                margin: 0px auto;
+                font-family: sans-serif;
+                font-size: 12px;
+            }
+            .blane img{
+                width: 530px;
+                height: 350px;
+                border-radius: 25px;
+            }
+            .blane span{
+                font-weight: bolder;
+                font-size: 15px;
+            }
+            .canoe{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                height: fit-content;
+                width: 82%;
+                margin: 0px auto;
+                font-family: sans-serif;
+                font-size: 12px;
+            }
+            .canoe1{
+                background-image: url(PROJECT\ IMAGES/inplane.jfif);
+                background-attachment: relative;
+                background-size: contain;
+                background-repeat: repeat;
+                background-position: center;
+                width: 820px;
+                height: 260px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                color: white;
+                line-height: -0px;
+                padding-left: 20px;
+                font-family: sans-serif;
+            }
+            .canoe1 h6{
+                font-size: x-large;
+            }
+            .canoe1 p{
+                font-size: larger;
+                font-weight: bolder;
+                letter-spacing: 0.4px;
+            }
+            .canoe2{
+                background-image: url(PROJECT\ IMAGES/canoe.jfif);
+                background-attachment: relative;
+                background-size: contain;
+                background-repeat: repeat;
+                background-position: center;
+                width: 250px;
+                height: 260px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+            }
+            .canoe2 h2{
+                font-size: x-large;
+                font-weight: bolder;
+                color: white;
+                margin-left: 20px;
+            }
+            .canoe2 button{
+                font-weight: bolder;
+                color: white;
+                background-color: #0e58cf;
+                border: none;
+                outline: none;
+                width: 140px;
+                height: 40px;
+                border-radius: 10px;
+                padding: 0px 6px;
+                cursor: pointer;
+                transform: translate(20px,-20px);
+            }
+            .canoe2 button:hover{
+                background-color: #00378f;
+            }
+            .transport{
+                width: 82%;
+                height: 250px;
+                border-radius: 25px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                padding: 0%;
+                margin: 0px auto;
+                font-family: sans-serif;
+                border: 0.5px solid rgb(180, 180, 180);
+            }
+            .tree{
+                width: 350px;
+                height: 250px;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+            }
+            .middle{
+                width: 650px;
+                height: 230px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                padding: 10px;
+            }
+            .middle1{
+                width: fit-content;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                color: rgb(17, 17, 17);
+            }
+            .middle1 h3{
+                font-size: 14px;
+                font-weight: bolder;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            .middle1 h1{
+                font-size: medium;
+                margin-top: 10px;
+            }
+            
+            .middle2{
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 100%;
+                height: 180px;
+            }
+            .middle2 h1{
+                margin-top: 7px;
+                color: rgb(17, 17, 17);
+                font-size: 28px;
+                font-weight: bolder;
+            }
+            .middle2 p{
+                margin-top: 10px;
+                font-size: 14px;
+            }
+            .middle2 h6{
+                margin-top: 20px;
+                font-size: 17px;
+            }
+
+            .scan{
+                width: 220px;
+                height: 220px;
+                border-top-right-radius: 25px;
+                margin-top: 25px;
+            }
+            .saud{
+                width: 50px;
+                height: 50px;
+            }
+            .hotel{
+                width: 82%;
+                height: 260px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                line-height: -0px;
+                padding: 10px;
+                font-family: sans-serif;
+                border: 3px solid black;
+                margin: 0px auto;
+                border: 0.5px solid rgb(180, 180, 180);
+            }
+            .hotel1{
+                width: 1085px;
+                color: #0e58cf;
+                padding-left: 15px;
+                font-size: 15px;
+                font-weight: bolder;
+                border-bottom: 0.5px solid rgb(180, 180, 180);
+            }
+            .hotel1 p{
+                height: 30px;
+                width: 300px;
+                padding-top: 10px;
+                padding-left: 8px;
+                margin-top: 7px;
+                margin-bottom: 0px;
+                cursor: pointer;
+                border-bottom: 2px solid #0e58cf;
+            }
+            .hotel1 p:hover{
+                padding-bottom: 5px;
+            }
+            .hotel2{
+                height: fit-content;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                margin-left: 15px;
+                padding-top: 6px;
+            }
+            .hotel2 h3{
+                font-size: 19px;
+                margin-left: 7px;
+                margin-bottom: 0px;
+                font-weight: bolder;
+            }
+            .hotel2 li{
+                list-style-type: none;
+                line-height: 18px;
+                font-weight: bold;
+                font-size: small;
+                color: #0e58cf;
+                cursor: pointer;
+            }
+            .hotel2 li:hover{
+                text-decoration: underline;
+            }
+            .hotel2 div{
+                display: flex;
+                flex-direction: row;
+            }
+            .ul2{
+                margin: 0px auto;
+            }
+            .gro{
+                width: 200px;
+                height: 35px;
+            }
+            .about{
+                width: 82%;
+                height: 370px;
+                margin: 0px auto;
+            }
+            .about li{
+                list-style-type: none;
+                font-size: 12px;
+                line-height: 31px;
+                color: #0e58cf;
+                cursor: pointer;
+            }
+            .about li:hover{
+                text-decoration: underline;
+            }
+            .about p{
+                font-weight: bolder;
+            }
+            .feedback{
+                display: flex;
+                flex-direction: row;
+            }
+            .policies{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 500px;
+                margin: 0px auto;
+            }
+            .company{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 500px;
+            }
+            .inc{
+                width: 82%;
+                height: 110px;
+                margin: 0px auto;
+                padding-top: 15px;
+                border-top: 0.5px solid rgb(180, 180, 180);
+            }
+            .inc p{
+                font-size: small;
+            }
+            .iconp{
+                margin: 0px auto; 
+                border-radius: 18px;
+                width: 110px;
+                height: 40px;
+                display: flex;
+                padding-left: 8px;
+                padding-right: 8px;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                position: fixed;
+                bottom: 20px;
+                right: 40px;
+                cursor: pointer;
+                background-color: white;
+            }
+            .iconp:hover{
+                background-color: #9ab3e4;
+            }
+            .iconp i{
+                color: #0e58cf;
+                margin-bottom: 29px;
+            }
+            .iconp p{
+                color: #0e58cf;
+                margin-top: 22px;
+                margin-left: -50px;
+                font-size: 20px;
+                font-weight: bolder;
+            }
+            #canva{
+                    visibility: hidden;
+            }
+            #offcanvasWithBothOptions{
+                visibility: hidden;
+            }
+            .caveat{
+                color: black;
+                background-color: yellow;
+                padding: 7px;
+                border-radius: 12px;
+                width: 90%;
+                margin: 0px auto;
+            }
+            .caveat h3{
+                text-align: center;
+                font-size: xx-large;
+            }
+            .project{
+                margin: 0px auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-weight: bolder;
+            }
+            .project h1{
+                color: blue;
+            }
+            .project a{
+                background-color: rgb(9, 255, 0);
+                border: 2px solid purple;
+            }
+            .project a:hover{
+                border: 2px solid red;
+            }
+            .project span{
+                background-color: aqua;
+                border: 2px solid purple;
+            }
+            .project span:hover{
+                border: 2px solid red;
+            }
+            #next{
+                background: aqua
+            }
+            #next:hover{
+                background: white;
+                border: 2px solid red;
+
+            }
+            @media screen and (max-width: 768px){
+                #canva{
+                    visibility: visible;
+                    background-color: yellow;
+                    margin-right: 0px;
+                    border: none;
+                    outline: none;
+                }
+
+                #offcanvasWithBothOptions{
+                    visibility: visible;
+                    background-color: rgba(84, 0, 105, 0.87);
+                }
+                #body{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    width: 480px;
+                }
+                #body p{
+                    visibility: visible;
+                }
+                body{
+                    overflow-x: hidden;
+                }
+                .top{
+                    font-family: sans-serif;
+                    color: rgb(1, 1, 97);
+                    width: 95%;
+                    height: 100px;
+                    margin-top: 0%;
+                    border: none;
+                    border-bottom: 0.5 solid rgb(180, 180, 180);
+                    box-shadow: 0px 1px 4px rgb(180, 180, 180);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 0px auto;
+                    padding-left: 30px;
+                }
+                .top img{
+                    width: 25px;
+                    height: 25px;
+                    margin-top: 33px;
+                    border-radius: 100%;
+                    visibility: hidden;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+                .top div{
+                    visibility: hidden;
+                    margin-left: 0px;
+                    margin-left: -25px;
+                }
+                .top h2{
+                    font-size: 30px;
+                    cursor: pointer;
+                    margin-top: 30px;
+                    visibility: visible;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+                .top p{
+                    margin-top: 30px;
+                    font-weight: bold;
+                    color: rgb(1, 1, 97);
+                    cursor: pointer;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+                .top p:hover{
+                    color: blue;
+                }
+            
+                .d1{
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+                .d3{
+                    width: 350px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    padding-left: 0px;
+                    visibility: hidden;
+                }
+                .d3a{
+                    width: 130px;
+                    height: 30px;
+                    justify-content: space-around !important;
+                    border: 2px solid rgb(148, 148, 148);
+                    border-radius: 17px;
+                    margin-top: 28px;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    visibility: visible;
+                }
+                .d3a:hover{
+                    background: rgb(138, 138, 138);
+                }
+                .d3b{
+                    width: 25px;
+                    justify-content: space-between !important;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+                .d3c{
+                    justify-content: space-between !important;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    width: 100px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                i{
+                    font-size: xx-large;
+                    margin-top: 0px;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    cursor: pointer;
+                    visibility: visible;
+                    color: blue;
+                }
+                i:hover{
+                    color: green;
+                }
+                #more{
+                    visibility: visible;
+                    margin-left: 20px;
+                    margin-right: 50px;
+                }
+
+                #myTab{
+                margin: 0px auto;
+                padding-top: 10px;
+                padding-left: 2px;
+                border:  0.5px solid rgb(180, 180, 180);
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+                }
+                #Stays-tab-pane{
+                    margin: 0px auto;
+                    border: 0.5px solid rgb(180, 180, 180);
+                    height: 320px;
+                    border-bottom-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    padding-top: 25px;
+                    padding-left: 30px;
+                }
+                #detail2{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                }
+                #detail2>div{
+                    margin-bottom: 8px;
+                }
+                #detail2 button{
+                    height: 40px;
+                    width: 300px;
+                }
+                #Flight-tab-pane{
+                height: 410px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                }
+                #myoneContent{
+                    width: 420px;
+                    height: fit-content;
+                }
+                #Round-tab-pane{
+                    margin: 0px;
+                    width: fit-content;
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 20px;
+                }
+                #from{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    border: 0.5px solid rgb(0, 0, 0);
+                    height: 50px;
+                    width: 230px;
+                    border-radius: 14px;
+                    cursor: pointer;
+                    margin-left: 7px;
+                    margin-bottom: 3px;
+                }
+                #from i{
+                    margin-top: 0px;
+                    margin-right: 0%;
+                    cursor: pointer;
+                }
+                #from input{
+                    width: 150px;
+                    height: 35px;
+                    margin-right: 0px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+                #Round-tab-pane button{
+                    border-radius: 30px;
+                    background-color: #0e58cf;
+                    color: white;
+                    font-family: sans-serif;
+                    font-weight: bolder;
+                    font-size: 20px;
+                    border: none;
+                    width: 90px;
+                    height: 50px;
+                    outline: none;
+                    cursor: pointer;
+                    margin-left: 7px;
+                }
+                #Round-tab-pane button:hover{
+                    background-color: #00378f;
+                }
+                #myoneTab button{
+                    font-weight: bolder;
+                }
+                #myoneTab button:hover{
+                    border-bottom: 2px solid black;
+                }
+                #myoneTab{
+                    color: #0e58cf;
+                }
+                #Multi-tab-pane{
+                    margin: 0px;
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 20px;
+                    margin-left: 40px;
+                    margin-top: -290px;
+                    
+                }
+                #One-tab-pane{
+                    margin: 0px;
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 20px;
+                    margin-left: 70px;
+                    margin-top: -290px;
+                }
+                #One-tab-pane button{
+                    border-radius: 30px;
+                    width: 90px;
+                    height: 50px;
+                    outline: none;
+                    cursor: pointer;
+                    margin-left: 7px;
+                }
+                #One-tab-pane button:hover{
+                    background-color: #00378f;
+                }
+                #Multi-tab-pane button{
+                    border-radius: 30px;
+                    background-color: #0e58cf;
+                    color: white;
+                    font-family: sans-serif;
+                    font-weight: bolder;
+                    font-size: 20px;
+                    border: none;
+                    width: 90px;
+                    height: 50px;
+                    outline: none;
+                    cursor: pointer;
+                    margin-left: 7px;
+                }
+                #Multi-tab-pane button:hover{
+                    background-color: #00378f;
+                }
+                #Cars-tab-pane{
+                margin: 0px auto;
+                height: 570px;
+                padding-top: 30px;
+                }
+                .date{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    height: 250px;
+                    width: 400px;
+                    border-radius: 14px;
+                    cursor: pointer;
+                    margin: 0px auto;
+                }
+                .date>div{
+                    height: 50px;
+                    width: 340px;
+                    border: 0.5px solid rgb(0, 0, 0);
+                    border-radius: 14px;
+                    padding-left: 15px;
+                    padding-top: 6px;
+                    margin-top: 30px;
+                }
+                .date i{
+                    margin-top: 0px;
+                    margin-right: 0%;
+                    cursor: pointer;
+                }
+                .date input{
+                    width: 250px;
+                    height: 35px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+                #ten{
+                    color: black;
+                    padding: 0px;
+                    
+                }
+                .pick{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                height: 50px;
+                border: none;
+                border-radius: 14px;
+                margin-bottom: 60px;
+                }
+                .pick>div{
+                    height: 50px;
+                    width: 340px;
+                    border: 0.5px solid rgb(0, 0, 0);
+                    margin-top: 5px;
+                }
+                .pick i{
+                    margin-top: 0px;
+                    margin-right: 0%;
+                    cursor: pointer;
+                }
+                .pick input{
+                    width: 250px;
+                    height: 35px;
+                    margin: 0px auto;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    margin-left: 7px;
+                }
+                #packages-tab-pane{
+                margin: 0px auto;
+                height: 380px;
+                padding-top: 30px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                border: 0.5px solid rgb(180, 180, 180);
+                margin-bottom: 450px;
+                margin-top: -570px;
+                }
+                .added{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 380px;
+                    font-size: 14px;
+                    margin-left: 30px;
+                }
+                .added p{
+                    border-radius: 20px;
+                    padding: 4px;
+                    border: 2px solid rgb(20, 20, 20);
+                    cursor: pointer;
+                    width: 100px;
+                    background-color: #3270ec;
+                }
+                .added p:hover{
+                    background-color: #99b9ec;
+                }
+                #pulti{
+                    margin: 0px;
+                    width: 380px;
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 20px;
+                    margin-left: 30px;
+                }
+                #pulti button{
+                    border-radius: 30px;
+                    background-color: #0e58cf;
+                    color: white;
+                    font-family: sans-serif;
+                    font-weight: bolder;
+                    font-size: 20px;
+                    border: none;
+                    width: 230px;
+                    height: 50px;
+                    outline: none;
+                    cursor: pointer;
+                    margin-left: 7px;
+                }
+                #pulti button:hover{
+                    background-color: #00378f;
+                }
+                #Things-tab-pane{
+                    margin: 0px auto;
+                    height: 220px;
+                    padding-top: 10px;
+                    border-bottom-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    border: 0.5px solid rgb(180, 180, 180);
+                    position: relative;
+                    margin-top: -830px;
+                    margin-bottom: 360px;
+                }
+                #tulti{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                }
+                #tulti>div{
+                    margin-bottom: 8px;
+                }
+                #rom{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    border: 0.5px solid rgb(0, 0, 0);
+                    height: 50px;
+                    width: 310px;
+                    border-radius: 14px;
+                    cursor: pointer;
+                    margin-left: 7px;
+                    padding-left: 10px;
+                }
+                #rom i{
+                    margin-top: 0px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+                #rom input{
+                    width: 150px;
+                    height: 35px;
+                    margin-right: 0px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+                #Cruises-tab-pane{
+                    margin: 0px auto;
+                    height: 300px;
+                    padding-top: 10px;
+                    border-bottom-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    border: 0.5px solid rgb(180, 180, 180);
+                    position: relative;
+                    margin-top: -580px;
+                    margin-bottom: 300px;
+                }
+                .key{
+                    height: 110px;
+                    background-color: rgb(0, 0, 39);
+                    border-radius: 15px;
+                    margin: 0% auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-family: sans-serif;
+                    color: white;
+                    font-weight: bold;
+                    font-size: smaller;
+                    letter-spacing: 0.6px;
+                }
+                .key img{
+                    width: 43px;
+                    height: 43px;
+                    margin-left: 0px;
+                    border-radius: 25%;
+                    margin-top: 20px;
+                    margin-right: 7px;
+                }
+                .key1{
+                    width: 250px;
+                }
+                .key2{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 180px;
+                }
+                .learn{
+                    padding: 5px;
+                    cursor: pointer;
+                    margin-top: 10px;
+                }
+                .learn:hover{
+                    border-radius: 17px;
+                    background-color: rgb(99, 109, 163);
+                }
+                .key button{
+                    margin-top: 5px;
+                    margin-right: 10px;
+                    width: 110px;
+                    height: 50px;
+                    border-radius: 25px;
+                    background-color: #0e58cf;
+                    color: white;
+                    font-family: sans-serif;
+                    font-weight: bolder;
+                    font-size: 15px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+                .key button:hover{
+                    background-color: #00378f;
+                }
+                .saving{
+                    border-radius: 20px;
+                    margin: 0px auto;
+                }
+                .saving button{
+                    width: 250px;
+                }
+                .items{
+                    height: 620px;
+                    margin: 0% auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    font-family: sans-serif;
+                    letter-spacing: 0.6px;
+                    border: none;
+                    overflow-x: hidden;
+                    overflow-x: scroll;
+                    display: flex;
+                    flex-direction: row;
+                    padding: 0px;
+                }
+                .items1 img{
+                    width: 190px;
+                    height: 190px;
+                    border-radius: 15px;
+                }
+                #tag{
+                margin-top: -14px;
+                }
+                .p5{
+                    transform: translate(2px,0px);
+                    font-size: 12px;
+                }
+                .transport{
+                    width: 95%;
+                    height: 760px;
+                    border-radius: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    padding: 0%;
+                    margin: 0px auto;
+                    font-family: sans-serif;
+                    border: 0.5px solid rgb(180, 180, 180);
+                }
+
+                .tree{
+                    width: 100%;
+                    height: 250px;
+                    border-radius: 25px;
+                }
+                .middle{
+                    width: 100%;
+                    height: 230px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    padding: 10px;
+                    margin-bottom: 40px;
+                }
+                .middle2 p{
+                    margin-top: 10px;
+                    font-size: 11px;
+                }
+                .middle2 h6{
+                    margin-top: 10px;
+                    font-size: 13px;
+                }
+
+                .scan{
+                    width: 220px;
+                    height: 220px;
+                    border-radius: 25px;
+                    margin: 0px auto;
+                }
+                .bluebo{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: fit-content;
+                    width: 95%;
+                    margin: 0px auto;
+                    font-family: sans-serif;
+                    font-size: 12px;
+                    padding-top: 15px;
+                    border-radius: 25px;
+                    border: 0.5px solid rgb(180, 180, 180);
+                }
+                .bluebo img{
+                    width: 95%;
+                }
+                .blane{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: fit-content;
+                    width: 95%;
+                    margin: 0px auto;
+                    font-family: sans-serif;
+                    font-size: 12px;
+                    border-radius: 25px;
+                    border: 0.5px solid rgb(180, 180, 180);
+                }
+                .blane img{
+                    width: 95%;
+                    height: 300px;
+                    border-radius: 25px;
+                    margin-top: 20px;
+                    margin: 0% auto;
+                }
+                .blane div{
+                    margin: 0px auto;
+                }
+                .blane1{
+                    width: 95%;
+                    margin-top: 97px;
+                }
+                .canoe{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    height: fit-content;
+                    margin: 0px auto;
+                    font-family: sans-serif;
+                    font-size: 12px;
+                }
+                .canoe1{
+                    background-image: url(PROJECT\ IMAGES/inplane.jfif);
+                    background-attachment: relative;
+                    background-size: contain;
+                    background-repeat: repeat;
+                    background-position: center;
+                    width: 220px;
+                    height: 200px;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    color: white;
+                    padding-left: 10px;
+                    font-family: sans-serif;
+                }
+                .canoe1 h6{
+                    font-size: x-large;
+                }
+                .canoe1 p{
+                    visibility: hidden;
+                }
+                .canoe2{
+                    background-image: url(PROJECT\ IMAGES/canoe.jfif);
+                    background-attachment: relative;
+                    background-size: contain;
+                    background-repeat: repeat;
+                    background-position: center;
+                    width: 220px;
+                    height: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    cursor: pointer;
+                }
+                .hotel{
+                    height: 260px;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    line-height: -0px;
+                    padding: 10px;
+                    font-family: sans-serif;
+                    border: 3px solid black;
+                    margin: 0px auto;
+                    border: 0.5px solid rgb(180, 180, 180);
+                }
+                .hotel1{
+                    width: 450px;
+                    color: #0e58cf;
+                    padding-left: 15px;
+                    font-size: 15px;
+                    font-weight: bolder;
+                    border-bottom: 0.5px solid rgb(180, 180, 180);
+                }
+                .hotel2 li{
+                    list-style-type: none;
+                    line-height: 20px;
+                }
+                .feedback{
+                    display: flex;
+                    flex-direction: column;
+                    height: 550px;
+                    margin-left: 10px;
+                }
+                .policies{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 410px;
+                    margin: 0px auto;
+                }
+                .company{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 410px;
+                    margin: 0px auto;
+                }
+
+                .inc{
+                    height: 110px;
+                    margin: 0px auto;
+                    padding-top: 15px;
+                    border-top: 0.5px solid rgb(180, 180, 180);
+                    margin-top: 230px;
+                }
+                .iconp{
+                    margin: 0px auto; 
+                    border-radius: 18px;
+                    width: 90px;
+                    height: 30px;
+                    display: flex;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    position: fixed;
+                    bottom: 10px;
+                    right: 40px;
+                    cursor: pointer;
+                }
+                .iconp:hover{
+                    background-color: #9ab3e4;
+                }
+                .iconp i{
+                    color: #0e58cf;
+                    font-size: 16px;
+                    margin-top: 27px;
+                }
+                .iconp p{
+                    color: #0e58cf;
+                    margin-top: 18px;
+                    font-size: 15px;
+                    font-weight: bolder;
+                    margin-left: 10px;
+                }
+                #iii{
+                    visibility: hidden;
+                }
+                .caveat{
+                    padding: 3px;
+                    border-radius: 12px;
+                    margin: 0px auto;
+                }
+                .project a{
+                    padding: 2px 5px;
+                    font-size: 13px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="d1">
+                <img src="PROJECT IMAGES/expedia.png" style="border-radius: 3px; visibility: visible;">
+                <h2>Expedia</h1>
+            </div>
+
+            <div class="dropdown" id="more">
+                <p style=" background-color: white; border: none;" class="btn btn-secondary dropdown-toggle" 
+                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More travel
+                </p>
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Stays</button></li>
+                    <li><button class="dropdown-item" type="button">Flight</button></li>
+                    <li><button class="dropdown-item" type="button">Cars</button></li>
+                    <li><button class="dropdown-item" type="button">packages</button></li>
+                    <li><button class="dropdown-item" type="button">Things to do</button></li>
+                    <li><button class="dropdown-item" type="button">Cruises</button></li>
+                    <li><button class="dropdown-item" type="button">Deals</button></li>
+                    <li><button class="dropdown-item" type="button">Group & meetings</button></li>
+                </ul>
+            </div>
+
+
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" 
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" id="canva">
+            <i class="fa-solid fa-bars"></i></i></button>
+
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header" id="canva">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">EXPEDIA</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="body">
+                    
+                    <img src="PROJECT IMAGES/tel.jpeg" style="width: 20px; height: 20px;">
+                    <p>Get the app</p>
+                
+                    <img src="PROJECT IMAGES/d earth.jpg" style="width: 20px; height: 20px;">
+                    <p>English</p>
+                    <p>List your property</p>
+                    <p>Support</p>
+                    <p>Trips</p>
+                    <i class="fa-solid fa-bell"></i>
+                    <p>Sign in</p>
+                    
+    
+                </div>
+            </div>
+            <div class="d3">
+                <div class="d3a">
+                    <img src="PROJECT IMAGES/tel.jpeg" style="width: 20px; height: 20px; margin-top: 4px;">
+                    <p style="margin-top: 4px;">Get the app</p>
+                </div>
+                <div class="d3b">
+                    <img src="PROJECT IMAGES/d earth.jpg" style="width: 20px; height: 20px;">
+                    <p>English</p>
+                </div>
+                <div class="d3c">
+                    <p>List your property</p>
+                    <p>Support</p>
+                    <p>Trips</p>
+                    <i class="fa-solid fa-bell" id="iii"></i>
+                    <p style="margin-right: 40px; margin-left: -30px;">Sign in</p>
+                </div>
+            </div>
+        </div><br><br>
+
+
+
+
+
+
+            
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="Stays-tab" data-bs-toggle="tab" data-bs-target="#Stays-tab-pane" 
+                type="button" role="tab" aria-controls="Stays-tab-pane" aria-selected="true">Stays</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Flight-tab" data-bs-toggle="tab" data-bs-target="#Flight-tab-pane" 
+                type="button" role="tab" aria-controls="Flight-tab-pane" aria-selected="false">Flight</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Cars-tab" data-bs-toggle="tab" data-bs-target="#Cars-tab-pane" 
+                type="button" role="tab" aria-controls="Cars-tab-pane" aria-selected="false">Cars</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="packages-tab" data-bs-toggle="tab" data-bs-target="#packages-tab-pane" 
+                type="button" role="tab" aria-controls="packages-tab-pane" aria-selected="false">packages</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Things-tab" data-bs-toggle="tab" data-bs-target="#Things-tab-pane" 
+                type="button" role="tab" aria-controls="Things-tab-pane" aria-selected="false">Things to do</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Cruises-tab" data-bs-toggle="tab" data-bs-target="#Cruises-tab-pane" 
+                type="button" role="tab" aria-controls="Cruises-tab-pane" aria-selected="false">Cruises</button>
+            </li>
+
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="Stays-tab-pane" role="tabpanel" 
+            aria-labelledby="Stays-tab" tabindex="0">
+                <div class="container row" id="detail2">
+                    <div class="col-sm-3" id="detail2a">
+                        <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                        <input type="search" placeholder="Going to">
+                    </div>
+                    <div class="col-sm-3" id="detail2b">
+                        <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
+                        <input type="date">
+                    </div>
+                    <div class="col-sm-3" id="detail2c">
+                        <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
+                        <input type="search" value="Travelers 2 Travelers, 1 room">
+                    </div>
+                    <button class="col-sm-1">
+                        search
+                    </button>
+                </div>
+                <div class="detail3">
+                    <div>
+                        <input type="checkbox">
+                        <p>Add a flights</p>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <p>Add a car</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-pane fade" id="Flight-tab-pane" role="tabpanel" 
+            aria-labelledby="Flight-tab" tabindex="0">
+                <ul class="nav nav-tabs" id="myoneTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="Round-tab" data-bs-toggle="tab" data-bs-target="#Round-tab-pane" 
+                        type="button" role="tab" aria-controls="Round-tab-pane" aria-selected="true">Roundtrip</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="One-tab" data-bs-toggle="tab" data-bs-target="#One-tab-pane" 
+                        type="button" role="tab" aria-controls="One-tab-pane" aria-selected="false">One-way</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Multi-tab" data-bs-toggle="tab" data-bs-target="#Multi-tab-pane" 
+                        type="button" role="tab" aria-controls="Multi-tab-pane" aria-selected="false">Multi-city</button>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" 
+                        aria-expanded="false" id="economy">Economy</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Economy</a></li>
+                          <li><a class="dropdown-item" href="#">Premium economy</a></li>
+                          <li><a class="dropdown-item" href="#">Business class</a></li>
+                          <li><a class="dropdown-item" href="#">package</a></li>
+                          <li><a class="dropdown-item" href="#">First class</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myoneContent">
+                    <div class="tab-pane fade show active row" id="Round-tab-pane" role="tabpanel" 
+                    aria-labelledby="Round-tab" tabindex="0">
+                        <div id="from">
+                            <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                            <input type="search" placeholder="Leaving from">
+                        </div>
+                        <div id="from">
+                            <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                            <input type="search" placeholder="Going to">
+                        </div>
+                        <div id="from">
+                            <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
+                            <input type="date">
+                        </div>
+                        <div id="from">
+                            <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
+                            <input type="search" value="Travelers 2 Travelers, 1 room">
+                        </div>
+                        <button>
+                            search
+                        </button>
+                    </div>
+                    <div class="tab-pane fade" id="One-tab-pane" role="tabpanel" 
+                        aria-labelledby="One-tab" tabindex="0">
+                        <div id="from">
+                            <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                            <input type="search" placeholder="Leaving from">
+                        </div>
+                        <div id="from">
+                            <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                            <input type="search" placeholder="Going to">
+                        </div>
+                        <div id="from">
+                            <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
+                            <input type="date">
+                        </div>
+                        <div id="from">
+                            <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
+                            <input type="search" value="Travelers 2 Travelers, 1 room">
+                        </div>
+                        <button>
+                            search
+                        </button>
+                    </div>
+                        <div class="tab-pane fade" id="Multi-tab-pane" role="tabpanel" 
+                        aria-labelledby="Multi-tab" tabindex="0">
+                            <div id="from">
+                                <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                                <input type="search" placeholder="Leaving from">
+                            </div>
+                            <div id="from">
+                                <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                                <input type="search" placeholder="Going to">
+                            </div>
+                            <div id="from">
+                                <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
+                                <input type="date">
+                            </div>
+                            <div id="from">
+                                <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
+                                <input type="search" value="Travelers 2 Travelers, 1 room">
+                            </div>
+                            <button>
+                                search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="Cars-tab-pane" role="tabpanel" 
+            aria-labelledby="Cars-tab" tabindex="0">
+
+
+                <div class="pick">
+                    <div>
+                        <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                        <input type="search" value="Pick-up">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                        <input type="search" value="Same as pick-up">
+                    </div>
+                </div>
+                <div class="date">
+                    <div>
+                        <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
+                        <input type="date">
+                    </div>
+
+                    <div class="btn-group" id="ten">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" id="tenb" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Pick-up time</span>
+                            <p>10:30 AM</p>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">12:00AM</a></li>
+                          <li><a class="dropdown-item" href="#">3:00AM</a></li>
+                          <li><a class="dropdown-item" href="#">6:00AM</a></li>
+                          <li><a class="dropdown-item" href="#">9:00AM</a></li>
+                          <li><a class="dropdown-item" href="#">12:00PM</a></li>
+                        </ul>
+                    </div>
+                      
+                    <div class="btn-group" id="ten">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" id="tenb" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                          <span>Drop-off time</span>
+                          <p>10:30 AM</p>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">12:00AM</a></li>
+                          <li><a class="dropdown-item" href="#">3:00AM</a></li>
+                          <li><a class="dropdown-item" href="#">6:00AM</a></li>
+                          <li><a class="dropdown-item" href="#">9:00AM</a></li>
+                          <li><a class="dropdown-item" href="#">12:00PM</a></li>
+                        </ul>
+                    </div>
+                </div><br>
+                <p style="margin-left: 30px; font-weight: bolder; font-size: 13px;">Special rate</p>
+                <div class="aarp">
+                    <p>Show AARP rate</p>
+                    <p>Discount codes</p>
+                </div>
+                <button class="bcode">
+                    search
+                </button>
+            </div>
+
+            <div class="tab-pane fade" id="packages-tab-pane" role="tabpanel" 
+            aria-labelledby="packages-tab" tabindex="0">
+                <div class="added">
+                    <p>Stay added</p>
+                    <p>Flight added</p>
+                    <p style="width: 50px; border: 1px solid rgb(20, 20, 20);">Car</p>
+                    <span class="nav-item dropdown">
+                        <p class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#" role="button" 
+                        aria-expanded="false" id="economy">Economy</p>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Economy</a></li>
+                          <li><a class="dropdown-item" href="#">Premium economy</a></li>
+                          <li><a class="dropdown-item" href="#">Business class</a></li>
+                          <li><a class="dropdown-item" href="#">package</a></li>
+                          <li><a class="dropdown-item" href="#">First class</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <div id="pulti">
+                    <div id="from">
+                        <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                        <input type="search" placeholder="Leaving from">
+                    </div>
+                    <div id="from">
+                        <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                        <input type="search" placeholder="Going to">
+                    </div>
+                    <div id="from">
+                        <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
+                        <input type="date">
+                    </div>
+                    <div id="from">
+                        <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
+                        <input type="search" value="Travelers 2 Travelers, 1 room">
+                    </div>
+                    <button>
+                        search
+                    </button>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="Things-tab-pane" role="tabpanel" 
+            aria-labelledby="Things-tab" tabindex="0">
+                <div id="tulti">
+                    <div id="rom">
+                        <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                        <input type="search" placeholder="Going to">
+                    </div>
+                    <div id="rom">
+                        <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
+                        <input type="date">
+                    </div>
+                    <button>
+                        search
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="tab-pane fade" id="Cruises-tab-pane" role="tabpanel" 
+            aria-labelledby="Cruises-tab" tabindex="0">
+            <div id="pulti">
+                <div id="from">
+                    <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                    <input type="search" placeholder="Leaving from">
+                </div>
+                <div id="from">
+                    <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                    <input type="search" placeholder="Going to">
+                </div>
+                <div id="from">
+                    <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
+                    <input type="date">
+                </div>
+                <div id="from">
+                    <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
+                    <input type="search" value="Travelers 2 Travelers, 1 room">
+                </div>
+                <button>
+                    search
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <br><br>
+
+
+        <div class="key container">
+            <div class="key1">
+                <img src="PROJECT IMAGES/download list.jfif">
+                <p>One Key members earn rewards across Expedia, Hotels.com, and Vrbo</p>
+            </div>
+            <div class="key2">
+                <button>
+                    Sign in
+                </button>
+                <p class="learn">Learn about One Key</p>
+            </div>
+        </div><br><br><br><br>
+
+        <div class="saving">
+            <h1>Big savings for a <br>limited time</h1>
+            <p>Save 20% or more on thousands of hotels when<br> 
+                you book by Sept 24* as a member.
+            </p>
+            <button>
+                See Member Prices
+            </button>
+        </div><br>
+
+        <div class="deals">
+            <h1>Last-minute weekend deals</h1>
+            <p>Showing deals for: <strong>Sep 1 - Sep 3</strong></p>
+        </div>
+
+
+
+
+        <div class="items">
+
+
+
+
+            <div class="items1">
+                <img src="PROJECT IMAGES/FB_IMG_1.jpg">
+                <p class="p1"><strong>9.4/10</strong> Exception (154 reviews)</p>
+                <h5>Mandarin Oriental jumeira, Dubai</h5>
+                <p class="p2">Dubai</p>
+                <p class="p3">Stay at this 5-star luxury hotel in Dubai. Enjoy<br>
+                    WiFi, free parking, and 5 outdoor pools. Popular <br>
+                    attractions Burj Khalifa and Dubai Mall are locate..
+                </p>
+                <p class="p4">
+                    <strong>$378</strong>
+                    <span style="font-size: 15px; margin-left: -8px;"><del>$1,690</del></span>
+                </p>
+                <p class="p3">per night<br>
+                    $2,437 total<br>
+                    include taxes & fees
+                </p>
+                <div>
+                    <i class="fa-thin fa-landmark" id="tag"></i>
+                    <p class="p5">Member price available</p>
+                </div> 
+                <p class="p6">Sign in for Member price</p>
+            </div>
+
+
+
+
+
+            <div class="items1">
+                <img src="PROJECT IMAGES/desert.jpg">
+                <p class="p1"><strong>9.1/10</strong>Wonderful (1000 reviews)</p>
+                <h5>1 Hotel Central Park</h5>
+                <p class="p2">New York</p>
+                <p class="p3">Stay at this 5-star luxury hotel in New York. <br>
+                    Enjoy free WiFi, breakfast, and a 24-hour fitness. <br>
+                    Popular attractions Rockefeller Center and..
+                </p>
+                <p class="p4">
+                    <strong>$1,014</strong>
+                    <span style="font-size: 15px; margin-left: -8px;"><del>$517</del></span>
+                </p>
+                <p class="p3">per night<br>
+                    $2,437 total<br>
+                    include taxes & fees
+                </p>
+                <div>
+                    <i class="fa-thin fa-landmark" id="tag"></i>
+                    <p class="p5">Member price available</p>
+                </div> 
+                <p class="p6">Sign in for Member price</p>
+            </div>
+
+
+
+            <div class="items1">
+                <img src="PROJECT IMAGES/FB_IMG_3.jpg">
+                <p class="p1"><strong>8.8/10</strong>Excellent (1843 reviews)</p>
+                <h5>Cypress Pointe Resort</h5>
+                <p class="p2">Orlando</p>
+                <p class="p3">Stay at this 4-star family-friendly hotel in Orlando. <br>
+                    Enjoy free parking, a children's pool, and a fitness <br>
+                    center. Our guests praise the spacious rooms an..
+                </p>
+                <p class="p4">
+                    <strong>$104</strong>
+                    <span style="font-size: 15px; margin-left: -8px;"><del>$148</del></span>
+                </p>
+                <p class="p3">per night<br>
+                    $278 total<br>
+                    include taxes & fees
+                </p>
+                <div>
+                    <i class="fa-thin fa-landmark" id="tag"></i>
+                    <p class="p5">Member price available</p>
+                </div> 
+                <p class="p6">Sign in for Member price</p>
+            </div>
+
+
+
+            <div class="items1">
+                <img src="PROJECT IMAGES/FB_IMG_4.jpg">
+                <p class="p1"><strong>9.2/10</strong>Wonderful (1012 reviews)</p>
+                <h5>Trump International Hotel & Tower Chicago</h5>
+                <p class="p2">Chicago</p>
+                <p class="p3">Stay at this 5-star luxury hotel in Chicago. Enjoy <br>
+                    free WiFi, a full-service spa, and breakfast. Our <br>
+                    guests praise the property condition in our..
+                </p>
+                <p class="p4">
+                    <strong>$500</strong>
+                    <span style="font-size: 15px; margin-left: -8px;"><del>$625</del></span>
+                </p>
+                <p class="p3">per night<br>
+                    $1,174 total<br>
+                    include taxes & fees
+                </p>
+                <p class="p7">20% off</p> 
+            </div>
+
+
+
+            <div class="items1">
+                <img src="PROJECT IMAGES/FB_IMG_5.jpg">
+                <p class="p1"><strong>9.1/10</strong>Wonderful (253 reviews)</p>
+                <h5>1 Hotel Nashville</h5>
+                <p class="p2">Nashville</p>
+                <p class="p3">Stay at this 5-star luxury hotel in Nashville. Enjoy <br>
+                    free WiFi, 2 restaurants, and 2 bars/lounges. Our <br>
+                    guests praise the property condition in our..
+                </p>
+                <p class="p4">
+                    <strong>$104</strong>
+                    <span style="font-size: 15px; margin-left: -8px;"><del>$510</del></span>
+                </p>
+                <p class="p3">per night<br>
+                    $881 total<br>
+                    include taxes & fees
+                </p>
+                <div>
+                    <i class="fa-thin fa-landmark" id="tag"></i>
+                    <p class="p5">Member price available</p>
+                </div> 
+                <p class="p6">Sign in for Member price</p>
+            </div>
+
+
+
+            <div class="items1">
+                <img src="PROJECT IMAGES/yamha.jpg">
+                <p class="p1"><strong>8.5/10</strong>Excellent (1000 reviews)</p>
+                <h5>Westgate Hotel</h5>
+                <p class="p2">San Diego</p>
+                <p class="p3">Stay at this 4.5-star luxury hotel in San Diego. <br>
+                    Enjoy a full-service spa, a rooftop terrace, and <br>
+                    breakfast. Our guests praise the property..
+                </p>
+                <p class="p4">
+                    <strong>$231</strong>
+                    <span style="font-size: 15px; margin-left: -8px;"><del>$289</del></span>
+                </p>
+                <p class="p3">per night<br>
+                    $581 total<br>
+                    include taxes & fees
+                </p>
+                <p class="p7">20% off</p> 
+            </div>
+
+
+
+            <div class="items1">
+                <img src="PROJECT IMAGES/FB_IMG_7.jpg">
+                <p class="p1"><strong>9.1/10</strong>9.1/10Wonderful (626 reviews)</p>
+                <h5>The Hoxton Downtown LA</h5>
+                <p class="p2">Los Angeles</p>
+                <p class="p3">Stay at this 4-star hotel in Los Angeles. Enjoy free <br>
+                    WiFi, 2 restaurants, and 2 bars/lounges. Our <br>
+                    guests praise the returant andproperty..
+                </p>
+                <p class="p4">
+                    <strong>$253</strong>
+                    <span style="font-size: 15px; margin-left: -8px;"><del>$217</del></span>
+                </p>
+                <p class="p3">per night<br>
+                    $691 total<br>
+                    include taxes & fees
+                </p>
+                <p class="p7">20% off</p> 
+            </div>
+
+
+
+
+            <div class="items1">
+                <img src="PROJECT IMAGES/FB_IMG_8.jpg">
+                <p class="p1"><strong>7.3/10</strong>Good (2158 reviews)</p>
+                <h5 style="font-size: 15px;">Courtland Grand Hotel, Trademark <br>Collection by Wyndham</h5>
+                <p class="p2">Atlanta</p>
+                <p class="p3">Stay at this 4-star business-friendly hotel in <br>
+                    Atlanta. Enjoy free WiFi, breakfast, and a fitness <br>
+                    center. Our guests praise the property condition..
+                </p>
+                <p class="p4">
+                    <strong>$151</strong>
+                    <span style="font-size: 15px; margin-left: -8px;"><del>$189</del></span>
+                </p>
+                <p class="p3">per night<br>
+                    $141 total<br>
+                    include taxes & fees
+                </p>
+                <div>
+                    <i class="fa-thin fa-landmark" id="tag"></i>
+                    <p class="p5">Member price available</p>
+                </div> 
+                <p class="p6">Sign in for Member price</p>
+            </div>
+
+
+
+            <div class="items1">
+                <img src="PROJECT IMAGES/FB_IMG_9.jpg">
+                <p class="p1"><strong>7.7/10</strong>Good (59 reviews)</p>
+                <h5>Ramee California Juffair</h5>
+                <p class="p2">Manama</p>
+                <p class="p3">Stay at this 4-star business-friendly hotel in <br>
+                    Manama. Enjoy free WiFi, free parking, and 4 <br>
+                    bars/lounges. Popular attractions Juffair Mall an..
+                </p>
+                <p class="p4">
+                    <strong>$40</strong>
+                    <span style="font-size: 15px; margin-left: -8px;"><del>$72</del></span>
+                </p>
+                <p class="p3">per night<br>
+                    $101 total<br>
+                    include taxes & fees
+                </p>
+                <p class="p7">45% off</p> 
+            </div>
+
+
+
+            <div class="items1">
+                <img src="PROJECT IMAGES/FB_IMG_10.jpg">
+                <p class="p1"><strong>9.5/10</strong>Exceptional (84 reviews)</p>
+                <h5 style="font-size: 15px;">ME Barcelona</h5>
+                <p class="p2">Barcelona</p>
+                <p class="p3">Stay at this 5-star luxury hotel in Barcelona. Enjoy <br>
+                    free WiFi, free valet parking, and 3 restaurants. <br>
+                    Popular attractions Plaça de Catalunya and La..
+                </p>
+                <p class="p4">
+                    <strong>$412</strong>
+                    <span style="font-size: 15px; margin-left: -8px;"><del>$516</del></span>
+                </p>
+                <p class="p3">per night<br>
+                    $937 total<br>
+                    include taxes & fees
+                </p>
+                <div>
+                    <i class="fa-thin fa-landmark" id="tag"></i>
+                    <p class="p5">Member price available</p>
+                </div> 
+                <p class="p6">Sign in for Member price</p>
+            </div>
+            
+
+
+
+            <div class="items1">
+                <img src="PROJECT IMAGES/FB_IMG_11.jpg">
+                <p class="p1"><strong>9.7/10</strong>Exceptional (262 reviews)</p>
+                <h5 style="font-size: 15px;">Cape Heritage Hotel</h5>
+                <p class="p2">Cape Town</p>
+                <p class="p3">Stay at this 4-star business-friendly hotel in Cape <br>
+                    Town. Enjoy free WiFi, 6 restaurants, and a <br>
+                    nightclub. Popular attractions Bree Street and..
+                </p>
+                <p class="p4">
+                    <strong>$366</strong>
+                    <span style="font-size: 15px; margin-left: -8px;"><del>$488</del></span>
+                </p>
+                <p class="p3">per night<br>
+                    $828 total<br>
+                    include taxes & fees
+                </p>
+                <div>
+                    <i class="fa-thin fa-landmark" id="tag"></i>
+                    <p class="p5">Member price available</p>
+                </div> 
+                <p class="p6">Sign in for Member price</p>
+            </div>
+            
+            
+
+
+            <div class="items1">
+                <img src="PROJECT IMAGES/FB_IMG_12.jpg">
+                <p class="p1"><strong>9.6/10</strong>Exceptional (1344 reviews)</p>
+                <h5 style="font-size: 15px;">The Lancaster Hotel</h5>
+                <p class="p2">Houston</p>
+                <p class="p3">Stay at this 4-star historic aparthotel in Houston. <br>
+                    Enjoy free breakfast, free WiFi, and room service. <br>
+                    Our guests praise the property condition in our..
+                </p>
+                <p class="p4">
+                    <strong>$369</strong>
+                    <span style="font-size: 15px; margin-left: -8px;"><del>$461</del></span>
+                </p>
+                <p class="p3">per night<br>
+                    $863 total<br>
+                    include taxes & fees
+                </p>
+                <div>
+                    <i class="fa-thin fa-landmark" id="tag"></i>
+                    <p class="p5">Member price available</p>
+                </div> 
+                <p class="p6">Sign in for Member price</p>
+            </div>
+
+
+
+            <div class="items1">
+                <img src="PROJECT IMAGES/FB_IMG_13.jpg">
+                <p class="p1"><strong>9.7/10</strong>Exceptional (295 reviews)</p>
+                <h5>Relais & Châteaux Heritage Madrid</h5>
+                <p class="p2">Madrid</p>
+                <p class="p3">Stay at this 5-star luxury hotel in Madrid. Enjoy <br>
+                    free WiFi, breakfast, and a 24-hour front desk. <br>
+                    Popular attractions Santiago Bernabéu Stadium.
+                </p>
+                <p class="p4">
+                    <strong>$377</strong>
+                    <span style="font-size: 15px; margin-left: -8px;"><del>$500</del></span>
+                </p>
+                <p class="p3">per night<br>
+                    $830 total<br>
+                    include taxes & fees
+                </p>
+                <p class="p7">45% off</p> 
+            </div>
+
+
+
+
+            <div class="items1">
+                <img src="PROJECT IMAGES/FB_IMG_14.jpg">
+                <p class="p1"><strong>9.2/10</strong>Wonderful (194 reviews)</p>
+                <h5 style="font-size: 15px;">Ramee California Juffair</h5>
+                <p class="p2">Houston</p>
+                <p class="p3">Stay at this 4-star historic aparthotel in Houston. <br>
+                    Enjoy free breakfast, free WiFi, and room service. <br>
+                    Our guests praise the property condition in our..
+                </p>
+                <p class="p4">
+                    <strong>$389</strong>
+                    <span style="font-size: 15px; margin-left: -8px;"><del>$561</del></span>
+                </p>
+                <p class="p3">per night<br>
+                    $869 total<br>
+                    include taxes & fees
+                </p>
+                <div>
+                    <i class="fa-thin fa-landmark" id="tag"></i>
+                    <p class="p5">Member price available</p>
+                </div> 
+                <p class="p6">Sign in for Member price</p>
+            </div>
+        </div><br><br><br>
+
+
+
+        
+        <div class="transport">
+            <img src="PROJECT IMAGES/palm t.jfif" class="tree">
+            <div class="middle">
+                <div class="middle1">
+                    <img src="PROJECT IMAGES/saud.jpg" class="saud">
+                    <div>
+                        <h3>SAUDI كتابة باللغة العربية في</h3>
+                        <h1>Nonstop flight from US to Saudi Arabia</h1>
+                    </div>
+                </div>
+                <div class="middle2">
+                    <h1>Go further with the Expedia app</h1>
+                    <p>Save on select hotels and earn OneKeyCash on bookings in the app. Our app deals <br>
+                    help you to save on trips so you can travel more and manage it all on the go.</p>
+                    <h6>Scan the QR code with your device camera and download our app</h6>
+                </div>
+            </div>
+            <img src="PROJECT IMAGES/qrscan.png" class="scan">
+        </div><br><br>
+
+
+
+
+
+        <div class="bluebo">
+            <div>
+                <img src="PROJECT IMAGES/image1.jfif">
+                <p>BEACH FOR DAYS<br>
+                <span>Prioritize your downtime this summer</span></p>
+            </div>
+
+            <div>
+                <img src="PROJECT IMAGES/image2.jfif">
+                <p>YOUR ONE STOP FOR SUMMER TRAVEL<br>
+                <span>Plan and save</span></p>
+            </div>
+
+            <div class="blue3">
+                <img src="PROJECT IMAGES/image3.jfif">
+                <p>ONE KEY REWARDS ANY WAY YOU TRAVEL<br>
+                <span>Expedia Rewards is now One Key</span></p>
+            </div>
+        </div><br><br><br>
+
+
+        <div class="blane">
+            <div class="blane1">
+                <img src="PROJECT IMAGES/image5.jfif">
+                <p>A SUMMER ADVENTURE ABROAD<br>
+                <span>Make the most of your days off this summer and take an international trip</span></p>
+            </div>
+
+            <div>
+                <img src="PROJECT IMAGES/pl1.jpg">
+                <p>2023 EXPEDIA AIR TRAVEL HACKS<br>
+                <span>Flight tips to save you money and get you there faster</span></p>
+            </div>
+        </div><br><br><br>
+
+        <div class="iconp">
+            <i class="fa-solid fa-house"></i>
+            <p>Help</p>
+        </div><br><br>
+
+        <div class="canoe">
+            <div class="canoe1">
+                <h2>Last-Minutes escapes</h2>
+                <p>Escape the everyday with a spur-of-the-moment trip</p>
+            </div>
+
+            <div class="canoe2">
+                <h2>
+                    Most<br>
+                    popular<br>
+                    activities<br>
+                </h2>
+                <button>Start having fun</button>
+            </div>
+        </div><br><br><br>
+
+
+
+        <div class="hotel">
+            <div class="hotel1">
+                <p>Explore a world of travel with Expedia</p>
+            </div>
+            
+            <div class="hotel2">
+                <h3>Hotel deals on top domestic destinations</h3>
+                <div>
+                    <ul>
+                        <li>Hotels</li>
+                        <li>New York hotels</li>
+                        <li>Miami hotels</li>
+                        <li>Chicago hotels</li>
+                        <li>Myrtle Beach hotels</li>
+                        <li>Key West hotels</li>
+                    </ul>
+                    <ul class="ul2">
+                        <li>Las Vegas hotels</li>
+                        <li>Orlando hotels</li>
+                        <li>Los Angeles hotels</li>
+                        <li>Nashville hotels</li>
+                        <li>New Orleans hotels</li>
+                        <li>San Francisco hotels</li>
+                    </ul>
+                </div>
+
+
+
+                <h3>Book hotels internationally</h3>
+                <div>
+                    <ul>
+                        <li>Cabo San Lucas hote</li>
+                        <li>Paris hotels</li>
+                        <li>Cancun hotels</li>
+                        <li>Tokyo hotels</li>
+                        <li>Los Cabos hotels</li>
+                    </ul>
+                    <ul class="ul2">
+                        <li>London hotels</li>
+                        <li>Barcelona hotels</li>
+                        <li>Los AngelesDubai hotels</li>
+                        <li>San juan hotels</li>
+                        <li>Riviera Maya hotels</li>
+                    </ul>
+                </div>
+
+
+                <h3>Top Domestic Flights</h3>
+                <div>
+                    <ul>
+                        <li>Flights to Las Vegas</li>
+                        <li>Flights to New York</li>
+                        <li>Flights to Miami</li>
+                        <li>Flights to Maui</li>
+                        <li>Flights to Dallas</li>
+                    </ul>
+                    <ul class="ul2">
+                        <li>Flights to Hawaii</li>
+                        <li>Flights to Orlando</li>
+                        <li>Flights to Los Angeles</li>
+                        <li>Flights to Houston</li>
+                        <li>Flights to Denver</li>
+                    </ul>
+                </div>
+
+
+
+                <h3>Top International Flights</h3>
+                <div>
+                    <ul>
+                        <li>Flights to Puerto Rico</li>
+                        <li>Flights to Kannur</li>
+                        <li>Flights to London</li>
+                        <li>Flights to Manila</li>
+                        <li>Flights to Bali</li>
+                    </ul>
+                    <ul class="ul2">
+                        <li>Flights to Tokyo</li>
+                        <li>Flights to Mexico City</li>
+                        <li>Flights to Cancun</li>
+                        <li>Flights to Cabo San Lucas</li>
+                        <li>Flights to Borabora</li>
+                    </ul>
+                </div>
+
+
+                <h3>Save today on vacation packages</h3>
+                <div>
+                    <ul>
+                        <li>Las Vegas vacation packages</li>
+                        <li>New York vacation packages</li>
+                        <li>Disneyland vacation packages</li>
+                        <li>Orlando vacation packages</li>
+                        <li>Key West vacation packages</li>
+                    </ul>
+                    <ul class="ul2">
+                        <li>Hawaii vacation packages</li>
+                        <li>Miami vacation packages</li>
+                        <li>Florida vacation packages</li>
+                        <li>New Orleans vacation packages</li>
+                        <li>Maui vacation packages</li>
+                    </ul>
+                </div>
+
+
+
+                <h3>Book international flights & hotels together to save</h3>
+                <div>
+                    <ul>
+                        <li>Cancun vacation packages</li>
+                        <li>Aruba vacation packages</li>
+                        <li>Caribbean vacation packages</li>
+                        <li>Italy vacation packages</li>
+                        <li>Turks and Caicos vacation packages</li>
+                    </ul>
+                    <ul class="ul2">
+                        <li>Punta Cana vacation packages</li>
+                        <li>Europe vacation packages</li>
+                        <li>Bahamas vacation packages</li>
+                        <li>London vacation packages</li>
+                        <li>Paris vacation packages</li>
+                    </ul>
+                </div>
+
+
+                <h3>Top places to visit domestically</h3>
+                <div>
+                    <ul>
+                        <li>Visit Los Angeles</li>
+                        <li>Visit New York</li>
+                        <li>Visit Orlando</li>
+                        <li>Visit Atlanta</li>
+                        <li>Visit Miami</li>
+                    </ul>
+                    <ul class="ul2">
+                        <li>Visit Las Vegas</li>
+                        <li>Visit Chicago</li>
+                        <li>Visit Dallas</li>
+                        <li>Visit Phoenix</li>
+                        <li>Visit Houston</li>
+                    </ul>
+                </div>
+
+
+                <h3>Top places to visit domestically</h3>
+                <div>
+                    <ul>
+                        <li>Visit the Bahamas</li>
+                        <li>Visit Mexico</li>
+                        <li>Visit Cancun</li>
+                        <li>Visit Austrailia</li>
+                        <li>Visit Aruba</li>
+                    </ul>
+                    <ul class="ul2">
+                        <li>Visit Vancouver</li>
+                        <li>Visit Cabo San Lucas</li>
+                        <li>Visit Punta Cana</li>
+                        <li>Visit London</li>
+                        <li>Visit Paris</li>
+                    </ul>
+                </div>
+
+
+                <h3>Airport & car rental deals</h3>
+                <div>
+                    <ul>
+                        <li>Car rentals in Los Angeles</li>
+                        <li>Car rentals in Las Vegas</li>
+                        <li>Car rentals in Phoenix</li>
+                        <li>Car rentals in Fort Lauderdale</li>
+                        <li>Car rentals in Atlanta</li>
+                    </ul>
+                    <ul class="ul2">
+                        <li>Car rentals in Orlando</li>
+                        <li>Car rentals in Denver</li>
+                        <li>Car rentals in Chicago</li>
+                        <li>Car rentals in New York</li>
+                        <li>Car rentals in Houston</li>
+                    </ul>
+                </div>
+
+
+                <h3>Find cheap car rentals at international airports</h3>
+                <div>
+                    <ul>
+                        <li>Car rentals in Dublin</li>
+                        <li>Car rentals in Toronto</li>
+                        <li>Car rentals in Dubai</li>
+                        <li>Car rentals in Cancun</li>
+                        <li>Car rentals in Rome</li>
+                    </ul>
+                    <ul class="ul2">
+                        <li>Car rentals in Vacouver</li>
+                        <li>Car rentals in Toronto</li>
+                        <li>Car rentals in Paris</li>
+                        <li>Car rentals in Puerto Rico</li>
+                        <li>Car rentals in Calgary</li>
+                    </ul>
+                </div>
+
+
+                <h3>Top Vacation Rental Destinations</h3>
+                <div>
+                    <ul>
+                        <li>Vacation Rentals</li>
+                        <li>Florida Vacation Rentals</li>
+                        <li>Vacation Rentals in South Carolina</li>
+                        <li>Myrtle Beach Vacation Rentals</li>
+                        <li>Panama City Vacation Rentals</li>
+                        <li>Gulf Shores Vacation Rentals</li>
+                        <li>Maui Vacation Rentals</li>
+                        <li>Pigeon Forge Vacation Rentals</li>
+                        <li>Lake of the Ozarks Vacation Rentals</li>
+                        <li>Luxury vacation rentals</li>
+                    </ul>
+                    <ul class="ul2">
+                        <li>United States Vacation Rentals</li>
+                        <li>Vacation Rentals in North Carolina</li>
+                        <li>Outer Banks Vacation Rentals</li>
+                        <li>Destin Vacation Rentals</li>
+                        <li>Hilton Head Vacation Rentals</li>
+                        <li>Key West Vacation Rentals</li>
+                        <li>Orlando Vacation Rentals</li>
+                        <li>Anna Maria Island vacation rentals</li>
+                        <li>Vacation Rentals by the beach</li>
+                        <li>Vacation rentals near by</li>
+                    </ul>
+                </div>
+
+
+                <h3>Popular cruise destinations</h3>
+                <div>
+                    <ul>
+                        <li>Cruises to Bahamas</li>
+                        <li>Cruises to Hawaii</li>
+                        <li>Cruises to Caribbean</li>
+                        <li>Cruises to Bermuda</li>
+                        <li>Cruises to Australia & New Zealand</li>
+                    </ul>
+                    <ul class="ul2">
+                        <li>Cruises to Mexico</li>
+                        <li>Cruises to Alaska</li>
+                        <li>Cruises to Europe</li>
+                        <li>Cruises to Africa</li>
+                        <li>Cruises to Canada & New England</li>
+                    </ul>
+                </div>
+
+
+                <h3>Cruise departure ports nearby</h3>
+                <div>
+                    <ul>
+                        <li>Cruises from Galveston</li>
+                        <li>Cruises from New York</li>
+                        <li>Cruises from Long Beach</li>
+                        <li>Cruises from Charleston</li>
+                        <li>Cruises from San Francisco</li>
+                    </ul>
+                    <ul class="ul2">
+                        <li>Cruises from Miami</li>
+                        <li>Cruises from Tampa</li>
+                        <li>Cruises from Boston</li>
+                        <li>Cruises from Port Canaveral</li>
+                        <li>Cruises from Norfolk</li>
+                    </ul>
+                </div>
+
+
+                <h3>Other Vacation ideas</h3>
+                <div>
+                    <ul>
+                        <li>Thanksgiving Getaways Deals</li>
+                        <li>Weekend Getaways</li>
+                        <li>Vacation Deposit and Payment Plan</li>
+                        <li>All Inclusive Vacations</li>
+                        <li>Beach Vacations</li>
+                        <li>Kid Friendly Vacations</li>
+                        <li>Romantic Vacations</li>
+                    </ul>
+                    <ul class="ul2">
+                        <li>X-mas Vacation Deals</li>
+                        <li>Plan your Vacation</li>
+                        <li>Expedia Group wildlife guidelines</li>
+                        <li>Ski Vacations</li>
+                        <li>Golf Vacations</li>
+                        <li>Luxury Vacations</li>
+                        <li>Adventure Vacations</li>
+                    </ul>
+                </div>
+
+
+                <h3>More destinations</h3>
+                <div>
+                    <ul>
+                        <li>All Destinations</li>
+                    </ul>
+                </div>
+            </div>
+        </div><br><br><br>
+        
+        <div class="about">
+            <img src="PROJECT IMAGES/expedia group.png" class="gro" style="margin-bottom: 10px;"><br>
+            <div class="feedback">
+                <div class="company">
+                    <div>
+                        <p>Company</p>
+                        <li>About</li>
+                        <li>Jobs</li>
+                        <li>List your property</li>
+                        <li>Partnership</li>
+                        <li>Investor Relations</li>
+                        <li>Advertising</li>
+                        <li>Affiliate Marketing</li>
+                        <li>Feedback</li>
+                    </div>
+                    
+
+                    <div>
+                        <p>Explore</p>
+                        <li>United States of America travel guide</li>
+                        <li>Hotels in United States of America</li>
+                        <li>Vacation rentals in United States of America</li>
+                        <li>Vacation packages in United States of America</li>
+                        <li>Domestic flights</li>
+                        <li>Car rentals in United States of America</li>
+                        <li>All accommodation types</li>
+                    </div>
+                </div>
+
+
+
+                <div class="policies">
+                    <div>
+                        <p>Policies</p>
+                        <li>Privacy</li>
+                        <li>Terms of us</li>
+                        <li>Vrbo terms and conditions</li>
+                        <li>Get started with One Key™</li>
+                        <li>Accessibility</li>
+                        <li>Your Privacy Choices</li>
+                    </div>
+                    <div>
+                        <p>Help</p>
+                        <li>Support</li>
+                        <li>Cancel your hotel or vacation rental booking</li>
+                        <li>Cancel your flight</li>
+                        <li>Refund timelines, policies & processes</li>
+                        <li>Use an Expedia coupon</li>
+                        <li>International travel documents</li>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        
+            <div class="inc">
+            <p>
+                Expedia, Inc. is not responsible for content on external Web sites.<br>
+                © 2023 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia 
+                and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc. 
+                CST# 2029030-50.
+            </p>
+        </div>
+        <div class="caveat">
+            <h3>caveat: this page just a student project, not attempt to clone
+                an <br> existing website
+            </h3>
+        </div><br>
+        <div class="project">
+            <h1>OTHER PROJECTS</h1>
+            <nav aria-label="...">
+                <ul class="pagination" id="proul">
+                    <li class="page-item">
+                        <a class="page-link" id="next" href="index.html">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="expedia.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="canva.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="findlaw.html">4</a></li>
+                    <li class="page-item"><a class="page-link" href="acefitness.html">5</a></li>
+                    <li class="page-item"><a class="page-link" href="ticketmaster.html">6</a></li>
+                    <li class="page-item"><a class="page-link" href="netflix.html">7</a></li>
+                    <li class="page-item"><a class="page-link" href="mtn.html">8</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="canva.html" id="next">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div><br><br>
+    </body>
+</html>
