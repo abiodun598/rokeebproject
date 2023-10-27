@@ -121,19 +121,24 @@
             }
             .country{
                 width: 260px;
-                height: 40px;
                 display: flex;
                 flex-direction: row;
                 background-color: rgb(59, 59, 59);
                 border-radius: 10px;
                 justify-content: space-around;
-                padding-top: 8px;
-                padding-bottom: 8px;
+                align-items: center;
                 margin-bottom: 30px;
                 cursor: pointer;
             }
             .country:hover{
                 background-color: rgb(53, 53, 53);
+            }
+            .dropdown{
+                height: 37px;
+            }
+            .dropdown p{
+                background-color: rgba(200,0,0,0.1);
+                border: none;
             }
             .last p{
                 margin-right: 15px;
@@ -155,9 +160,6 @@
             }
             .foot2:hover{
                 color: rgb(248, 164, 192);
-            }
-            .lang{
-                margin-left: 15px;
             }
             i{
                 visibility: hidden;
@@ -724,10 +726,22 @@
             <p><a href="#" class="foot2">Terms</a></p>
             <div class="country">
                 <img src="PROJECT IMAGES/d earth.jpg">
-                <p class="lang">English (United KIngdom)</p>
-                <select>
-                        
-                </select>
+                <div class="dropdown">
+                    <p class="btn btn-secondary dropdown-toggle lang" 
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        English (United KIngdom)
+                    </p>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" type="button"><input type="text"></button></li>
+                        <li><button class="dropdown-item" type="button">Flight</button></li>
+                        <li><button class="dropdown-item" type="button">Cars</button></li>
+                        <li><button class="dropdown-item" type="button">packages</button></li>
+                        <li><button class="dropdown-item" type="button">Things to do</button></li>
+                        <li><button class="dropdown-item" type="button">Cruises</button></li>
+                        <li><button class="dropdown-item" type="button">Deals</button></li>
+                        <li><button class="dropdown-item" type="button">Group & meetings</button></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
