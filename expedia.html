@@ -78,7 +78,7 @@
                 border-radius: 17px;
             }
             .d3a:hover{
-                background: rgb(138, 138, 138);
+                background: rgba(93, 212, 255,0.5);
             }
             .d3b{
                 justify-content: space-between !important;
@@ -102,7 +102,10 @@
             #myTab{
                 margin: 0px auto;
                 width: 82%;
-                padding-left: 300px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
                 border:  0.5px solid rgb(180, 180, 180);
                 border-top-left-radius: 30px;
                 border-top-right-radius: 30px;
@@ -123,25 +126,32 @@
             #Stays-tab-pane{
                 margin: 0px auto;
                 border: 0.5px solid rgb(180, 180, 180);
-                width: 100%;
-                height: 180px;
+                width: 82%;
                 border-bottom-left-radius: 30px;
                 border-bottom-right-radius: 30px;
                 padding-top: 25px;
                 padding-left: 30px;
+                padding-bottom: 30px;
+                position: absolute;
+                z-index: 3;
             }
             #detail2{
                 justify-content: space-around;
-
             }
             #detail2>div{
+                width:30%;
+            }
+            #detail2>div>p{
+                font-weight:500;
+            }
+            #detail2>div>div{
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
+                padding: 6px 3px;
                 align-items: center;
                 border: 0.5px solid rgb(0, 0, 0);
-                height: 50px;
-                width: 300px;
+                width: 100%;
                 border-radius: 14px;
                 cursor: pointer;
             }
@@ -151,8 +161,8 @@
                 cursor: pointer;
             }
             #detail2 input{
-                width: 270px;
-                height: 35px;
+                width: 88%;
+                padding: 6px 3px;
                 margin-right: 0px;
                 border: none;
                 outline: none;
@@ -200,25 +210,39 @@
             #Flight-tab-pane{
                 margin: 0px auto;
                 border: 0.5px solid rgb(180, 180, 180);
-                width: 100%;
-                height: 180px;
+                width: 82%;
+                height: 250px;
                 border-bottom-left-radius: 30px;
                 border-bottom-right-radius: 30px;
+                padding: 30px 30px;
                 padding-top: 25px;
-                padding-left: 30px;
+                position: absolute;
             }
             #myoneContent{
                 margin: 0px;
-                width: 82%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
                 height: fit-content;
             }
             #Round-tab-pane{
-                margin: 0px;
-                width: 82%;
-                height: fit-content;
+                width: 92%;
+                padding-top: 25px;
+                padding-left: 30px;
+                padding-bottom: 30px;
+                position: absolute;
                 display: flex;
                 flex-direction: row;
-                padding-top: 20px;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 3;
+            }
+            #Round-tab-pane>div>p{
+                font-size: 13px;
+                font-weight:500;
+            }
+            #Round-tab-pane>div{
+                width: 21%;
             }
             #from{
                 display: flex;
@@ -227,8 +251,9 @@
                 align-items: center;
                 border: 0.5px solid rgb(0, 0, 0);
                 height: 50px;
-                width: 230px;
+                width: 100%;
                 border-radius: 14px;
+                margin-right: 15px;
                 cursor: pointer;
             }
             #from i{
@@ -237,7 +262,7 @@
                 cursor: pointer;
             }
             #from input{
-                width: 150px;
+                width: 88%;
                 height: 35px;
                 margin-right: 0px;
                 border: none;
@@ -270,23 +295,25 @@
             #myoneTab{
                 color: #0e58cf;
             }
-            #Multi-tab-pane{
-                margin: 0px;
-                width: 82%;
-                height: fit-content;
-                display: flex;
-                flex-direction: row;
-                padding-top: 20px;
-                margin-top: -120px;
-            }
+            
             #One-tab-pane{
-                margin: 0px;
-                width: 82%;
-                height: fit-content;
+                margin: 0px auto;
+                width: 92%;
+                padding-top: 35px;
+                padding-left: 30px;
+                padding-bottom: 30px;
+                position: absolute;
                 display: flex;
                 flex-direction: row;
-                padding-top: 20px;
-                margin-top: -30px;
+                justify-content: space-between;
+                align-items: center;
+            }
+            #One-tab-pane>div>p{
+                font-size: 13px;
+                font-weight:500;
+            }
+            #One-tab-pane>div{
+                width: 21%;
             }
             #One-tab-pane button{
                 border-radius: 30px;
@@ -304,6 +331,25 @@
             }
             #One-tab-pane button:hover{
                 background-color: #00378f;
+            }
+            #Multi-tab-pane{
+                margin: 0px auto;
+                width: 92%;
+                padding-top: 46px;
+                padding-left: 30px;
+                padding-bottom: 30px;
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            #Multi-tab-pane>div>p{
+                font-size: 13px;
+                font-weight:500;
+            }
+            #Multi-tab-pane>div{
+                width: 21%;
             }
             #Multi-tab-pane button{
                 border-radius: 30px;
@@ -336,20 +382,23 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                height: 50px;
-                width: 1050px;
+                padding: 6px 0px;
+                width: 95%;
                 border: none;
                 border-radius: 14px;
                 cursor: pointer;
                 margin: 0px auto;
             }
-            .pick>div{
+            .pick>div>div{
                 height: 50px;
-                width: 515px;
+                width: 100%;
                 border: 0.5px solid rgb(0, 0, 0);
                 border-radius: 14px;
                 padding-left: 15px;
                 padding-top: 6px;
+            }
+            .pick>div{
+                width: 49%;
             }
             .pick i{
                 margin-top: 0px;
@@ -357,8 +406,8 @@
                 cursor: pointer;
             }
             .pick input{
-                width: 350px;
-                height: 35px;
+                width: 88%;
+                padding: 5px 0px;
                 margin: 0px auto;
                 border: none;
                 outline: none;
@@ -366,33 +415,36 @@
                 margin-left: 7px;
             }
             #Cars-tab-pane{
-                margin: 0px auto;
                 width: 82%;
-                height: 310px;
+                padding-bottom: 30px;
                 padding-top: 30px;
                 border-bottom-left-radius: 30px;
                 border-bottom-right-radius: 30px;
                 border: 0.5px solid rgb(180, 180, 180);
+                position: absolute;
+                margin-left: 9%;
             }
             .date{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                height: 50px;
-                width: 1050px;
+                padding: 5px 0px;
+                width: 95%;
                 border-radius: 14px;
-                cursor: pointer;
                 margin: 0px auto;
+                margin-top: 20px;
             }
-            .date>div{
+            .date>div>div{
                 height: 50px;
-                width: 340px;
+                width: 100%;
                 border: 0.5px solid rgb(0, 0, 0);
                 border-radius: 14px;
                 padding-left: 15px;
                 padding-top: 6px;
-                margin-top: 30px;
+            }
+            .date>div{
+                width: 31%;
             }
             .date i{
                 margin-top: 0px;
@@ -400,7 +452,7 @@
                 cursor: pointer;
             }
             .date input{
-                width: 250px;
+                width: 88%;
                 height: 35px;
                 border: none;
                 outline: none;
@@ -409,7 +461,10 @@
             #ten{
                 color: black;
                 padding: 0px;
-                
+            }
+            #ten>button{
+                border: none;
+                cursor: auto;
             }
             #tenb{
                 border-radius: 14px;
@@ -426,11 +481,15 @@
                 font-size: 12px;
                 color: black;
             }
-            #tenb p{
+            #tenb select{
+                cursor: pointer;
                 margin-top: 0px;
                 font-size: 14px;
                 font-weight: bolder;
                 color: black;
+                border: none;
+                outline: none;
+                width: 90%;
             }
             .aarp{
                 display: flex;
@@ -464,25 +523,24 @@
                 cursor: pointer;
                 margin-left: 30px;
             }
-            .bcode{
+            .bcode:hover{
                 background-color: #00378f;
             }
             #packages-tab-pane{
                 margin: 0px auto;
                 width: 82%;
-                height: 180px;
-                padding-top: 30px;
+                padding: 30px 0px;
                 border-bottom-left-radius: 30px;
                 border-bottom-right-radius: 30px;
                 border: 0.5px solid rgb(180, 180, 180);
-                position: relative;
-                margin-top: -310px;
+                position: absolute;
+                margin-left: 9%;
             }
             .added{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                width: 380px;
+                width: 35%;
                 font-size: 14px;
                 margin-left: 30px;
             }
@@ -499,12 +557,21 @@
             }
             #pulti{
                 margin: 0px;
-                width: 82%;
-                height: fit-content;
+                width: 92%;
+                padding-top: 16px;
+                padding-left: 30px;
+                padding-bottom: 30px;
                 display: flex;
                 flex-direction: row;
-                padding-top: 20px;
-                margin-left: 30px;
+                justify-content: space-between;
+                align-items: center;
+            }
+            #pulti>div>p{
+                font-size: 13px;
+                font-weight:500;
+            }
+            #pulti>div{
+                width: 22%;
             }
             #pulti button{
                 border-radius: 30px;
@@ -526,17 +593,16 @@
             #Things-tab-pane{
                 margin: 0px auto;
                 width: 82%;
-                height: 110px;
-                padding-top: 10px;
+                padding: 10px 0px;
                 border-bottom-left-radius: 30px;
                 border-bottom-right-radius: 30px;
                 border: 0.5px solid rgb(180, 180, 180);
-                position: relative;
-                margin-top: -180px;
+                position: absolute;
+                margin-left: 9%;
             }
             #tulti{
                 margin: 0px;
-                width: 1050px;
+                width: 94%;
                 height: fit-content;
                 display: flex;
                 flex-direction: row;
@@ -566,13 +632,17 @@
                 flex-direction: row;
                 justify-content: flex-start;
                 align-items: center;
+                align-items: center;
                 border: 0.5px solid rgb(0, 0, 0);
                 height: 50px;
-                width: 450px;
+                width: 100%;
                 border-radius: 14px;
                 cursor: pointer;
                 margin-left: 7px;
                 padding-left: 10px;
+            }
+            #tulti>div{
+                width: 42%;
             }
             #rom i{
                 margin-top: 0px;
@@ -580,7 +650,7 @@
                 cursor: pointer;
             }
             #rom input{
-                width: 380px;
+                width: 88%;
                 height: 35px;
                 margin-right: 0px;
                 border: none;
@@ -590,18 +660,16 @@
             #Cruises-tab-pane{
                 margin: 0px auto;
                 width: 82%;
-                height: 110px;
+                padding-bottom: 20px;
                 padding-top: 10px;
                 border-bottom-left-radius: 30px;
                 border-bottom-right-radius: 30px;
                 border: 0.5px solid rgb(180, 180, 180);
+                margin-bottom: 250px;
                 position: relative;
-                margin-top: -110px;
-                margin-bottom: 200px;
             }
             .key{
                 width: 82%;
-                height: 90px;
                 background-color: rgb(0, 0, 39);
                 border-radius: 15px;
                 margin: 0% auto;
@@ -625,7 +693,8 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                width: 600px;
+                align-items: center;
+                width: fit-content;
             }
             .key1 p{
                 margin-top: 10px;
@@ -633,8 +702,9 @@
             .key2{
                 display: flex;
                 flex-direction: row;
-                justify-content: space-around;
-                width: 300px;
+                justify-content: space-between;
+                align-items: center;
+                width: 23.5%;
             }
             .learn{
                 padding: 10px;
@@ -646,10 +716,8 @@
                 background-color: rgb(99, 109, 163);
             }
             .key button{
-                margin-right: -30px;
-                margin-top: 5px;
-                width: 29%;
-                height: 50px;
+                padding: 8px 12px;
+                width: fit-content;
                 border-radius: 25px;
                 background-color: #0e58cf;
                 color: white;
@@ -682,16 +750,14 @@
                 padding-left: 50px;
             }
             .saving p{
-                margin-top: -8px;
                 font-size: 17px;
             }
             .saving h1{
                 font-size: 40px;
             }
             .saving button{
-                padding: 10px 15px;
-                width: 20%;
-                height: 65px;
+                padding: 16px 18px;
+                width: fit-content;
                 border-radius: 32px;
                 background-color: #0e58cf;
                 color: white;
@@ -705,9 +771,10 @@
             .saving button:hover{
                 background-color: #00378f;
             }
+            
             .deals{
                 width: 82%;
-                height: 130px;
+                padding: 25px 0px;
                 margin: 0% auto;
                 display: flex;
                 flex-direction: column;
@@ -717,12 +784,8 @@
                 color: rgb(0, 0, 39);
                 letter-spacing: 0.6px;
             }
-            .deals p{
-                margin-top: -8px;
-            }
             .items{
                 width: 82%;
-                height: 660px;
                 margin: 0% auto;
                 display: flex;
                 flex-direction: row;
@@ -732,8 +795,6 @@
                 border: none;
                 overflow-x: hidden;
                 overflow-x: scroll;
-                display: flex;
-                flex-direction: row;
                 padding: 0px;
             }
             .items1{
@@ -773,25 +834,16 @@
                 margin-top: 8px;
                 margin-bottom: 0px;
             }
-            .items1 div{
-                width: 227px;
-                height: 30px;
-                padding: 5px;
+            .p5{
                 background-color: gold;
-                border: none;
-                outline: none;
-                border-radius: 10px;
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
+                font-size: 15px;
+                padding: 5px;
+                border-radius: 12px;
+                cursor: pointer;
                 margin-top: 8px;
             }
-            #tag{
-                margin-top: -7px;
-            }
-            .p5{
-                transform: translate(-50px,0px);
-                font-size: 12px;
+            .p5:hover{
+                background-color: rgb(219, 186, 0);
             }
             .p6{
                 font-size: 15px;
@@ -826,8 +878,11 @@
                 font-family: sans-serif;
                 font-size: 12px;
             }
+            .bluebo>div{
+                width: 32%;
+            }
             .bluebo img{
-                width: 350px;
+                width: 100%;
                 height: 250px;
                 border-radius: 25px;
             }
@@ -845,8 +900,11 @@
                 font-family: sans-serif;
                 font-size: 12px;
             }
+            .blane>div{
+                width: 48%;
+            }
             .blane img{
-                width: 530px;
+                width: 100%;
                 height: 350px;
                 border-radius: 25px;
             }
@@ -870,7 +928,7 @@
                 background-size: contain;
                 background-repeat: repeat;
                 background-position: center;
-                width: 820px;
+                width: 75%;
                 height: 260px;
                 border-radius: 10px;
                 display: flex;
@@ -895,7 +953,7 @@
                 background-size: contain;
                 background-repeat: repeat;
                 background-position: center;
-                width: 250px;
+                width: 23%;
                 height: 260px;
                 display: flex;
                 flex-direction: column;
@@ -926,7 +984,6 @@
             }
             .transport{
                 width: 82%;
-                height: 250px;
                 border-radius: 25px;
                 display: flex;
                 flex-direction: row;
@@ -938,13 +995,11 @@
             }
             .tree{
                 width: 350px;
-                height: 250px;
+                height: 254px;
                 border-top-left-radius: 25px;
                 border-bottom-left-radius: 25px;
             }
             .middle{
-                width: 650px;
-                height: 230px;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
@@ -974,7 +1029,6 @@
                 flex-direction: column;
                 justify-content: flex-start;
                 width: 100%;
-                height: 180px;
             }
             .middle2 h1{
                 margin-top: 7px;
@@ -983,17 +1037,17 @@
                 font-weight: bolder;
             }
             .middle2 p{
-                margin-top: 10px;
-                font-size: 14px;
+                margin-top: 15px;
+                font-size: 13px;
             }
             .middle2 h6{
-                margin-top: 20px;
-                font-size: 17px;
+                margin-top: 14px;
+                font-size: 15px;
             }
 
             .scan{
-                width: 220px;
-                height: 220px;
+                width: 22%;
+                height: 210px;
                 border-top-right-radius: 25px;
                 margin-top: 25px;
             }
@@ -1016,7 +1070,7 @@
                 border: 0.5px solid rgb(180, 180, 180);
             }
             .hotel1{
-                width: 1085px;
+                width: 100%;
                 color: #0e58cf;
                 padding-left: 15px;
                 font-size: 15px;
@@ -1073,7 +1127,7 @@
             }
             .about{
                 width: 82%;
-                height: 370px;
+                height: fit-content;
                 margin: 0px auto;
             }
             .about li{
@@ -1092,66 +1146,59 @@
             .feedback{
                 display: flex;
                 flex-direction: row;
+                justify-content: space-between;
             }
             .policies{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                width: 500px;
-                margin: 0px auto;
+                width: 47%;
             }
             .company{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                width: 500px;
+                width: 45%;
             }
             .inc{
                 width: 82%;
-                height: 110px;
                 margin: 0px auto;
-                padding-top: 15px;
+                padding: 20px 0px;
                 border-top: 0.5px solid rgb(180, 180, 180);
             }
             .inc p{
                 font-size: small;
             }
             .iconp{
+                width: fit-content;
                 margin: 0px auto; 
                 border-radius: 18px;
-                width: 110px;
-                height: 40px;
+                padding: 0px 15px;
                 display: flex;
-                padding-left: 8px;
-                padding-right: 8px;
                 flex-direction: row;
                 justify-content: flex-start;
-                align-items: center;
                 position: fixed;
                 bottom: 20px;
                 right: 40px;
+                background-color: rgb(202, 202, 202);
                 cursor: pointer;
-                background-color: white;
             }
             .iconp:hover{
                 background-color: #9ab3e4;
             }
             .iconp i{
                 color: #0e58cf;
-                margin-bottom: 29px;
             }
             .iconp p{
                 color: #0e58cf;
-                margin-top: 22px;
-                margin-left: -50px;
                 font-size: 20px;
                 font-weight: bolder;
             }
-            #canva{
-                    visibility: hidden;
+            .caro{
+                display: none;
             }
             #offcanvasWithBothOptions{
-                visibility: hidden;
+                display: none;
             }
             .caveat{
                 color: black;
@@ -1199,343 +1246,159 @@
 
             }
             @media screen and (max-width: 768px){
-                #canva{
-                    visibility: visible;
-                    background-color: yellow;
-                    margin-right: 0px;
-                    border: none;
-                    outline: none;
-                }
-
-                #offcanvasWithBothOptions{
-                    visibility: visible;
-                    background-color: rgba(84, 0, 105, 0.87);
-                }
-                #body{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    width: 480px;
-                }
-                #body p{
-                    visibility: visible;
-                }
-                body{
-                    overflow-x: hidden;
-                }
                 .top{
-                    font-family: sans-serif;
-                    color: rgb(1, 1, 97);
-                    width: 95%;
-                    height: 100px;
-                    margin-top: 0%;
-                    border: none;
-                    border-bottom: 0.5 solid rgb(180, 180, 180);
-                    box-shadow: 0px 1px 4px rgb(180, 180, 180);
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: flex-start;
-                    align-items: center;
-                    margin: 0px auto;
-                    padding-left: 30px;
+                    display: none;
                 }
-                .top img{
-                    width: 25px;
-                    height: 25px;
-                    margin-top: 33px;
-                    border-radius: 100%;
-                    visibility: hidden;
-                    margin-left: 0px;
-                    margin-right: 0px;
+                .ke{
+                    display: none;
                 }
-                .top div{
-                    visibility: hidden;
-                    margin-left: 0px;
-                    margin-left: -25px;
-                }
-                .top h2{
-                    font-size: 30px;
-                    cursor: pointer;
-                    margin-top: 30px;
-                    visibility: visible;
-                    margin-left: 0px;
-                    margin-right: 0px;
-                }
-                .top p{
-                    margin-top: 30px;
-                    font-weight: bold;
-                    color: rgb(1, 1, 97);
-                    cursor: pointer;
-                    margin-left: 0px;
-                    margin-right: 0px;
-                }
-                .top p:hover{
-                    color: blue;
-                }
-            
-                .d1{
-                    margin-left: 0px;
-                    margin-right: 0px;
-                }
-                .d3{
-                    width: 350px;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: flex-start;
-                    margin-left: 0px;
-                    margin-right: 0px;
-                    padding-left: 0px;
-                    visibility: hidden;
-                }
-                .d3a{
-                    width: 130px;
-                    height: 30px;
-                    justify-content: space-around !important;
-                    border: 2px solid rgb(148, 148, 148);
-                    border-radius: 17px;
-                    margin-top: 28px;
-                    margin-left: 0px;
-                    margin-right: 0px;
-                    visibility: visible;
-                }
-                .d3a:hover{
-                    background: rgb(138, 138, 138);
-                }
-                .d3b{
-                    width: 25px;
-                    justify-content: space-between !important;
-                    margin-left: 0px;
-                    margin-right: 0px;
-                }
-                .d3c{
-                    justify-content: space-between !important;
-                    margin-left: 0px;
-                    margin-right: 0px;
-                    width: 100px;
+                .caro{
+                    display: inline-block;
+                    width: 100%;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
+                    align-items: center;
+                    color: #002e77;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                    border-bottom: 0.5 solid rgb(180, 180, 180);
+                    box-shadow: 0px 1px 4px rgb(180, 180, 180);
+                    position: sticky;
+                    top: 0px;
+                    background-color: white;
+                    z-index: 7;
                 }
-                i{
-                    font-size: xx-large;
-                    margin-top: 0px;
-                    margin-left: 0px;
-                    margin-right: 0px;
+                .caro i{
+                    color: yellow;
+                    font-weight: 700;
+                    padding: 0px 7px;
+                }
+                .caro img{
                     cursor: pointer;
-                    visibility: visible;
+                }
+                #mor{
+                    color: #002e77;
+                    font-weight: 700;
+                    padding-top: 10px;
+                }
+                #offcanvasWithBothOptions{
+                    display: inline-block;
+                }
+                
+                #offcanvasWithBothOptions i{
+                    font-size: x-large;
+                    cursor: pointer;
+                    color: darkblue;
+                }
+                #offcanvasWithBothOptions i:hover{
                     color: blue;
                 }
-                i:hover{
-                    color: green;
+                #offcanvasWithBothOptions p{
+                    font-size: large;
+                    font-weight: 700;
+                    cursor: pointer;
+                    color: darkblue;
                 }
-                #more{
-                    visibility: visible;
-                    margin-left: 20px;
-                    margin-right: 50px;
+                #offcanvasWithBothOptions p:hover{
+                    color: blue;
                 }
-
-                #myTab{
-                margin: 0px auto;
-                padding-top: 10px;
-                padding-left: 2px;
-                border:  0.5px solid rgb(180, 180, 180);
-                border-top-left-radius: 30px;
-                border-top-right-radius: 30px;
+                 #myTab{
+                    margin: 0px auto;
+                    width: 82%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    border:  0.5px solid rgb(124, 101, 101);
+                    border-top-left-radius: 30px;
+                    border-top-right-radius: 30px;
+                    font-size: 12px;
+                }
+                #myTab li{
+                    border: none;
+                    color: black;
+                    font-weight: bolder;
+                }
+                #myTab li:hover{
+                    border-bottom: 1.3px solid black;
+                }
+                #myTabContent{
+                    margin: 0px auto;
+                    width: 82%;
+                    height: fit-content;
                 }
                 #Stays-tab-pane{
                     margin: 0px auto;
                     border: 0.5px solid rgb(180, 180, 180);
-                    height: 320px;
+                    width: 82%;
                     border-bottom-left-radius: 30px;
                     border-bottom-right-radius: 30px;
-                    padding-top: 25px;
+                    padding-top: 10px;
                     padding-left: 30px;
+                    padding-bottom: 15px;
+                    position: absolute;
+                    z-index: 3;
                 }
                 #detail2{
                     display: flex;
                     flex-direction: column;
-                    justify-content: flex-start;
+                    justify-content: space-between;
                 }
                 #detail2>div{
-                    margin-bottom: 8px;
+                    width:100%;
+                    
                 }
+                #detail2>div>p{
+                    font-weight:500;
+                    font-size: 11px;
+                }
+                
                 #detail2 button{
-                    height: 40px;
-                    width: 300px;
+                    margin-top: 10px;
                 }
-                #Flight-tab-pane{
-                height: 410px;
-                border-bottom-left-radius: 30px;
-                border-bottom-right-radius: 30px;
+                #detail2 button:hover{
+                    background-color: #00378f;
                 }
-                #myoneContent{
-                    width: 420px;
-                    height: fit-content;
-                }
-                #Round-tab-pane{
-                    margin: 0px;
-                    width: fit-content;
-                    height: fit-content;
-                    display: flex;
-                    flex-direction: column;
-                    padding-top: 20px;
-                }
-                #from{
+                .detail3{
                     display: flex;
                     flex-direction: row;
                     justify-content: flex-start;
+                    margin-top: 30px;
+                }
+                #Flight-tab-pane{
+                    display: none;
+                }
+                #Flight-tab{
+                    display: none;
+                }
+                
+                .pick{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                     align-items: center;
-                    border: 0.5px solid rgb(0, 0, 0);
-                    height: 50px;
-                    width: 230px;
+                    padding: 0px 0px;
+                    width: 95%;
+                    border: none;
                     border-radius: 14px;
                     cursor: pointer;
-                    margin-left: 7px;
-                    margin-bottom: 3px;
+                    margin: 0px auto; 
                 }
-                #from i{
-                    margin-top: 0px;
-                    margin-right: 0%;
-                    cursor: pointer;
-                }
-                #from input{
-                    width: 150px;
-                    height: 35px;
-                    margin-right: 0px;
-                    border: none;
-                    outline: none;
-                    cursor: pointer;
-                }
-                #Round-tab-pane button{
-                    border-radius: 30px;
-                    background-color: #0e58cf;
-                    color: white;
-                    font-family: sans-serif;
-                    font-weight: bolder;
-                    font-size: 20px;
-                    border: none;
-                    width: 90px;
+                .pick>div>div{
                     height: 50px;
-                    outline: none;
-                    cursor: pointer;
-                    margin-left: 7px;
-                }
-                #Round-tab-pane button:hover{
-                    background-color: #00378f;
-                }
-                #myoneTab button{
-                    font-weight: bolder;
-                }
-                #myoneTab button:hover{
-                    border-bottom: 2px solid black;
-                }
-                #myoneTab{
-                    color: #0e58cf;
-                }
-                #Multi-tab-pane{
-                    margin: 0px;
-                    height: fit-content;
-                    display: flex;
-                    flex-direction: column;
-                    padding-top: 20px;
-                    margin-left: 40px;
-                    margin-top: -290px;
-                    
-                }
-                #One-tab-pane{
-                    margin: 0px;
-                    height: fit-content;
-                    display: flex;
-                    flex-direction: column;
-                    padding-top: 20px;
-                    margin-left: 70px;
-                    margin-top: -290px;
-                }
-                #One-tab-pane button{
-                    border-radius: 30px;
-                    width: 90px;
-                    height: 50px;
-                    outline: none;
-                    cursor: pointer;
-                    margin-left: 7px;
-                }
-                #One-tab-pane button:hover{
-                    background-color: #00378f;
-                }
-                #Multi-tab-pane button{
-                    border-radius: 30px;
-                    background-color: #0e58cf;
-                    color: white;
-                    font-family: sans-serif;
-                    font-weight: bolder;
-                    font-size: 20px;
-                    border: none;
-                    width: 90px;
-                    height: 50px;
-                    outline: none;
-                    cursor: pointer;
-                    margin-left: 7px;
-                }
-                #Multi-tab-pane button:hover{
-                    background-color: #00378f;
-                }
-                #Cars-tab-pane{
-                margin: 0px auto;
-                height: 570px;
-                padding-top: 30px;
-                }
-                .date{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    align-items: center;
-                    height: 250px;
-                    width: 400px;
-                    border-radius: 14px;
-                    cursor: pointer;
-                    margin: 0px auto;
-                }
-                .date>div{
-                    height: 50px;
-                    width: 340px;
+                    width: 100%;
                     border: 0.5px solid rgb(0, 0, 0);
                     border-radius: 14px;
                     padding-left: 15px;
                     padding-top: 6px;
-                    margin-top: 30px;
-                }
-                .date i{
-                    margin-top: 0px;
-                    margin-right: 0%;
-                    cursor: pointer;
-                }
-                .date input{
-                    width: 250px;
-                    height: 35px;
-                    border: none;
-                    outline: none;
-                    cursor: pointer;
-                }
-                #ten{
-                    color: black;
-                    padding: 0px;
-                    
-                }
-                .pick{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                height: 50px;
-                border: none;
-                border-radius: 14px;
-                margin-bottom: 60px;
                 }
                 .pick>div{
-                    height: 50px;
-                    width: 340px;
-                    border: 0.5px solid rgb(0, 0, 0);
-                    margin-top: 5px;
+                    width: 100%;
+                    margin-top: 7px;
+                }
+                .pick>div>p{
+                    font-size: 12px;
                 }
                 .pick i{
                     margin-top: 0px;
@@ -1543,31 +1406,71 @@
                     cursor: pointer;
                 }
                 .pick input{
-                    width: 250px;
-                    height: 35px;
+                    width: 88%;
+                    padding: 5px 0px;
                     margin: 0px auto;
                     border: none;
                     outline: none;
                     cursor: pointer;
                     margin-left: 7px;
                 }
+                #Cars-tab-pane{
+                    width: 82%;
+                    padding-bottom: 30px;
+                    padding-top: 10px;
+                    border-bottom-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    border: 0.5px solid rgb(180, 180, 180);
+                    position: absolute;
+                    margin-left: 9%;
+                }
+                .date{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 5px 0px;
+                    width: 95%;
+                    border-radius: 14px;
+                    margin: 0px auto;
+                    margin-top: 20px;
+                }
+                .date>div:first-child{
+                    display: none;
+                }
+                .date>div{
+                    width: 100%;
+                }
+                #tenb{
+                    border-radius: 14px;
+                    padding: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 3px;
+                    align-items: flex-start;
+                    padding-left: 8px;
+                    background-color: white;
+                }
+                .aarp p:last-child{
+                    display: none;
+                }
+                .bcode{
+                    width: 70%;
+                }
                 #packages-tab-pane{
-                margin: 0px auto;
-                height: 380px;
-                padding-top: 30px;
-                border-bottom-left-radius: 30px;
-                border-bottom-right-radius: 30px;
-                border: 0.5px solid rgb(180, 180, 180);
-                margin-bottom: 450px;
-                margin-top: -570px;
+                    padding: 10px 0px;
+                    margin-left: 9%;
                 }
                 .added{
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
-                    width: 380px;
-                    font-size: 14px;
-                    margin-left: 30px;
+                    width: 91%;
+                    font-size: 11px;
+                    margin-left: 5px;
+                }
+                .elim{
+                    display: none;
                 }
                 .added p{
                     border-radius: 20px;
@@ -1577,17 +1480,24 @@
                     width: 100px;
                     background-color: #3270ec;
                 }
-                .added p:hover{
-                    background-color: #99b9ec;
-                }
                 #pulti{
                     margin: 0px;
-                    width: 380px;
-                    height: fit-content;
+                    width: 92%;
+                    padding-top: 0px;
+                    padding-left: 30px;
+                    padding-bottom: 30px;
                     display: flex;
                     flex-direction: column;
-                    padding-top: 20px;
-                    margin-left: 30px;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                #pulti>div>p{
+                    font-size: 11px;
+                    font-weight:500;
+                }
+                #pulti>div{
+                    width: 100%;
+                    margin-top: 13px;
                 }
                 #pulti button{
                     border-radius: 30px;
@@ -1597,7 +1507,8 @@
                     font-weight: bolder;
                     font-size: 20px;
                     border: none;
-                    width: 230px;
+                    width: 90%;
+                    margin-top: 12px;
                     height: 50px;
                     outline: none;
                     cursor: pointer;
@@ -1608,349 +1519,252 @@
                 }
                 #Things-tab-pane{
                     margin: 0px auto;
-                    height: 220px;
-                    padding-top: 10px;
+                    width: 82%;
+                    padding: 10px 0px;
                     border-bottom-left-radius: 30px;
                     border-bottom-right-radius: 30px;
                     border: 0.5px solid rgb(180, 180, 180);
-                    position: relative;
-                    margin-top: -830px;
-                    margin-bottom: 360px;
+                    position: absolute;
+                    margin-left: 9%;
                 }
                 #tulti{
+                    margin: 0px;
+                    width: 94%;
+                    height: fit-content;
                     display: flex;
                     flex-direction: column;
-                    justify-content: flex-start;
+                    justify-content: space-between;
+                    padding-top: 20px;
+                    margin-left: 10px;
                 }
-                #tulti>div{
-                    margin-bottom: 8px;
+                #tulti button{
+                    width: 85%;
+                    margin-top: 12px;
+                    margin-left: 7px;
+                }
+                #tulti button:hover{
+                    background-color: #00378f;
                 }
                 #rom{
                     display: flex;
                     flex-direction: row;
                     justify-content: flex-start;
                     align-items: center;
+                    align-items: center;
                     border: 0.5px solid rgb(0, 0, 0);
                     height: 50px;
-                    width: 310px;
+                    width: 90%;
                     border-radius: 14px;
                     cursor: pointer;
                     margin-left: 7px;
-                    padding-left: 10px;
+                    padding-left: 0px;
                 }
-                #rom i{
-                    margin-top: 0px;
-                    margin-right: 10px;
-                    cursor: pointer;
-                }
-                #rom input{
-                    width: 150px;
-                    height: 35px;
-                    margin-right: 0px;
-                    border: none;
-                    outline: none;
-                    cursor: pointer;
+                #tulti>div{
+                    width: 100%;
                 }
                 #Cruises-tab-pane{
                     margin: 0px auto;
-                    height: 300px;
+                    width: 82%;
+                    padding-bottom: 20px;
                     padding-top: 10px;
                     border-bottom-left-radius: 30px;
                     border-bottom-right-radius: 30px;
                     border: 0.5px solid rgb(180, 180, 180);
+                    margin-bottom: 85px;
                     position: relative;
-                    margin-top: -580px;
-                    margin-bottom: 300px;
                 }
                 .key{
-                    height: 110px;
+                    width: 90%;
                     background-color: rgb(0, 0, 39);
                     border-radius: 15px;
                     margin: 0% auto;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     justify-content: space-between;
                     align-items: center;
-                    font-family: sans-serif;
-                    color: white;
-                    font-weight: bold;
-                    font-size: smaller;
-                    letter-spacing: 0.6px;
-                }
-                .key img{
-                    width: 43px;
-                    height: 43px;
-                    margin-left: 0px;
-                    border-radius: 25%;
-                    margin-top: 20px;
-                    margin-right: 7px;
-                }
-                .key1{
-                    width: 250px;
                 }
                 .key2{
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: row;
+                    justify-content: space-between;
                     align-items: center;
-                    width: 180px;
-                }
-                .learn{
-                    padding: 5px;
-                    cursor: pointer;
-                    margin-top: 10px;
-                }
-                .learn:hover{
-                    border-radius: 17px;
-                    background-color: rgb(99, 109, 163);
-                }
-                .key button{
-                    margin-top: 5px;
-                    margin-right: 10px;
-                    width: 110px;
-                    height: 50px;
-                    border-radius: 25px;
-                    background-color: #0e58cf;
-                    color: white;
-                    font-family: sans-serif;
-                    font-weight: bolder;
-                    font-size: 15px;
-                    border: none;
-                    outline: none;
-                    cursor: pointer;
-                }
-                .key button:hover{
-                    background-color: #00378f;
+                    width: 70%;
                 }
                 .saving{
-                    border-radius: 20px;
-                    margin: 0px auto;
+                    width: 82%;
+                    height: 400px;
+                    padding-left: 15px;
                 }
-                .saving button{
-                    width: 250px;
+                .saving h1{
+                    font-size: 23px;
+                    font-weight: 800;
                 }
-                .items{
-                    height: 620px;
-                    margin: 0% auto;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: flex-start;
-                    font-family: sans-serif;
-                    letter-spacing: 0.6px;
-                    border: none;
-                    overflow-x: hidden;
-                    overflow-x: scroll;
-                    display: flex;
-                    flex-direction: row;
-                    padding: 0px;
+                .saving p{
+                    font-size: 14px;
                 }
-                .items1 img{
-                    width: 190px;
-                    height: 190px;
-                    border-radius: 15px;
-                }
-                #tag{
-                margin-top: -14px;
-                }
-                .p5{
-                    transform: translate(2px,0px);
-                    font-size: 12px;
-                }
-                .transport{
-                    width: 95%;
-                    height: 760px;
-                    border-radius: 25px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    padding: 0%;
-                    margin: 0px auto;
-                    font-family: sans-serif;
-                    border: 0.5px solid rgb(180, 180, 180);
-                }
-
-                .tree{
+                .hotel1{
                     width: 100%;
-                    height: 250px;
-                    border-radius: 25px;
+                    color: #0e58cf;
+                    padding-left: 15px;
+                    font-size: 15px;
+                    font-weight: bolder;
+                    border-bottom: 0px solid rgb(180, 180, 180);
                 }
-                .middle{
-                    width: 100%;
-                    height: 230px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    padding: 10px;
-                    margin-bottom: 40px;
+                .hotel1 p{
+                    height: 30px;
+                    width: fit-content;
+                    padding-top: 0px;
+                    padding-left: 8px;
+                    line-height: 20px;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    cursor: pointer;
+                    border-bottom: 0px solid #0e58cf;
                 }
-                .middle2 p{
-                    margin-top: 10px;
-                    font-size: 11px;
+                .hotel2{
+                    margin-top: 18px;
+                    border-top: 0.5px solid rgb(180, 180, 180);
                 }
-                .middle2 h6{
-                    margin-top: 10px;
-                    font-size: 13px;
-                }
-
-                .scan{
-                    width: 220px;
-                    height: 220px;
-                    border-radius: 25px;
-                    margin: 0px auto;
+                .hotel1 p:hover{
+                    padding-bottom: 5px;
                 }
                 .bluebo{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    align-items: center;
-                    height: fit-content;
-                    width: 95%;
-                    margin: 0px auto;
-                    font-family: sans-serif;
-                    font-size: 12px;
-                    padding-top: 15px;
-                    border-radius: 25px;
                     border: 0.5px solid rgb(180, 180, 180);
+                    border-radius: 25px;
+
                 }
-                .bluebo img{
-                    width: 95%;
+                .bluebo>div{
+                    width: 100%;
+                    margin: 0px auto;
                 }
                 .blane{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    height: fit-content;
-                    width: 95%;
-                    margin: 0px auto;
-                    font-family: sans-serif;
-                    font-size: 12px;
-                    border-radius: 25px;
                     border: 0.5px solid rgb(180, 180, 180);
-                }
-                .blane img{
-                    width: 95%;
-                    height: 300px;
                     border-radius: 25px;
-                    margin-top: 20px;
-                    margin: 0% auto;
+
                 }
-                .blane div{
+                .blane>div{
+                    width: 100%;
                     margin: 0px auto;
-                }
-                .blane1{
-                    width: 95%;
-                    margin-top: 97px;
                 }
                 .canoe{
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     justify-content: space-between;
                     height: fit-content;
+                    width: 82%;
                     margin: 0px auto;
-                    font-family: sans-serif;
-                    font-size: 12px;
                 }
-                .canoe1{
-                    background-image: url(PROJECT\ IMAGES/inplane.jfif);
-                    background-attachment: relative;
-                    background-size: contain;
-                    background-repeat: repeat;
-                    background-position: center;
-                    width: 220px;
-                    height: 200px;
-                    border-radius: 10px;
+                
+                .canoe>div{
+                    width: 100%;
+                    margin: 0px auto;
+                    border-radius: 20px;
+                    height: 250px;
+                    margin-bottom: 20px;
+                }
+                .transport{
+                    width: 82%;
+                    border-radius: 25px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: flex-start;
-                    color: white;
-                    padding-left: 10px;
-                    font-family: sans-serif;
                 }
-                .canoe1 h6{
-                    font-size: x-large;
+                .tree{
+                    width: 100%;
+                    height: 254px;
+                    border-radius: 25px;
                 }
-                .canoe1 p{
-                    visibility: hidden;
+                
+
+                .scan{
+                    width: 79%;
+                    height: 210px;
+                    margin-top: 25px;
+                    margin: 0px auto;
                 }
-                .canoe2{
-                    background-image: url(PROJECT\ IMAGES/canoe.jfif);
-                    background-attachment: relative;
-                    background-size: contain;
-                    background-repeat: repeat;
-                    background-position: center;
-                    width: 220px;
-                    height: 200px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    cursor: pointer;
+                .saud{
+                    width: 50px;
+                    height: 50px;
                 }
                 .hotel{
-                    height: 260px;
-                    border-radius: 10px;
+                    width: 82%;
+                    height: 310px;
+                }
+                
+                .hotel2 h3{
+                    font-size: 17px;
+                    margin-bottom: 7px;
+                    font-weight: bolder;
+                    margin-top: 25px;
+                }
+                .hotel2 div{
                     display: flex;
                     flex-direction: column;
-                    justify-content: flex-start;
-                    line-height: -0px;
-                    padding: 10px;
-                    font-family: sans-serif;
-                    border: 3px solid black;
+                }
+                .ul2{
+                    margin: 0px;
+                }
+                .about{
+                    width: 82%;
                     margin: 0px auto;
-                    border: 0.5px solid rgb(180, 180, 180);
                 }
-                .hotel1{
-                    width: 450px;
-                    color: #0e58cf;
-                    padding-left: 15px;
-                    font-size: 15px;
-                    font-weight: bolder;
-                    border-bottom: 0.5px solid rgb(180, 180, 180);
-                }
-                .hotel2 li{
+                .about li{
                     list-style-type: none;
-                    line-height: 20px;
+                    font-size: 12px;
+                    line-height: 27px;
+                    color: #0e58cf;
+                    cursor: pointer;
+                }
+                .about li:hover{
+                    text-decoration: underline;
+                }
+                .about p{
+                    font-weight: bolder;
                 }
                 .feedback{
                     display: flex;
                     flex-direction: column;
-                    height: 550px;
-                    margin-left: 10px;
+                    justify-content: space-between;
                 }
                 .policies{
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
-                    width: 410px;
-                    margin: 0px auto;
+                    width: 100%;
                 }
                 .company{
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
-                    width: 410px;
-                    margin: 0px auto;
+                    width: 100%;
+                    margin-bottom: 32px;
                 }
-
                 .inc{
-                    height: 110px;
+                    width: 82%;
                     margin: 0px auto;
-                    padding-top: 15px;
+                    padding: 20px 0px;
                     border-top: 0.5px solid rgb(180, 180, 180);
-                    margin-top: 230px;
+                }
+                .inc p{
+                    font-size: small;
                 }
                 .iconp{
+                    width: fit-content;
                     margin: 0px auto; 
                     border-radius: 18px;
-                    width: 90px;
-                    height: 30px;
+                    padding: 0px 15px;
                     display: flex;
-                    padding-left: 8px;
-                    padding-right: 8px;
                     flex-direction: row;
                     justify-content: flex-start;
-                    align-items: center;
                     position: fixed;
-                    bottom: 10px;
+                    bottom: 20px;
                     right: 40px;
+                    background-color: rgb(202, 202, 202);
                     cursor: pointer;
                 }
                 .iconp:hover{
@@ -1958,23 +1772,32 @@
                 }
                 .iconp i{
                     color: #0e58cf;
-                    font-size: 16px;
-                    margin-top: 27px;
                 }
                 .iconp p{
                     color: #0e58cf;
-                    margin-top: 18px;
-                    font-size: 15px;
+                    font-size: 20px;
                     font-weight: bolder;
-                    margin-left: 10px;
                 }
-                #iii{
-                    visibility: hidden;
+                .caveat{
+                    color: black;
+                    background-color: yellow;
+                    padding: 7px;
+                    border-radius: 12px;
+                    width: 90%;
+                    margin: 0px auto;
+                }
+                .caveat h3{
+                    text-align: center;
+                    font-size: xx-large;
                 }
                 .caveat{
                     padding: 3px;
                     border-radius: 12px;
                     margin: 0px auto;
+                }
+                .caveat h3{
+                    text-align: center;
+                    font-size: 25px;
                 }
                 .project a{
                     padding: 2px 5px;
@@ -1986,7 +1809,7 @@
     <body>
         <div class="top">
             <div class="d1">
-                <img src="PROJECT IMAGES/expedia.png" style="border-radius: 3px; visibility: visible;">
+                <img src="PROJECT IMAGES/expedia.png" style="border-radius: 3px;">
                 <h2>Expedia</h1>
             </div>
 
@@ -2007,33 +1830,6 @@
                 </ul>
             </div>
 
-
-
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" 
-            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" id="canva">
-            <i class="fa-solid fa-bars"></i></i></button>
-
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-                <div class="offcanvas-header" id="canva">
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">EXPEDIA</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body" id="body">
-                    
-                    <img src="PROJECT IMAGES/tel.jpeg" style="width: 20px; height: 20px;">
-                    <p>Get the app</p>
-                
-                    <img src="PROJECT IMAGES/d earth.jpg" style="width: 20px; height: 20px;">
-                    <p>English</p>
-                    <p>List your property</p>
-                    <p>Support</p>
-                    <p>Trips</p>
-                    <i class="fa-solid fa-bell"></i>
-                    <p>Sign in</p>
-                    
-    
-                </div>
-            </div>
             <div class="d3">
                 <div class="d3a">
                     <img src="PROJECT IMAGES/tel.jpeg" style="width: 20px; height: 20px; margin-top: 4px;">
@@ -2051,9 +1847,55 @@
                     <p style="margin-right: 40px; margin-left: -30px;">Sign in</p>
                 </div>
             </div>
-        </div><br><br>
+        </div><br class="ke"><br class="ke">
 
 
+        <div class="caro">
+            <a href="expedia.html"><img src="PROJECT IMAGES/expedia.png" style="border-radius: 3px; width: 50px; height: 50px;"></a>
+            <div class="dropdown" id="mor">
+                <p style=" background-color: white; border: none; font-weight: 700; color: darkblue;" class="btn btn-secondary dropdown-toggle" 
+                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More travel
+                </p>
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Stays</button></li>
+                    <li><button class="dropdown-item" type="button">Flight</button></li>
+                    <li><button class="dropdown-item" type="button">Cars</button></li>
+                    <li><button class="dropdown-item" type="button">packages</button></li>
+                    <li><button class="dropdown-item" type="button">Things to do</button></li>
+                    <li><button class="dropdown-item" type="button">Cruises</button></li>
+                    <li><button class="dropdown-item" type="button">Deals</button></li>
+                    <li><button class="dropdown-item" type="button">Group & meetings</button></li>
+                </ul>
+            </div>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" id="canva">
+                <i class="fa-solid fa-bars"></i></i>
+            </button>
+        </div>
+            
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header" id="canva">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">EXPEDIA</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" id="body">
+                
+                <img src="PROJECT IMAGES/tel.jpeg" style="width: 20px; height: 20px;" >
+                <p>Get the app</p>
+            
+                <img src="PROJECT IMAGES/d earth.jpg" style="width: 20px; height: 20px;">
+                <p>English</p>
+                <p>List your property</p>
+                <p>Support</p>
+                <p>Trips</p>
+                <i class="fa-solid fa-bell"></i>
+                <p>Sign in</p>
+                
+
+            </div>
+        </div>
 
 
 
@@ -2063,27 +1905,27 @@
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="Stays-tab" data-bs-toggle="tab" data-bs-target="#Stays-tab-pane" 
-                type="button" role="tab" aria-controls="Stays-tab-pane" aria-selected="true">Stays</button>
+                type="button" role="tab" aria-controls="Stays-tab-pane" aria-selected="true" onclick="stay()">Stays</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item" role="presentation" id="floy">
                 <button class="nav-link" id="Flight-tab" data-bs-toggle="tab" data-bs-target="#Flight-tab-pane" 
-                type="button" role="tab" aria-controls="Flight-tab-pane" aria-selected="false">Flight</button>
+                type="button" role="tab" aria-controls="Flight-tab-pane" aria-selected="false" onclick="flight()">Flight</button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="Cars-tab" data-bs-toggle="tab" data-bs-target="#Cars-tab-pane" 
-                type="button" role="tab" aria-controls="Cars-tab-pane" aria-selected="false">Cars</button>
+                type="button" role="tab" aria-controls="Cars-tab-pane" aria-selected="false" onclick="car()">Cars</button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="packages-tab" data-bs-toggle="tab" data-bs-target="#packages-tab-pane" 
-                type="button" role="tab" aria-controls="packages-tab-pane" aria-selected="false">packages</button>
+                type="button" role="tab" aria-controls="packages-tab-pane" aria-selected="false" onclick="park()">packages</button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="Things-tab" data-bs-toggle="tab" data-bs-target="#Things-tab-pane" 
-                type="button" role="tab" aria-controls="Things-tab-pane" aria-selected="false">Things to do</button>
+                type="button" role="tab" aria-controls="Things-tab-pane" aria-selected="false" onclick="things()">Things to do</button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="Cruises-tab" data-bs-toggle="tab" data-bs-target="#Cruises-tab-pane" 
-                type="button" role="tab" aria-controls="Cruises-tab-pane" aria-selected="false">Cruises</button>
+                type="button" role="tab" aria-controls="Cruises-tab-pane" aria-selected="false" onclick="cruise()">Cruises</button>
             </li>
 
         </ul>
@@ -2091,20 +1933,29 @@
             <div class="tab-pane fade show active" id="Stays-tab-pane" role="tabpanel" 
             aria-labelledby="Stays-tab" tabindex="0">
                 <div class="container row" id="detail2">
-                    <div class="col-sm-3" id="detail2a">
-                        <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
-                        <input type="search" placeholder="Going to">
+                    <div>
+                        <p id="p1"></p>
+                        <div class="col-sm-3" id="detail2a">
+                            <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                            <input type="search" placeholder="Going to" id="inp1">
+                        </div>
                     </div>
-                    <div class="col-sm-3" id="detail2b">
-                        <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
-                        <input type="date">
+                    <div>
+                        <p id="p2"></p>
+                        <div class="col-sm-3" id="detail2b">
+                            <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
+                            <input type="date" id="inp2">
+                        </div>
                     </div>
-                    <div class="col-sm-3" id="detail2c">
-                        <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
-                        <input type="search" value="Travelers 2 Travelers, 1 room">
+                    <div>
+                        <p id="p3"></p>
+                        <div class="col-sm-3" id="detail2c">
+                            <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
+                            <input type="search" value="Travelers 2 Travelers, 1 room" id="inp3">
+                        </div>
                     </div>
-                    <button class="col-sm-1">
-                        search
+                    <button class="col-sm-1" onclick="forstay()">
+                        search  
                     </button>
                 </div>
                 <div class="detail3">
@@ -2124,15 +1975,15 @@
                 <ul class="nav nav-tabs" id="myoneTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="Round-tab" data-bs-toggle="tab" data-bs-target="#Round-tab-pane" 
-                        type="button" role="tab" aria-controls="Round-tab-pane" aria-selected="true">Roundtrip</button>
+                        type="button" role="tab" aria-controls="Round-tab-pane" aria-selected="true" onclick="Round()">Roundtrip</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="One-tab" data-bs-toggle="tab" data-bs-target="#One-tab-pane" 
-                        type="button" role="tab" aria-controls="One-tab-pane" aria-selected="false">One-way</button>
+                        type="button" role="tab" aria-controls="One-tab-pane" aria-selected="false" onclick="One()">One-way</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="Multi-tab" data-bs-toggle="tab" data-bs-target="#Multi-tab-pane" 
-                        type="button" role="tab" aria-controls="Multi-tab-pane" aria-selected="false">Multi-city</button>
+                        type="button" role="tab" aria-controls="Multi-tab-pane" aria-selected="false" onclick="Multi()">Multi-city</button>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" 
@@ -2147,140 +1998,195 @@
                     </li>
                 </ul>
                 <div class="tab-content" id="myoneContent">
-                    <div class="tab-pane fade show active row" id="Round-tab-pane" role="tabpanel" 
+                    <div class="tab-pane fade show active" id="Round-tab-pane" role="tabpanel" 
                     aria-labelledby="Round-tab" tabindex="0">
-                        <div id="from">
-                            <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
-                            <input type="search" placeholder="Leaving from">
+                        <div>
+                            <p id="rp1"></p>
+                            <div id="from">
+                                <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                                <input type="search" placeholder="Leaving from" id="r1">
+                            </div>
                         </div>
-                        <div id="from">
-                            <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
-                            <input type="search" placeholder="Going to">
+                        <div>
+                            <p id="rp2"></p>
+                            <div id="from">
+                                <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                                <input type="search" placeholder="Going to"  id="r2">
+                            </div>
                         </div>
-                        <div id="from">
-                            <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
-                            <input type="date">
+                        <div>
+                            <p id="rp3"></p>
+                            <div id="from">
+                                <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
+                                <input type="date"  id="r3">
+                            </div>
                         </div>
-                        <div id="from">
-                            <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
-                            <input type="search" value="Travelers 2 Travelers, 1 room">
+                        <div>
+                            <p id="rp4"></p>
+                            <div id="from">
+                                <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
+                                <input type="search" value="Travelers 2 Travelers, 1 room" id="r4">
+                            </div>
                         </div>
-                        <button>
+                        <button onclick="forround()">
                             search
                         </button>
                     </div>
                     <div class="tab-pane fade" id="One-tab-pane" role="tabpanel" 
                         aria-labelledby="One-tab" tabindex="0">
-                        <div id="from">
-                            <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
-                            <input type="search" placeholder="Leaving from">
+                        <div>
+                            <p id="op1"></p>
+                            <div id="from">
+                                <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                                <input type="search" placeholder="Leaving from" id="o1">
+                            </div>
                         </div>
-                        <div id="from">
-                            <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
-                            <input type="search" placeholder="Going to">
+                        <div>
+                            <p id="op2"></p>
+                            <div id="from">
+                                <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                                <input type="search" placeholder="Going to"  id="o2">
+                            </div>
                         </div>
-                        <div id="from">
-                            <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
-                            <input type="date">
+                        <div>
+                            <p id="op3"></p>
+                            <div id="from">
+                                <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
+                                <input type="date"  id="o3">
+                            </div>
                         </div>
-                        <div id="from">
-                            <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
-                            <input type="search" value="Travelers 2 Travelers, 1 room">
+                        <div>
+                            <p id="op4"></p>
+                            <div id="from">
+                                <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
+                                <input type="search" value="Travelers 2 Travelers, 1 room" id="o4">
+                            </div>
                         </div>
-                        <button>
+                        <button onclick="forone()">
                             search
                         </button>
                     </div>
-                        <div class="tab-pane fade" id="Multi-tab-pane" role="tabpanel" 
-                        aria-labelledby="Multi-tab" tabindex="0">
+                    <div class="tab-pane fade" id="Multi-tab-pane" role="tabpanel" 
+                    aria-labelledby="Multi-tab" tabindex="0">
+                        <div>
+                            <p id="mp1"></p>
                             <div id="from">
                                 <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
-                                <input type="search" placeholder="Leaving from">
+                                <input type="search" placeholder="Leaving from" id="m1">
                             </div>
+                        </div>
+                        <div>
+                            <p id="mp2"></p>
                             <div id="from">
                                 <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
-                                <input type="search" placeholder="Going to">
+                                <input type="search" placeholder="Going to"  id="m2">
                             </div>
+                        </div>
+                        <div>
+                            <p id="mp3"></p>
                             <div id="from">
                                 <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
-                                <input type="date">
+                                <input type="date"  id="m3">
                             </div>
+                        </div>
+                        <div>
+                            <p id="mp4"></p>
                             <div id="from">
                                 <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
-                                <input type="search" value="Travelers 2 Travelers, 1 room">
+                                <input type="search" value="Travelers 2 Travelers, 1 room" id="m4">
                             </div>
-                            <button>
-                                search
-                            </button>
                         </div>
+                        <button onclick="formul()">
+                            search
+                        </button>
+                    </div>
                     </div>
                 </div>
 
             </div>
             <div class="tab-pane fade" id="Cars-tab-pane" role="tabpanel" 
-            aria-labelledby="Cars-tab" tabindex="0">
+                aria-labelledby="Cars-tab" tabindex="0">
 
 
                 <div class="pick">
                     <div>
-                        <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
-                        <input type="search" value="Pick-up">
+                        <p id="pickfrom"></p>
+                        <div>
+                            <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                            <input type="search" placeholder="Pick-up" id="inc1">
+                        </div>
                     </div>
                     <div>
-                        <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
-                        <input type="search" value="Same as pick-up">
+                        <p id="dropto"></p>
+                        <div>
+                            <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                            <input type="search" placeholder="Drop-off" id="inc2">
+                        </div>
                     </div>
                 </div>
                 <div class="date">
                     <div>
-                        <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
-                        <input type="date">
+                        <p id="datego"></p>
+                        <div>
+                            <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
+                            <input type="date" id="inc3">
+                        </div>
                     </div>
-
-                    <div class="btn-group" id="ten">
-                        <button type="button" class="btn btn-secondary dropdown-toggle" id="tenb" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span>Pick-up time</span>
-                            <p>10:30 AM</p>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">12:00AM</a></li>
-                          <li><a class="dropdown-item" href="#">3:00AM</a></li>
-                          <li><a class="dropdown-item" href="#">6:00AM</a></li>
-                          <li><a class="dropdown-item" href="#">9:00AM</a></li>
-                          <li><a class="dropdown-item" href="#">12:00PM</a></li>
-                        </ul>
+                    
+                    <div>
+                        <p id="pickgo"></p>
+                        <div class="btn-group" id="ten">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" id="tenb">
+                                <span>Pick-up time</span>
+                                <select id="inc4">
+                                    <option value="7:00AM">7:00AM</option>
+                                    <option value="9:00AM">9:00AM</option>
+                                    <option value="12:00PM">12:00PM</option>
+                                    <option value="2:00PM">2:00PM</option>
+                                    <option value="4:00PM">4:00PM</option>
+                                    <option value="7:00PM">7:00PM</option>
+                                    <option value="8:00PM">8:00PM</option>
+                                </select>
+                                
+                            </button>
+                        </div>
                     </div>
-                      
-                    <div class="btn-group" id="ten">
-                        <button type="button" class="btn btn-secondary dropdown-toggle" id="tenb" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                          <span>Drop-off time</span>
-                          <p>10:30 AM</p>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">12:00AM</a></li>
-                          <li><a class="dropdown-item" href="#">3:00AM</a></li>
-                          <li><a class="dropdown-item" href="#">6:00AM</a></li>
-                          <li><a class="dropdown-item" href="#">9:00AM</a></li>
-                          <li><a class="dropdown-item" href="#">12:00PM</a></li>
-                        </ul>
-                    </div>
-                </div><br>
+                    
+                      <div>
+                            <p id="dropgo"></p>
+                            <div class="btn-group" id="ten">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" id="tenb">
+                                    <span>Drop-off time</span>
+                                    <select id="inc5">
+                                        <option value="8:00AM">8:00AM</option>
+                                        <option value="10:30AM">10:30AM</option>
+                                        <option value="1:00PM">1:00PM</option>
+                                        <option value="3:00PM">3:00PM</option>
+                                        <option value="5:30PM">5:30PM</option>
+                                        <option value="7:30PM">7:30PM</option>
+                                        <option value="9:00PM">9:00PM</option>
+                                    </select>
+                                </button>
+                            </div>
+                      </div>
+                   <br>
+                </div>
                 <p style="margin-left: 30px; font-weight: bolder; font-size: 13px;">Special rate</p>
                 <div class="aarp">
                     <p>Show AARP rate</p>
                     <p>Discount codes</p>
                 </div>
-                <button class="bcode">
+                <button class="bcode" onclick="forcars()">
                     search
                 </button>
             </div>
 
             <div class="tab-pane fade" id="packages-tab-pane" role="tabpanel" 
-            aria-labelledby="packages-tab" tabindex="0">
+                 aria-labelledby="packages-tab" tabindex="0">
                 <div class="added">
                     <p>Stay added</p>
-                    <p>Flight added</p>
-                    <p style="width: 50px; border: 1px solid rgb(20, 20, 20);">Car</p>
+                    <p class="elim">Flight added</p>
+                    <p style="width: 50px; border: 1px solid rgb(20, 20, 20);" class="elim">Car</p>
                     <span class="nav-item dropdown">
                         <p class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#" role="button" 
                         aria-expanded="false" id="economy">Economy</p>
@@ -2294,23 +2200,35 @@
                     </span>
                 </div>
                 <div id="pulti">
-                    <div id="from">
-                        <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
-                        <input type="search" placeholder="Leaving from">
+                    <div>
+                        <p id="pp1"></p>
+                        <div id="from">
+                            <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                            <input type="search" placeholder="Leaving from" id="pc1">
+                        </div>
                     </div>
-                    <div id="from">
-                        <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
-                        <input type="search" placeholder="Going to">
+                    <div>
+                        <p id="pp2"></p>
+                        <div id="from">
+                            <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                            <input type="search" placeholder="Going to"  id="pc2">
+                        </div>
                     </div>
-                    <div id="from">
-                        <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
-                        <input type="date">
+                    <div>
+                        <p id="pp3"></p>
+                        <div id="from">
+                            <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
+                            <input type="date"  id="pc3">
+                        </div>
                     </div>
-                    <div id="from">
-                        <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
-                        <input type="search" value="Travelers 2 Travelers, 1 room">
+                    <div>
+                        <p id="pp4"></p>
+                        <div id="from">
+                            <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
+                            <input type="search" value="Travelers 2 Travelers, 1 room" id="pc4">
+                        </div>
                     </div>
-                    <button>
+                    <button onclick="forpul()">
                         search
                     </button>
                 </div>
@@ -2318,15 +2236,22 @@
             <div class="tab-pane fade" id="Things-tab-pane" role="tabpanel" 
             aria-labelledby="Things-tab" tabindex="0">
                 <div id="tulti">
-                    <div id="rom">
-                        <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
-                        <input type="search" placeholder="Going to">
+                    <div>
+                        <p id="prom1"></p>
+                        <div id="rom">
+                            <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                            <input type="search" placeholder="Going to" id="thingt1">
+                        </div>
                     </div>
-                    <div id="rom">
-                        <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
-                        <input type="date">
+                    <div>
+                        <p id="prom2"></p>
+                        <div id="rom">
+                            <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
+                            <input type="date" id="thingt2">
+                        </div>
                     </div>
-                    <button>
+                    
+                    <button onclick="thingtab()">
                         search
                     </button>
                 </div>
@@ -2335,27 +2260,39 @@
 
             <div class="tab-pane fade" id="Cruises-tab-pane" role="tabpanel" 
             aria-labelledby="Cruises-tab" tabindex="0">
-            <div id="pulti">
-                <div id="from">
-                    <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
-                    <input type="search" placeholder="Leaving from">
+                <div id="pulti">
+                    <div>
+                        <p id="crp1"></p>
+                        <div id="from">
+                            <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                            <input type="search" placeholder="Leaving from" id="ic1">
+                        </div>
+                    </div>
+                    <div>
+                        <p id="crp2"></p>
+                        <div id="from">
+                            <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
+                            <input type="search" placeholder="Going to" id="ic2">
+                        </div>
+                    </div>
+                    <div>
+                        <p id="crp3"></p>
+                        <div id="from">
+                            <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
+                            <input type="date" id="ic3">
+                        </div>
+                    </div>
+                    <div>
+                        <p id="crp4"></p>
+                        <div id="from">
+                            <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
+                            <input type="search" value="Travelers 2 Travelers, 1 room" id="ic4">
+                        </div>
+                    </div>
+                    <button onclick="forcul()">
+                        search
+                    </button>
                 </div>
-                <div id="from">
-                    <i class="fa-solid fa-location-dot" id="icon" style="color: #3270ec;"></i>
-                    <input type="search" placeholder="Going to">
-                </div>
-                <div id="from">
-                    <i class="fa-regular fa-calendar-day" id="icon" style="color: #3270ec;"></i>
-                    <input type="date">
-                </div>
-                <div id="from">
-                    <i class="fa-solid fa-user" id="icon" style="color: #407ee2;"></i>
-                    <input type="search" value="Travelers 2 Travelers, 1 room">
-                </div>
-                <button>
-                    search
-                </button>
-            </div>
             </div>
         </div>
 
@@ -2415,10 +2352,7 @@
                     $2,437 total<br>
                     include taxes & fees
                 </p>
-                <div>
-                    <i class="fa-thin fa-landmark" id="tag"></i>
-                    <p class="p5">Member price available</p>
-                </div> 
+                <p class="p5"><i class="fa-thin fa-landmark"></i>  Member price available</p>
                 <p class="p6">Sign in for Member price</p>
             </div>
 
@@ -2443,10 +2377,8 @@
                     $2,437 total<br>
                     include taxes & fees
                 </p>
-                <div>
-                    <i class="fa-thin fa-landmark" id="tag"></i>
-                    <p class="p5">Member price available</p>
-                </div> 
+                    
+                    <p class="p5"><i class="fa-thin fa-landmark"></i>  Member price available</p>
                 <p class="p6">Sign in for Member price</p>
             </div>
 
@@ -2469,10 +2401,7 @@
                     $278 total<br>
                     include taxes & fees
                 </p>
-                <div>
-                    <i class="fa-thin fa-landmark" id="tag"></i>
-                    <p class="p5">Member price available</p>
-                </div> 
+                <p class="p5"><i class="fa-thin fa-landmark"></i>  Member price available</p>
                 <p class="p6">Sign in for Member price</p>
             </div>
 
@@ -2517,10 +2446,7 @@
                     $881 total<br>
                     include taxes & fees
                 </p>
-                <div>
-                    <i class="fa-thin fa-landmark" id="tag"></i>
-                    <p class="p5">Member price available</p>
-                </div> 
+                <p class="p5"><i class="fa-thin fa-landmark"></i> Member price available</p>
                 <p class="p6">Sign in for Member price</p>
             </div>
 
@@ -2588,10 +2514,7 @@
                     $141 total<br>
                     include taxes & fees
                 </p>
-                <div>
-                    <i class="fa-thin fa-landmark" id="tag"></i>
-                    <p class="p5">Member price available</p>
-                </div> 
+                <p class="p5"><i class="fa-thin fa-landmark"></i>  Member price available</p>
                 <p class="p6">Sign in for Member price</p>
             </div>
 
@@ -2636,10 +2559,7 @@
                     $937 total<br>
                     include taxes & fees
                 </p>
-                <div>
-                    <i class="fa-thin fa-landmark" id="tag"></i>
-                    <p class="p5">Member price available</p>
-                </div> 
+                <p class="p5"><i class="fa-thin fa-landmark"></i>  Member price available</p>
                 <p class="p6">Sign in for Member price</p>
             </div>
             
@@ -2663,10 +2583,7 @@
                     $828 total<br>
                     include taxes & fees
                 </p>
-                <div>
-                    <i class="fa-thin fa-landmark" id="tag"></i>
-                    <p class="p5">Member price available</p>
-                </div> 
+                <p class="p5"><i class="fa-thin fa-landmark"></i>  Member price available</p>
                 <p class="p6">Sign in for Member price</p>
             </div>
             
@@ -2690,10 +2607,7 @@
                     $863 total<br>
                     include taxes & fees
                 </p>
-                <div>
-                    <i class="fa-thin fa-landmark" id="tag"></i>
-                    <p class="p5">Member price available</p>
-                </div> 
+                <p class="p5"><i class="fa-thin fa-landmark"></i>  Member price available</p>
                 <p class="p6">Sign in for Member price</p>
             </div>
 
@@ -2739,10 +2653,7 @@
                     $869 total<br>
                     include taxes & fees
                 </p>
-                <div>
-                    <i class="fa-thin fa-landmark" id="tag"></i>
-                    <p class="p5">Member price available</p>
-                </div> 
+                <p class="p5"><i class="fa-thin fa-landmark"></i>  Member price available</p>
                 <p class="p6">Sign in for Member price</p>
             </div>
         </div><br><br><br>
@@ -3220,5 +3131,452 @@
                 </ul>
             </nav>
         </div><br><br>
+
+
+        <script>
+            function stay(){
+                document.getElementById('Stays-tab-pane').style.zIndex=3
+                document.getElementById('Flight-tab-pane').style.zIndex=1
+                document.getElementById('Cars-tab-pane').style.zIndex=1
+                document.getElementById('packages-tab-pane').style.zIndex=1
+                document.getElementById('Things-tab-pane').style.zIndex=1
+                document.getElementById('Cruises-tab-pane').style.zIndex=1
+            }
+            function flight(){
+                document.getElementById('Stays-tab-pane').style.zIndex=1
+                document.getElementById('Flight-tab-pane').style.zIndex=3
+                document.getElementById('Cars-tab-pane').style.zIndex=1
+                document.getElementById('packages-tab-pane').style.zIndex=1
+                document.getElementById('Things-tab-pane').style.zIndex=1
+                document.getElementById('Cruises-tab-pane').style.zIndex=1
+            }
+            function car(){
+                document.getElementById('Stays-tab-pane').style.zIndex=1
+                document.getElementById('Flight-tab-pane').style.zIndex=1
+                document.getElementById('Cars-tab-pane').style.zIndex=3
+                document.getElementById('packages-tab-pane').style.zIndex=1
+                document.getElementById('Things-tab-pane').style.zIndex=1
+                document.getElementById('Cruises-tab-pane').style.zIndex=1
+            }
+            function park(){
+                document.getElementById('Stays-tab-pane').style.zIndex=1
+                document.getElementById('Flight-tab-pane').style.zIndex=1
+                document.getElementById('Cars-tab-pane').style.zIndex=1
+                document.getElementById('packages-tab-pane').style.zIndex=3
+                document.getElementById('Things-tab-pane').style.zIndex=1
+                document.getElementById('Cruises-tab-pane').style.zIndex=1
+            }
+            function things(){
+                document.getElementById('Stays-tab-pane').style.zIndex=1
+                document.getElementById('Flight-tab-pane').style.zIndex=1
+                document.getElementById('Cars-tab-pane').style.zIndex=1
+                document.getElementById('packages-tab-pane').style.zIndex=1
+                document.getElementById('Things-tab-pane').style.zIndex=3
+                document.getElementById('Cruises-tab-pane').style.zIndex=1
+            }
+            function cruise(){
+                document.getElementById('Stays-tab-pane').style.zIndex=1
+                document.getElementById('Flight-tab-pane').style.zIndex=1
+                document.getElementById('Cars-tab-pane').style.zIndex=1
+                document.getElementById('packages-tab-pane').style.zIndex=1
+                document.getElementById('Things-tab-pane').style.zIndex=1
+                document.getElementById('Cruises-tab-pane').style.zIndex=6
+            }
+
+
+
+
+
+            function Round(){
+                document.getElementById('Round-tab-pane').style.zIndex=3
+                document.getElementById('One-tab-pane').style.zIndex=1
+                document.getElementById('Multi-tab-pane').style.zIndex=1
+            }
+            function One(){
+                document.getElementById('Round-tab-pane').style.zIndex=1
+                document.getElementById('One-tab-pane').style.zIndex=3
+                document.getElementById('Multi-tab-pane').style.zIndex=1
+            }
+            function Multi(){
+                document.getElementById('Round-tab-pane').style.zIndex=1
+                document.getElementById('One-tab-pane').style.zIndex=1
+                document.getElementById('Multi-tab-pane').style.zIndex=3
+            }
+            function forstay(){
+                let inp1=document.getElementById('inp1').value;
+                let inp2=document.getElementById('inp2').value;
+                let inp3=document.getElementById('inp3').value;
+                let p1=document.getElementById('p1');
+                let p2=document.getElementById('p2');
+                let p3=document.getElementById('p3');
+                
+                if(inp1==''){
+                    p1.innerHTML='enter where you are going'
+                    p1.style.color= 'red'
+                }
+                else{
+                    p1.innerHTML='valid'
+                    p1.style.color= 'green'
+                }
+                if(inp2==''){
+                    p2.innerHTML='input date'
+                    p2.style.color= 'red'
+                }
+                else if(inp2<''){
+                    p2.innerHTML='input date'
+                    p2.style.color= 'red'
+                }
+                else{
+                    p2.innerHTML='valid'
+                    p2.style.color= 'green'
+                }
+                if(inp3==''){
+                    p3.innerHTML='input the number of the travelers'
+                    p3.style.color= 'red'
+                }
+                else{
+                    p3.innerHTML='valid'
+                    p3.style.color= 'green'
+                }
+            }
+            function forround(){
+                let inr1=document.getElementById('r1').value;
+                let inr2=document.getElementById('r2').value;
+                let inr3=document.getElementById('r3').value;
+                let inr4=document.getElementById('r4').value;
+                let pr1=document.getElementById('rp1');
+                let pr2=document.getElementById('rp2');
+                let pr3=document.getElementById('rp3');
+                let pr4=document.getElementById('rp4');
+                if(inr1==''){
+                    pr1.innerHTML='input where you are leaving from'
+                    pr1.style.color= 'red'
+                }
+                else if(inr1==inr2){
+                    pr1.innerHTML='the value of where you are leaving from and where you are going cannot be the same'
+                    pr1.style.color= 'red'
+                    pr1.style.fontSize= '11px'
+                }
+                else{
+                    pr1.innerHTML='valid'
+                    pr1.style.color= 'green'
+                }
+                if(inr2==''){
+                    pr2.innerHTML='enter your destination'
+                    pr2.style.color= 'red'
+                }
+                else if(inr1==inr2){
+                    pr2.innerHTML='the value of where you are leaving from and where you are going cannot be the same'
+                    pr2.style.color= 'red'
+                    pr2.style.fontSize= '11px'
+                }
+                else{
+                    pr2.innerHTML='safe journey'
+                    pr2.style.color= 'green'
+                }
+                if(inr3==''){
+                    pr3.innerHTML='input date'
+                    pr3.style.color= 'red'
+                }
+                else{
+                    pr3.innerHTML='valid'
+                    pr3.style.color= 'green'
+                }
+                if(inr4==''){
+                    pr4.innerHTML='input the number of the travelers'
+                    pr4.style.color= 'red'
+                }
+                else{
+                    pr4.innerHTML='valid'
+                    pr4.style.color= 'green'
+                }
+            }
+
+            function forone(){
+                let ino1=document.getElementById('o1').value;
+                let ino2=document.getElementById('o2').value;
+                let ino3=document.getElementById('o3').value;
+                let ino4=document.getElementById('o4').value;
+                let po1=document.getElementById('op1');
+                let po2=document.getElementById('op2');
+                let po3=document.getElementById('op3');
+                let po4=document.getElementById('op4');
+                if(ino1==''){
+                    po1.innerHTML='enter where you are leaving from'
+                    po1.style.color= 'red'
+                }
+                else if(ino1==ino2){
+                    po1.innerHTML='the value of where you are leaving from and where you are going cannot be the same'
+                    po1.style.color= 'red'
+                    po1.style.fontSize= '11px'
+                }
+                else{
+                    po1.innerHTML='valid'
+                    po1.style.color= 'green'
+                }
+                if(ino2==''){
+                    po2.innerHTML='input your destination'
+                    po2.style.color= 'red'
+                }
+                else if(ino1==ino2){
+                    po2.innerHTML='the value of where you are leaving from and where you are going cannot be the same'
+                    po2.style.color= 'red'
+                    po2.style.fontSize= '11px'
+                }
+                else{
+                    po2.innerHTML='valid'
+                    po2.style.color= 'green'
+                }
+                if(ino3==''){
+                    po3.innerHTML='input date'
+                    po3.style.color= 'red'
+                }
+                else{
+                    po3.innerHTML='valid'
+                    po3.style.color= 'green'
+                }
+                if(ino4==''){
+                    po4.innerHTML='enter the number of the travelers'
+                    po4.style.color= 'red'
+                }
+                else{
+                    po4.innerHTML='valid'
+                    po4.style.color= 'green'
+                }
+            }
+
+            function formul(){
+                let inm1=document.getElementById('m1').value;
+                let inm2=document.getElementById('m2').value;
+                let inm3=document.getElementById('m3').value;
+                let inm4=document.getElementById('m4').value;
+                let pm1=document.getElementById('mp1');
+                let pm2=document.getElementById('mp2');
+                let pm3=document.getElementById('mp3');
+                let pm4=document.getElementById('mp4');
+                if(inm1==''){
+                    pm1.innerHTML='input where you are leaving from'
+                    pm1.style.color= 'red'
+                }
+                else if(inm1==inm2){
+                    pm1.innerHTML='the value of where you are leaving from and where you are going cannot be the same'
+                    pm1.style.color= 'red'
+                    pm1.style.fontSize= '11px'
+                }
+                else{
+                    pm1.innerHTML='valid'
+                    pm1.style.color= 'green'
+                }
+                if(inm2==''){
+                    pm2.innerHTML='input your destination'
+                    pm2.style.color= 'red'
+                
+                }
+                else if(inm1==inm2){
+                    pm2.innerHTML='the value of where you are leaving from and where you are going cannot be the same'
+                    pm2.style.color= 'red'
+                    pm2.style.fontSize= '11px'
+                }
+                else{
+                    pm2.innerHTML='valid'
+                    pm2.style.color= 'green'
+                }
+                if(inm3==''){
+                    pm3.innerHTML='enter date'
+                    pm3.style.color= 'red'
+                }
+                else{
+                    pm3.innerHTML='valid'
+                    pm3.style.color= 'green'
+                }
+                if(inm4==''){
+                    pm4.innerHTML='input the number of the travelers'
+                    pm4.style.color= 'red'
+                }
+                else{
+                    pm4.innerHTML='valid'
+                    pm4.style.color= 'green'
+                }
+            }
+
+            function forpul(){
+                let inpa1=document.getElementById('pc1').value;
+                let inpa2=document.getElementById('pc2').value;
+                let inpa3=document.getElementById('pc3').value;
+                let inpa4=document.getElementById('pc4').value;
+                let pp1=document.getElementById('pp1');
+                let pp2=document.getElementById('pp2');
+                let pp3=document.getElementById('pp3');
+                let pp4=document.getElementById('pp4');
+                if(inpa1==''){
+                    pp1.innerHTML='input where you are leaving from'
+                    pp1.style.color= 'red'
+                }
+                else if(inpa1==inpa2){
+                    pp1.innerHTML='the value of where you are leaving from and where you are going cannot be the same'
+                    pp1.style.color= 'red'
+                    pp1.style.fontSize= '11px'
+                }
+                else{
+                    pp1.innerHTML='valid'
+                    pp1.style.color= 'green'
+                }
+                if(inpa2==''){
+                    pp2.innerHTML='enter your destination'
+                    pp2.style.color= 'red'
+                }
+                else if(inpa1==inpa2){
+                    pp2.innerHTML='the value of where you are leaving from and where you are going cannot be the same'
+                    pp2.style.color= 'red'
+                    pp2.style.fontSize= '11px'
+                }
+                else{
+                    pp2.innerHTML='valid'
+                    pp2.style.color= 'green'
+                }
+                if(inpa3==''){
+                    pp3.innerHTML='input date'
+                    pp3.style.color= 'red'
+                }
+                else{
+                    pp3.innerHTML='valid'
+                    pp3.style.color= 'green'
+                }
+                if(inpa4==''){
+                    pp4.innerHTML='input the number of the travelers'
+                    pp4.style.color= 'red'
+                }
+                else{
+                    pp4.innerHTML='valid'
+                    pp4.style.color= 'green'
+                }
+            }
+
+            function forcul(){
+                let ic1=document.getElementById('ic1').value;
+                let ic2=document.getElementById('ic2').value;
+                let ic3=document.getElementById('ic3').value;
+                let ic4=document.getElementById('ic4').value;
+                let crp1=document.getElementById('crp1');
+                let crp2=document.getElementById('crp2');
+                let crp3=document.getElementById('crp3');
+                let crp4=document.getElementById('crp4');
+                if(ic1==''){
+                    crp1.innerHTML='enter where you are leaving from'
+                    crp1.style.color= 'red'
+                }
+                else if(ic1==ic2){
+                    crp1.innerHTML='the value of where you are leaving from and where you are going cannot be the same'
+                    crp1.style.color= 'red'
+                    crp1.style.fontSize= '11px'
+                }
+                else{
+                    crp1.innerHTML='valid'
+                    crp1.style.color= 'green'
+                }
+                if(ic2==''){
+                    crp2.innerHTML='input your destination'
+                    crp2.style.color= 'red'
+                }
+                else if(ic1==ic2){
+                    crp2.innerHTML='the value of where you are leaving from and where you are going cannot be the same'
+                    crp2.style.color= 'red'
+                    crp2.style.fontSize= '11px'
+                }
+                else{
+                    crp2.innerHTML='safe journey'
+                    crp2.style.color= 'green'
+                }
+                if(ic3==''){
+                    crp3.innerHTML='input date'
+                    crp3.style.color= 'red'
+                }
+                else{
+                    crp3.innerHTML='valid'
+                    crp3.style.color= 'green'
+                }
+                if(ic4==''){
+                    crp4.innerHTML='enter the number of the travelers'
+                    crp4.style.color= 'red'
+                }
+                else{
+                    crp4.innerHTML='valid'
+                    crp4.style.color= 'green'
+                }
+            }
+            
+                
+            function forcars(){
+                let inc4=document.getElementById('inc4').value;
+                let inc5=document.getElementById('inc5').value;
+                let to1=document.getElementById('pickfrom');
+                let to2=document.getElementById('dropto');
+                let to3=document.getElementById('datego');
+                let to4=document.getElementById('pickgo');
+                let to5=document.getElementById('dropgo');
+                let inc1=document.getElementById('inc1').value;
+                let inc2=document.getElementById('inc2').value;
+                let inc3=document.getElementById('inc3').value;
+                if(inc1==''){
+                    to1.innerHTML='input where you want to be picked'
+                    to1.style.color= 'red'
+                }
+                else if(inc1==inc2){
+                    to1.innerHTML='it cannot be possible to pick you from where you want to be dropped'
+                    to1.style.color= 'red'
+                    to1.style.fontSize= '12px'
+                }
+                else{
+                    to1.innerHTML="we'll be there right now"
+                    to1.style.color= 'green'
+                }
+                if(inc2==''){
+                    to2.innerHTML='enter where you want to be dropped'
+                    to2.style.color= 'red'
+                }
+                else if(inc1==inc2){
+                    to2.innerHTML='it cannot be possible to drop you to where you want to be picked'
+                    to2.style.color= 'red'
+                    to2.style.fontSize= '12px'
+                }
+                else{
+                    to2.innerHTML='valid'
+                    to2.style.color= 'green'
+                }
+                if(inc3==''){
+                    to3.innerHTML='input date'
+                    to3.style.color= 'red'
+                }
+                else{
+                    to3.innerHTML='valid'
+                    to3.style.color= 'green'
+                }
+            }
+            function thingtab(){
+                let thingt1=document.getElementById('thingt1').value;
+                let thingt2=document.getElementById('thingt2').value;
+                let prom1=document.getElementById('prom1');
+                let prom2=document.getElementById('prom2');
+                if(thingt1==''){
+                    prom1.innerHTML='enter where you are going'
+                    prom1.style.color= 'red'
+                }
+                else{
+                    prom1.innerHTML='valid'
+                    prom1.style.color= 'green'
+                }
+                if(thingt2==''){
+                    prom2.innerHTML='input the date you are going'
+                    prom2.style.color= 'red'
+                }
+                else{
+                    prom1.innerHTML='valid'
+                    prom1.style.color= 'red'
+                    prom1.style.fontSize= '11px'
+                }
+                
+            }
+        
+        </script>
     </body>
 </html>

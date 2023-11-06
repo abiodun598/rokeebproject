@@ -638,9 +638,9 @@
                     
                     <div style="float: right; display: flex; flex-direction: row; font-size: 11px; height: 100%;
                     justify-content: space-between;  align-items: center; width: 200px; color: black; font-weight: bold;">
-                        <p class="navp" id="invi">YOUR CART (<span style="color: red;">0</span>)</p> 
-                        <p class="navp" id="invi" onclick="serh()">SIGN IN</p> 
-                        <i class="fa-solid fa-search" onclick="ser()"></i>
+                        <p class="navp">YOUR CART (<span style="color: red;">0</span>)</p> 
+                        <p class="navp">SIGN IN</p> 
+                        <i class="fa-solid fa-search"></i>
                     </div>
                 </div>
             </div>
@@ -1029,20 +1029,5 @@
             </nav>
         </div><br><br><br>
 
-
-
-
-
-
-        <script>
-            function ser(){
-                document.getElementById('invi').innerHTML="<input type='search' placeholder='search what you like in exercise' id='rem'>"
-            }
-            function serh(){
-                document.getElementById('invi').innerHTML=`<div class='spinner-border text-danger' role='status' id='sppin'>
-                <span class='visually-hidden'>Loading...</span></div> Logging in`
-            }
-            
-        </script>
     </body>
 </html>

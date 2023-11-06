@@ -948,16 +948,10 @@
             function bim(){
                 let put= document.getElementById('put').value;
                 let alrt= document.getElementById('alert');
-                let inv1= /^[a-zA-Z0-9]+@[a-z.]+\.[a-zA-Z]{3}$/;
-                let inv=  /^[a-z0-9]+@[a-z.]+\.[a-zA-Z]{3}$/;
+                let inv=  /^[a-z0-9]+@[a-z.]+\.[a-zA-Z]{2,4}$/;
                 if(put.match(inv)){
-                    alrt.innerHTML= `<div class='spinner-border text-info' role='status' id='sppin'>
-                <span class='visually-hidden'>Loading...</span></div> Loading your mail for Netflix`
+                    alrt.innerHTML= `Loading your mail for Netflix`
                     alrt.style.color= 'green'
-                }
-                else if(put.match(inv1)){
-                    alrt.innerHTML= 'uppercase is not allowed in E-mail address'
-                    alrt.style.color= 'red'
                 }
                 else{
                     alrt.innerHTML= 'enter a valid E-mail address'
@@ -968,17 +962,11 @@
             function bim2(){
                 let pt2= document.getElementById('put2').value;
                 let alrt2= document.getElementById('alert2');
-                let inv12= /^[a-zA-Z0-9]+@[a-z.]+\.[a-zA-Z]{3}$/;
-                let inv2=  /^[a-z0-9]+@[a-z.]+\.[a-zA-Z]{3}$/;
-                // k.match('rok')
+                let inv2=  /^[a-z0-9]+@[a-z.]+\.[a-zA-Z]{2,4}$/;
                 if(pt2.match(inv2)){
                     alrt2.innerHTML= `<div class='spinner-border text-light' role='status' id='sppin'>
                 <span class='visually-hidden'>Loading...</span></div> Loading your mail to create Netflix`
                     alrt2.style.color= 'green'
-                }
-                else if(pt2.match(inv12)){
-                    alrt2.innerHTML= 'uppercase is not allowed in E-mail address'
-                    alrt2.style.color= 'red'
                 }
                 else{
                     alrt2.innerHTML= 'enter a valid E-mail address'

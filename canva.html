@@ -20,6 +20,7 @@
                 box-shadow: 0px 1px 4px rgb(180, 180, 180);
                 position: fixed;
                 top: 0px;
+                z-index: 5;
                 height: 80px;
                 background-color: white;
             }
@@ -549,7 +550,6 @@
             }
             .country{
                 width: 100%;
-                height: 50px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
@@ -829,6 +829,7 @@
                     flex-direction: column;
                     justify-content: space-between;
                     width: 90%;
+                    height: fit-content;
                     padding: 10px 0px;
                     margin: 0px auto;
                     position: relative;
@@ -840,6 +841,7 @@
                     flex-direction: column;
                     justify-content: space-between;
                     margin-bottom: 20px;
+                    height: fit-content;
                 }
                 .content div{
                     display: flex;
@@ -888,7 +890,11 @@
                     justify-content: space-around;
                     align-items: center;
                     width: 95%;
+                    height: fit-content;
                     margin: 0px auto;
+                }
+                .country{
+                    margin-bottom: 10px;
                 }
                 .p3{
                     width: 90%; 
@@ -986,12 +992,12 @@
                         </li>
                     </ul>
                     <form class="d-flex" id="form">
-                        <input class="form-control me-2" type="search" placeholder="Try logo, poster, anything" aria-label="Search">
+                        <input id="plog" class="form-control me-2" type="search" placeholder="Try logo, poster, anything" aria-label="Search">
                         <h6 onclick="theser()" id="b1">
                             Log in
                         </h6>
                         <p id="mid"></p>
-                        <h6 onclick="thesign()" id="b2">
+                        <h6 id="b2">
                             Sign up
                         </h6>
                     </form>
@@ -1158,7 +1164,7 @@
                 </div>
                 <div class="concor">
                     <h1 style="color: white; font-weight: bolder; font-size: xx-large;">CONCORDIA</h1>
-                    <p style="color: rgb(64, 191, 250); font-size: x-large; width: 220px;
+                    <p style="color: rgb(64, 191, 250); font-size: x-large; width: 100%;
                     font-weight: bolder; border: 2px solid gold;">
                         Go anywhere
                     </p>
@@ -1466,12 +1472,16 @@
 
             <script>
                 function theser(){
-                    document.getElementById('mid').innerHTML=`<div class='spinner-border text-success' role='status' id='sppin'>
-                    <span class='visually-hidden'>Loading...</span></div> Logging in...`
-                }
-                function thesign(){
-                    document.getElementById('mid').innerHTML=`<div class='spinner-border text-warning' role='status' id='sppin'>
-                    <span class='visually-hidden'>Loading...</span></div> pls wait...`
+                    let plog= document.getElementById('plog').value;
+                    if(!plog){
+                        document.getElementById('mid').innerHTML=`invalid input`
+                        document.getElementById('mid').style.color=`red`
+                    }
+                    else{
+                        document.getElementById('mid').innerHTML=`<div class='spinner-border text-success' role='status' id='sppin'>
+                        <span class='visually-hidden'>Loading...</span></div> Logging in...`
+                        document.getElementById('mid').style.color=`black`
+                    }
                 }
                 
 

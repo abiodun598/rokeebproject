@@ -80,6 +80,11 @@
                 margin-right: 22px;
                 
             }
+            #bur{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
             .search{
                 display: flex;
                 flex-direction: row;
@@ -584,7 +589,7 @@
                 .containe{
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-around;
+                    justify-content: space-between;
                     position: sticky;
                     top: 0px;
                     z-index: 7;
@@ -937,9 +942,9 @@
                     display: none;
                 }
                 .caveat{
-                padding: 3px;
-                border-radius: 12px;
-                margin: 0px auto;
+                    padding: 3px;
+                    border-radius: 12px;
+                    margin: 0px auto;
                 }
                 .caveat h3{
                     text-align: center;
@@ -989,13 +994,13 @@
                                 <li>4G Surveillance Camera (10 meters cable)</li>
                             </div>
                             <img src="PROJECT IMAGES/guns.png">
-                            
                         </div>
                     </div>
                 </div>
+                <p id="prom" style="padding-top: 6px; width: fit-content; font-weight: 500;"></p>
                 <div class="search">
-                    <i class="fa-solid fa-search"></i>
-                    <input type="text" placeholder="search by Products, brands & categories">
+                    <i class="fa-solid fa-search" onclick="thing()"></i>
+                    <input type="text" placeholder="search by Products, brands & categories" id="thingt">
                 </div>
             </div>
             <div class="forico">
@@ -1374,6 +1379,18 @@
             function cancel(){
                 let bur=document.getElementById('need');
                 bur.style.display='none'
+            }
+            function thing(){
+                let thingt1=document.getElementById('thingt').value;
+                let prom1=document.getElementById('prom');
+                if(thingt1==''){
+                    prom1.innerHTML='invalid'
+                    prom1.style.color= 'red'
+                }
+                else{
+                    prom1.innerHTML='Searching...'
+                    prom1.style.color= 'green'
+                }
             }
             function moon(){
                 let body=document.querySelector('.body');

@@ -867,22 +867,21 @@
                 <h3><i class="fa-solid fa-search"></i>FindLaw makes it easy to find a lawyer</h3><br>
                 <div class="issue">
                     <div>
-                        <label for="text"  style="margin-top: 18px;">My legal issue</label><br>
+                        <label for="text"  style="margin-top: 18px;" id="prom1">My legal issue</label><br>
                         <div class="input-group mb-3">
                             <button class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false" 
                             style="background: orangered; margin-top: 0px; color: white; font-size: 23px; width: 55px;"></button>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                            </ul>
+                            <ul class="dropdown-menu dropdown-menu-end"></ul>
                             <input type="text" class="form-control"
-                            aria-label="Text input with dropdown button">
+                            aria-label="Text input with dropdown button" id="thingt1">
                             
                         </div>
                     </div>
                     <div>
-                        <label for="search">I need help near <span style="font-weight: lighter; color: rgb(194, 192, 192);">(city, ZIP code or county)</span> </label><br>
-                        <input type="search" value="Lagos, Lagos" class="lon">
+                        <label for="search" id="prom2">I need help near <span style="font-weight: lighter; color: rgb(194, 192, 192);">(city, ZIP code or county)</span> </label><br>
+                        <input type="search" placeholder="Lagos, Lagos" class="lon" id="thingt2" >
                     </div>
-                    <button>FIND MY LAWYER >></button>
+                    <button onclick="thingtab()">FIND MY LAWYER >></button>
                 </div>
             </div>
         </div><br><br>
@@ -1240,20 +1239,38 @@
             function bim(){
                 let put= document.getElementById('flem').value;
                 let alrt= document.getElementById('alert');
-                let inv1= /^[a-zA-Z0-9]+@[a-z.]+\.[a-zA-Z]{3}$/;
-                let inv=  /^[a-z0-9]+@[a-z.]+\.[a-zA-Z]{3}$/;
+                let inv=  /^[a-z0-9]+@[a-z.]+\.[a-zA-Z]{2,4}$/;
                 if(put.match(inv)){
                     alrt.innerHTML= ` Loading ...`
                     alrt.style.color= 'white'
-                }
-                else if(put.match(inv1)){
-                    alrt.innerHTML= 'uppercase is not allowed in E-mail address'
-                    alrt.style.color= 'orange'
                 }
                 else{
                     alrt.innerHTML= 'enter a valid E-mail address'
                     alrt.style.color= 'red'
                 }
+            }
+            function thingtab(){
+                let thingt1=document.getElementById('thingt1').value;
+                let thingt2=document.getElementById('thingt2').value;
+                let prom1=document.getElementById('prom1');
+                let prom2=document.getElementById('prom2');
+                if(thingt1==''){
+                    prom1.innerHTML='invalid'
+                    prom1.style.color= 'red'
+                }
+                else{
+                    prom1.innerHTML='valid'
+                    prom1.style.color= 'green'
+                }
+                if(thingt2==''){
+                    prom2.innerHTML='input your city'
+                    prom2.style.color= 'red'
+                }
+                else{
+                    prom2.innerHTML='valid'
+                    prom2.style.color= 'green'
+                }
+                
             }
         </script>
     </body>
